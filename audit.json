@@ -11,7 +11,6 @@
   "enabled": 293,
   "disabled": 17,
   "browser": {
-    "url": "http://127.0.0.1:8766/",
     "desktop": [
       1536,
       1024
@@ -26,7 +25,8 @@
     "mobileHorizontalOverflow": false,
     "search": "MIGU -> one matching asset; HDR10+ -> one matching asset",
     "detail": "MIGU PNG 405x96",
-    "downloadShaMatches": true
+    "downloadShaMatches": true,
+    "environment": "Local browser preview verification"
   },
   "sheets": [
     {
