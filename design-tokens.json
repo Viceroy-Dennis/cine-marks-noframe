@@ -1,0 +1,41 @@
+{
+  "name": "映标 · 无框原色",
+  "background": "transparent",
+  "badge": {
+    "height": 32,
+    "pixelHeight": 96,
+    "visibleContentPixelHeight": 80,
+    "minimumHorizontalTransparentPadding": 4,
+    "verticalTransparentPadding": 8,
+    "width": "adaptive to source alpha bounds"
+  },
+  "decoration": {
+    "border": false,
+    "frame": false,
+    "base": false,
+    "shadow": false,
+    "highlight": false
+  },
+  "colors": {
+    "rule": "Preserve source RGB values and gradients; no global gray or gold mask",
+    "brandVariants": "Only per-asset documented variants",
+    "unverifiedReference": "Restored reference colors; not asserted to be official brand colors"
+  },
+  "sourceKind": "mixed audited logos and preserved reference artwork",
+  "svg": "Vector logos remain embedded SVG; raster sources remain embedded PNG. Per-item assetType identifies each.",
+  "rasterRenderer": "@resvg/resvg-js",
+  "preserved": [
+    "filter.id",
+    "filter.name",
+    "filter.groupId",
+    "filter.pattern",
+    "filter.isEnabled",
+    "filter order",
+    "group objects",
+    "non-visual filter fields"
+  ],
+  "compatibility": {
+    "embedded": "PNG data URI support depends on target app",
+    "relative": "Resolve imageURL against the hosted package base URL"
+  }
+}
