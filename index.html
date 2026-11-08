@@ -10796,8 +10796,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
     catch { return 'system'; }
   }
   const state = { query: '', group: 'all', onlyEnabled: false, height: 32, active: null, theme: savedTheme(), effectiveTheme: 'light' };
-  const adaptivePath = badge => `themes/adaptive/${encodeURIComponent(badge.id)}.svg`;
-  const pngPath = badge => state.effectiveTheme === 'light' ? `themes/light/${encodeURIComponent(badge.id)}.png` : badge.png;
+  const versioned = (url, badge) => `${url}?v=${encodeURIComponent(badge.sourceSha256.slice(0, 16))}`;
+  const adaptivePath = badge => versioned(`themes/adaptive/${encodeURIComponent(badge.id)}.svg`, badge);
+  const pngPath = badge => versioned(state.effectiveTheme === 'light' ? `themes/light/${encodeURIComponent(badge.id)}.png` : badge.png, badge);
   function image(badge, className = 'badge') {
     const img = document.createElement('img');
     img.src = adaptivePath(badge); img.alt = badge.name; img.className = className;
