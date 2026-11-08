@@ -26,7 +26,7 @@
 
 ## 实际限制
 
-当前是适合深色资源列表的颜色版本。白字在浅底不保证可读；浅底展示用于检查透明边缘。部分官方应用图标保留自身底板/内部阴影，没有额外加框；不能称其内部每一像素均透明。
+原始素材保留深色版本，另补 58 项浅色前景变体。预览会实际切换图像中的主题层，独立浅色 PNG 和自适应 SVG 已纳入发布。部分官方应用图标保留自身底板/内部阴影，没有额外加框；不能称其内部每一像素均透明。
 
 PPTV的历史聚力(PP)源图120×30，放大仍略模糊。历史Logo的来源已记录，未声称每个都是最新品牌规范。
 
@@ -50,3 +50,11 @@ PPTV的历史聚力(PP)源图120×30，放大仍略模糊。历史Logo的来源�
 远程订阅配置位于仓库根目录 `badges-noframe.json`。固定订阅地址为 [https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json](https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json)；图片 URL 锁定至完整素材提交 SHA。浏览器和配置检查不替代实际消费应用的订阅导入测试。
 
 线上发布验证：固定 JSON 返回 HTTP 200，310/310 张远程 PNG 与本地逐字节一致，0 缺失。GitHub Raw 的 JSON 响应类型为 text/plain; charset=utf-8，缓存 max-age=300，CORS 为 *；详细记录见 publication.json。尚未在实际消费应用执行导入与刷新测试。
+
+## 深浅主题复审
+
+全部 310 个原 PNG 与 310 个原 SVG 保持原始哈希。58 个浅色变体尺寸与 alpha 通道逐像素一致；57 个非金灰处理变体的所有可见彩色像素 RGB 保持一致。金灰星芒只做明确记录的亮度适配并保留渐变。14 个原生容器内部白色保持，252 项无需改色的 PNG 逐字节复用原稿。
+
+修复前，杜比视界、杜比全景声、TrueHD、Sony Pictures Core、DAZN 的白字在白底上没有达到 3:1 对比度的核心像素。浅色变体的这些单色核心像素全部通过同一检查。彩色品牌不是通用文字，不以此声明每个品牌色都达到 WCAG 文本阈值。
+
+腾讯、WeTV、YouTube 等内部白色播放符号保留；外部白字才变深。Pluto TV 的末端 tv 是透明字孔，因此尾圈也随主题变深，字孔保持透明。自适应是否跟随实际应用，取决于使用端 SVG 解码与主题传递；不支持时使用固定浅色/深色 PNG 入口。

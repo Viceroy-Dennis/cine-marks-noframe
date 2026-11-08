@@ -5,8 +5,9 @@
   "description": "Original-color transparent media badges and GitHub subscription builder.",
   "scripts": {
     "build:github": "node scripts/build-github.mjs",
-    "test": "node --test scripts/build-github.test.mjs",
-    "build:themes": "node scripts/build-theme-assets.cjs"
+    "test": "node --test scripts/build-github.test.mjs scripts/build-theme-subscriptions.test.mjs",
+    "build:themes": "node scripts/build-theme-assets.cjs",
+    "build:theme-subscriptions": "node scripts/build-theme-subscriptions.mjs"
   },
   "engines": {
     "node": ">=20"
