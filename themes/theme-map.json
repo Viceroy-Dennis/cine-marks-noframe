@@ -1,0 +1,3836 @@
+{
+  "description": "Per-artwork light-background adaptations. Theme variants are accessibility treatments, not a claim of official light brand assets. No added border, halo, background or shadow.",
+  "protectedNativeContainers": [
+    "stream-005",
+    "stream-007",
+    "stream-009",
+    "stream-010",
+    "stream-019",
+    "stream-035",
+    "stream-054",
+    "stream-058",
+    "stream-096",
+    "stream-118",
+    "stream-121",
+    "stream-123",
+    "studio-m1905",
+    "stream-145"
+  ],
+  "items": [
+    {
+      "id": "stream-001",
+      "name": "爱奇艺",
+      "mode": "preserve",
+      "sourceSha256": "13f46a6db6e87969cf89ec950ed945206cc8634eb785543e08691d5c657c7d8a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.iq.com/"
+    },
+    {
+      "id": "stream-002",
+      "name": "腾讯视频",
+      "mode": "neutral-regions",
+      "sourceSha256": "fb7aafc2807a26f6a826c9d1c37d4cba560690d2e6add88d356028106e828f15",
+      "regions": [
+        [
+          105,
+          0,
+          267,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change external Tencent Chinese wordmark only. Preserve the white play triangle inside the colored icon (bbox x29..57,y34..62).",
+      "sourceURL": "https://vfiles.gtimg.cn/tvideo2/channel-vue/assets/logo-Ckf4UreJ.svg"
+    },
+    {
+      "id": "stream-003",
+      "name": "WeTV",
+      "mode": "neutral-regions",
+      "sourceSha256": "055765e080861bee662fd2d5985b413688ba43659900d4b771ab24439309b62a",
+      "regions": [
+        [
+          105,
+          0,
+          213,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change WeTV wordmark only. Preserve the white play triangle inside the colored icon (bbox x29..57,y32..60).",
+      "sourceURL": "https://wetv.vip/en"
+    },
+    {
+      "id": "stream-004",
+      "name": "优酷",
+      "mode": "neutral-regions",
+      "sourceSha256": "b054b4e3d8bd0d6f14cc984c819ec42d161070041910d3293316c279c1a6deeb",
+      "regions": [
+        [
+          82,
+          0,
+          164,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change Youku white Chinese wordmark only; blue/orange emblem stays unchanged.",
+      "sourceURL": "https://img.alicdn.com/imgextra/i1/O1CN01180Rqd1u3Lo8PdgSs_!!6000000005981-55-tps-213-72.svg"
+    },
+    {
+      "id": "stream-005",
+      "name": "芒果TV",
+      "mode": "preserve",
+      "sourceSha256": "c5fa6496d2087f80c7468c870a8101afb1242cce81d254e626c502ebfd25c82b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Mango white glyph is inside the orange rounded app tile.",
+      "sourceURL": "https://static.hitv.com/pc2/img/logo.1c1a524.png"
+    },
+    {
+      "id": "stream-006",
+      "name": "哔哩哔哩",
+      "mode": "preserve",
+      "sourceSha256": "a0b00f1e3e35954342602befaf63b42d8ddd444cc45d8b2c8930e18575b6ba0b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90bd1f3e7b77851fd0c56474f6fa43b816babdab/icons/bilibili.svg"
+    },
+    {
+      "id": "stream-007",
+      "name": "Bstation",
+      "mode": "preserve",
+      "sourceSha256": "2d0794f4dbb247a6c4ae998fe11610ab8ccaea12d512c1b3d402260d391e08cf",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Bstation white television mascot is inside the cyan/blue app tile.",
+      "sourceURL": "https://play-lh.googleusercontent.com/qFtim49LDuuxWOrL9isvvwYAaPjdxOybw-7e_3dfGYe74XC8gtS9rfbo8m2gqJ4_2ip9aqnDHu7TlEJCBpnuglQ=w240-h480-rw"
+    },
+    {
+      "id": "stream-008",
+      "name": "AcFun",
+      "mode": "preserve",
+      "sourceSha256": "50b84b11798a18b18fcf92baa0024c16675aa9d29647b2465b7d8f1526ce63f4",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://p4-plat.wsbkwai.com/kos/nlav10360/static/img/logo.91f4645c.svg"
+    },
+    {
+      "id": "stream-009",
+      "name": "华数TV",
+      "mode": "preserve",
+      "sourceSha256": "b3f7732091edee89e3ab63b74a7bd5150e33eca556fb81d1307d3446fb6b7103",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Wasu white fan/text is part of the orange/white app tile.",
+      "sourceURL": "https://pp.myapp.com/ma_icon/0/icon_11705163_1785307669/256"
+    },
+    {
+      "id": "stream-010",
+      "name": "百视TV",
+      "mode": "preserve",
+      "sourceSha256": "0117b349d0dd13438464e9fb9ae4480f273df461c786de6f293a4916d6e779db",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "BesTV white b is inside the red icon; external brand text is already red.",
+      "sourceURL": "https://app.bestv.cn/asset/airCLassProductImg/besTVLogo.png"
+    },
+    {
+      "id": "stream-011",
+      "name": "埋堆堆",
+      "mode": "neutral-regions",
+      "sourceSha256": "c20ab74660afb62f9f57c8fa69b1e1c94716fc404b00e3d758707188ff1f0f47",
+      "regions": [
+        [
+          96,
+          0,
+          222,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change white Chinese wordmark only; multicolor symbol stays unchanged.",
+      "sourceURL": "https://activity-1254361794.file.myqcloud.com/pchome/mdd-logo.png"
+    },
+    {
+      "id": "stream-012",
+      "name": "Netflix",
+      "mode": "preserve",
+      "sourceSha256": "6644e99e27bbd49b644f976c4c9f3ab38e84dfcc3bd1e10c3203603543710c32",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/netflix.svg"
+    },
+    {
+      "id": "stream-013",
+      "name": "Amazon Prime Video",
+      "mode": "neutral-regions",
+      "sourceSha256": "fd28d61710b3aadbfd60d2ca49ad0137c9e4aa27b892350a3bda9d0ac50b3c61",
+      "regions": [
+        [
+          137,
+          0,
+          133,
+          55
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change video light-gray wordmark (#E0E0E0), not cyan prime/arrow. Pure-white-only detection misses this item.",
+      "sourceURL": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/prime-video-light.svg"
+    },
+    {
+      "id": "stream-014",
+      "name": "HBO Max",
+      "mode": "monochrome",
+      "sourceSha256": "60f346d006dd24154177a951e78e90289bae85a7148cd4d2a23ab577a14b4c68",
+      "regions": [
+        [
+          0,
+          0,
+          120,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/hbo-max.svg"
+    },
+    {
+      "id": "stream-015",
+      "name": "Disney+",
+      "mode": "neutral-regions",
+      "sourceSha256": "fdf9419647f5888b6ab2311392c70249efec616feb3aee20f2dc8de72a2988d3",
+      "regions": [
+        [
+          0,
+          34,
+          156,
+          62
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change Disney+ white foreground below the arc; preserve blue/cyan arc.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/disney-plus.svg"
+    },
+    {
+      "id": "stream-016",
+      "name": "Hulu",
+      "mode": "preserve",
+      "sourceSha256": "73e552022b0468cc9d1e459a90ddde2538c5bd8d2d0b888db74fb5241a050147",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/hulu.svg"
+    },
+    {
+      "id": "stream-017",
+      "name": "Apple TV+",
+      "mode": "monochrome",
+      "sourceSha256": "6a11fab8602aac4c75cd4846d71bb9974bc9d4967c2321e9ad922b58b270d7be",
+      "regions": [
+        [
+          0,
+          0,
+          219,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/apple-tv-plus-light.svg"
+    },
+    {
+      "id": "stream-018",
+      "name": "Apple TV",
+      "mode": "monochrome",
+      "sourceSha256": "ff2778f1ee328de3471087a93ee894564900b369a1ca33883efa04a46fa9193c",
+      "regions": [
+        [
+          0,
+          0,
+          168,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/apple-tv.svg"
+    },
+    {
+      "id": "stream-019",
+      "name": "iTunes",
+      "mode": "preserve",
+      "sourceSha256": "a88a5ed26b4f5aaec9809650fdc3966c746db14341aba4f3b6cf8202a37b4354",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "iTunes pale disc/background and white areas belong to its native gradient icon.",
+      "sourceURL": "https://www.apple.com/v/itunes/home/l/images/overview/itunes_logo__dwjkvx332d0m_large_2x.png"
+    },
+    {
+      "id": "stream-020",
+      "name": "Paramount+",
+      "mode": "preserve",
+      "sourceSha256": "4a04db97b2551712e77823e417c3f95a8b1ba50a7493dffe3b535ac5c3d28966",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/paramount-plus.svg"
+    },
+    {
+      "id": "stream-021",
+      "name": "Peacock",
+      "mode": "neutral-regions",
+      "sourceSha256": "b73f3644332e3cedd900d8249a0f6be6a8a672500c10b3a96bc7df6c0d98ef07",
+      "regions": [
+        [
+          0,
+          0,
+          52,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change white p glyph; preserve six colored dots.",
+      "sourceURL": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/peacock-light.svg"
+    },
+    {
+      "id": "stream-022",
+      "name": "Discovery+",
+      "mode": "neutral-regions",
+      "sourceSha256": "cff072adb669852a0edcd65e77e36a84d92dff2b03656366108710728b9fc50f",
+      "regions": [
+        [
+          0,
+          63,
+          135,
+          33
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change lower discovery+ text; preserve colored sphere and its internal white highlights/edge (upper y<63).",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/media/discovery-plus.png"
+    },
+    {
+      "id": "stream-023",
+      "name": "Crunchyroll",
+      "mode": "preserve",
+      "sourceSha256": "ef00e628ba7068cb9a4e3be4e565d5315521cd619f8d4a121113501ff633bf7a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/crunchyroll.svg"
+    },
+    {
+      "id": "stream-024",
+      "name": "Funimation",
+      "mode": "preserve",
+      "sourceSha256": "5572615399558b6ef6f111db61e0523dc93ea74c2bbd788b594ddb500ad56b38",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/funimation-us.png"
+    },
+    {
+      "id": "stream-025",
+      "name": "HIDIVE",
+      "mode": "preserve",
+      "sourceSha256": "dad94625830fa6f482106457bfe2232341400680900f3aea6dbac85c099aafd5",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://cdn.cookielaw.org/logos/9ba987d0-417d-4455-ab02-764b3dc7f03e/01905b7a-3996-73c3-a7b6-1b4cedb97d6d/f62c8641-1f86-4368-b917-1f6693841a1b/HIDIVELogoPNG.png"
+    },
+    {
+      "id": "stream-026",
+      "name": "AMC+",
+      "mode": "neutral-regions",
+      "sourceSha256": "8c9f32f3bbd3c993c1c6d589970fd7323d61a463dc4b652838be8a066095b761",
+      "regions": [
+        [
+          125,
+          25,
+          40,
+          45
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change only white plus; preserve teal gradient amc wordmark and outline.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/vod/amc-plus-vod-us.png"
+    },
+    {
+      "id": "stream-027",
+      "name": "MGM+",
+      "mode": "preserve",
+      "sourceSha256": "8cedf818b8754ef27a029ac8fdc03f9fdfcfd3123a7270ce80434ce53ae6baff",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/mgm-plus-us.png"
+    },
+    {
+      "id": "stream-028",
+      "name": "STARZ",
+      "mode": "preserve",
+      "sourceSha256": "f0c8a78a2628d8fbfab8e23e997047e563336968e88a92b483c1b45253a47be6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/starz-us.png"
+    },
+    {
+      "id": "stream-030",
+      "name": "Showtime",
+      "mode": "preserve",
+      "sourceSha256": "4360920ae091f99502e75253685cb4f1571c4fdb165a1c23fbd9dac78718bf12",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/showtime-us.png"
+    },
+    {
+      "id": "stream-031",
+      "name": "Paramount+ with Showtime",
+      "mode": "neutral-regions",
+      "sourceSha256": "49def259562d0d53941973f87e781aa07257cd96e45b20109a6aad7927614fc5",
+      "regions": [
+        [
+          0,
+          0,
+          162,
+          56
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change upper white Paramount+ and WITH text; preserve red SHOWTIME below.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/paramount-plus-with-showtime-us.png"
+    },
+    {
+      "id": "stream-032",
+      "name": "YouTube",
+      "mode": "neutral-regions",
+      "sourceSha256": "79c70b047699d226fdead6b8e5a19d168371579ba1099ec4529c2c50867b7920",
+      "regions": [
+        [
+          120,
+          0,
+          261,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change YouTube wordmark; preserve red icon and white play triangle (x52..80,y32..64).",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/youtube.svg"
+    },
+    {
+      "id": "stream-033",
+      "name": "YouTube Premium",
+      "mode": "neutral-regions",
+      "sourceSha256": "7236e55aff36b462c711530235634577a393e9e0cf3416b123d85949db32a09d",
+      "regions": [
+        [
+          125,
+          0,
+          274,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change Premium wordmark; preserve red icon and white play triangle (x51..79,y32..65).",
+      "sourceURL": "https://raw.githubusercontent.com/TaranVH/LOGOS/master/YouTube_Premium_logo.svg.png"
+    },
+    {
+      "id": "stream-034",
+      "name": "YouTube TV",
+      "mode": "neutral-regions",
+      "sourceSha256": "a6732a67367c8cee1207782d082cc3f3d9198714d2f672717af1c7182752eebd",
+      "regions": [
+        [
+          120,
+          0,
+          321,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change YouTube TV wordmark; preserve red icon and white play triangle (x51..79,y32..63).",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/media/youtube-tv.png"
+    },
+    {
+      "id": "stream-035",
+      "name": "Google Play Movies & TV",
+      "mode": "preserve",
+      "sourceSha256": "a324950bcba4cf090634fd0486259b203aa82da6a44ce04f1cd252e6fadb521f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Google Play Movies white film perforations belong inside the red film icon.",
+      "sourceURL": "https://static.wikia.nocookie.net/logopedia/images/8/8a/Google_Play_Movies_%26_TV_logo.svg/revision/latest"
+    },
+    {
+      "id": "stream-037",
+      "name": "Tubi",
+      "mode": "monochrome",
+      "sourceSha256": "d7d32784a05b8ec6c53ef913e341fd369aa2b0320448c621e619c5195587051c",
+      "regions": [
+        [
+          0,
+          0,
+          198,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/media/tubi.png"
+    },
+    {
+      "id": "stream-038",
+      "name": "Pluto TV",
+      "mode": "neutral-regions",
+      "sourceSha256": "d6b35b1e5a96bdfd4535509151d6b0e005dedc3fd880d5c0428ff16e4ee4e3db",
+      "regions": [
+        [
+          0,
+          0,
+          336,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Pluto wordmark and terminal white circle have transparent letter holes, not black pixels. Adapt both neutral foreground parts; preserve colorful arcs and transparent cutouts.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/media/pluto-tv.png"
+    },
+    {
+      "id": "stream-039",
+      "name": "Plex",
+      "mode": "preserve",
+      "sourceSha256": "d7696c7fceffcea979836cce7f499fff0287d31e29d4bcffcc3183c400ac3e7a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90bd1f3e7b77851fd0c56474f6fa43b816babdab/icons/plex.svg"
+    },
+    {
+      "id": "stream-040",
+      "name": "MUBI",
+      "mode": "monochrome",
+      "sourceSha256": "f1a98b71415fb34f6f6727819a27bfa71a8b7cd5095b5eb055ec4e5290be65c4",
+      "regions": [
+        [
+          0,
+          0,
+          276,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/main/svg/mubi.svg"
+    },
+    {
+      "id": "stream-041",
+      "name": "Shudder",
+      "mode": "preserve",
+      "sourceSha256": "33ad5cc82a6c9d49618f756d3190518ac20226adfce73cb9ecd244073598d595",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/shudder-us.png"
+    },
+    {
+      "id": "stream-042",
+      "name": "BritBox",
+      "mode": "neutral-regions",
+      "sourceSha256": "7133582c53e2447722245ab871fcb43758de7eb7b809cf40ab521aa4638ebcae",
+      "regions": [
+        [
+          0,
+          61,
+          204,
+          35
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change small CREATED BY BBC & itv white subline only; preserve blue/red britbox main text.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/media/britbox.png"
+    },
+    {
+      "id": "stream-045",
+      "name": "Criterion Channel",
+      "mode": "monochrome",
+      "sourceSha256": "8384bbab5f070d61a161bf7bec1eef45952dbbe5bcabadc86710fa9f760a2e44",
+      "regions": [
+        [
+          0,
+          0,
+          264,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://www.criterionchannel.com/geo-block"
+    },
+    {
+      "id": "stream-048",
+      "name": "Vimeo",
+      "mode": "preserve",
+      "sourceSha256": "f747476e55c6ae4abc32dcc20b65b53797ccf2d49aa3e284231aa2d7c2e11715",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/90bd1f3e7b77851fd0c56474f6fa43b816babdab/icons/vimeo.svg"
+    },
+    {
+      "id": "stream-049",
+      "name": "BBC iPlayer",
+      "mode": "neutral-regions",
+      "sourceSha256": "2696391f344d4cebbc0ad22ae43fe0ad9ab1edd81ada0251fbea9afac4abb17a",
+      "regions": [
+        [
+          0,
+          0,
+          186,
+          48
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change BBC white knockout blocks to dark variant retaining letter holes; preserve pink iPLAYER.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/bbc-iplayer.svg"
+    },
+    {
+      "id": "stream-050",
+      "name": "ITVX",
+      "mode": "preserve",
+      "sourceSha256": "5c0ab2b8e63d19a8f467fd68c520be728f30322dd90174f3e703e27e5693fd6e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/itvx.svg"
+    },
+    {
+      "id": "stream-051",
+      "name": "Channel 4",
+      "mode": "preserve",
+      "sourceSha256": "9868fefb925b9110b8d20b86fa11c754926bc3ce4ee5e8a8052c40dad39b872a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/channel-4.svg"
+    },
+    {
+      "id": "stream-053",
+      "name": "NOW",
+      "mode": "monochrome",
+      "sourceSha256": "4be469a37f14dbede66be8f8dee09b7b39311a87c95cdae53dac24b032da31df",
+      "regions": [
+        [
+          0,
+          0,
+          270,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/now-tv.svg"
+    },
+    {
+      "id": "stream-054",
+      "name": "Sky Go",
+      "mode": "preserve",
+      "sourceSha256": "a193548cbb17bceb31496454311ed0cb1ba521dcf5b7f0871062713cccd5b781",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Sky Go white areas belong to the native blue/white rounded app icon.",
+      "sourceURL": "https://skygo.sky.it/etc/designs/skygo/img/sky-go-app-1024-px-rgb@2x.png"
+    },
+    {
+      "id": "stream-055",
+      "name": "SkyShowtime",
+      "mode": "monochrome",
+      "sourceSha256": "cc092d945a6285f56c1e74dceba48ac606717162fbd40f7a39782ea1ead0f018",
+      "regions": [
+        [
+          0,
+          0,
+          354,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/skyshowtime.svg"
+    },
+    {
+      "id": "stream-056",
+      "name": "Viaplay",
+      "mode": "neutral-regions",
+      "sourceSha256": "71e6ba2d7bb98c0df60c85d3b4bbda5e7a4f1390205901034cb3d3c7a1ef48d7",
+      "regions": [
+        [
+          94,
+          0,
+          245,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change external viaplay text; preserve white arrow inside magenta/red circle (x9..60,y18..78).",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/netherlands/viaplay-hz-nl.png"
+    },
+    {
+      "id": "stream-057",
+      "name": "Rakuten TV",
+      "mode": "preserve",
+      "sourceSha256": "7e16d4b4b9d266182adc96ce7fb88fb423c433c9e1998ee5a8c73cfbaa0f346d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/rakuten-tv.svg"
+    },
+    {
+      "id": "stream-058",
+      "name": "CANAL+",
+      "mode": "preserve",
+      "sourceSha256": "d387a3721bce51b9c747575a398251ade994fe224a778e933653acc71eed33c6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "CANAL+ white letters are deliberately on a painted black brand plate.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/france/canal-plus-fr.png"
+    },
+    {
+      "id": "stream-070",
+      "name": "Movistar Plus+",
+      "mode": "monochrome",
+      "sourceSha256": "cdcfad7f4b9974e0f140f58a7cfbca054abd422ea9af95e5ebce2bf6ad4b4473",
+      "regions": [
+        [
+          0,
+          0,
+          186,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/movistar-plus.svg"
+    },
+    {
+      "id": "stream-080",
+      "name": "Stan",
+      "mode": "monochrome",
+      "sourceSha256": "157c508e2025a0c9898f87f303a71fb797946d0807e32ade06a0a088ea8d3f04",
+      "regions": [
+        [
+          0,
+          0,
+          276,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://www.stan.com.au/"
+    },
+    {
+      "id": "stream-087",
+      "name": "Crave",
+      "mode": "preserve",
+      "sourceSha256": "fed4ec27185c9169ec5f73f57eaa84a644dc0c042a74a6c0bed5a23ac7ee05e3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/canada/crave-ca.png"
+    },
+    {
+      "id": "stream-088",
+      "name": "CBC Gem",
+      "mode": "neutral-regions",
+      "sourceSha256": "520cdb5bb9ba950cc32c4f22a665ccc1feb8c123f4c2b17b77b29e42579dda80",
+      "regions": [
+        [
+          92,
+          0,
+          241,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change Gem white wordmark only; preserve red CBC symbol.",
+      "sourceURL": "https://gem.cbc.ca/"
+    },
+    {
+      "id": "stream-089",
+      "name": "JioHotstar",
+      "mode": "metallic",
+      "sourceSha256": "919267a9f5cb0d2887ab355f146635626ecdc589d5613c4b169f5b8749d4363e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "JioHotstar pale metallic star contains gray/gold highlights. It lacks contrast on light surfaces but is not a white wordmark: use a separately sourced dark/brand variant or explicitly designed darker material treatment. Do not globally invert or flatten its gradient by a white mask.",
+      "sourceURL": "https://img10.hotstar.com/image/upload/f_auto,q_90,w_256/v1737554969/web-assets/prod/images/rebrand/logo.png"
+    },
+    {
+      "id": "stream-095",
+      "name": "TVING",
+      "mode": "preserve",
+      "sourceSha256": "c21fad5b79784e9e820255e98a00fad0c3aca9512a4342f909cd4cfc7ad72c93",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/tving.svg"
+    },
+    {
+      "id": "stream-096",
+      "name": "Wavve",
+      "mode": "preserve",
+      "sourceSha256": "0df502a77b0661cf0f04ab73028b1f2468de263ae57ff545593f5f15dd7696ba",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Wavve white w is inside the blue app tile.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/wavve.svg"
+    },
+    {
+      "id": "stream-097",
+      "name": "Coupang Play",
+      "mode": "neutral-regions",
+      "sourceSha256": "b21e2012da7e3c8e417b75a59dbe04fa498730535422725cecdb479c18fcd231",
+      "regions": [
+        [
+          120,
+          0,
+          324,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change neutral white text only; preserve cyan symbol and colored letters inside coupang.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/coupang-play.svg"
+    },
+    {
+      "id": "stream-100",
+      "name": "U-NEXT",
+      "mode": "monochrome",
+      "sourceSha256": "7112074e309d6e79c548808772f66c5d25643c88f59556921c3c7902df4eb973",
+      "regions": [
+        [
+          0,
+          0,
+          444,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://video.unext.jp/"
+    },
+    {
+      "id": "stream-101",
+      "name": "ABEMA",
+      "mode": "monochrome",
+      "sourceSha256": "500e3f8972198781496267df6f0fe9023dfb9915930a3ad0cca4ea08e5e385a6",
+      "regions": [
+        [
+          0,
+          0,
+          378,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://abema.tv/assets/images/icons/logo.svg?version=20200413"
+    },
+    {
+      "id": "stream-103",
+      "name": "FOD",
+      "mode": "preserve",
+      "sourceSha256": "f41991da9afd5c0c42f3da25ec99cafa1886d110b019e0cce0e816a7ac1fb0a4",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://i.fod.fujitv.co.jp/website/img/common/phase2/logo_fod.png"
+    },
+    {
+      "id": "stream-104",
+      "name": "Hulu Japan",
+      "mode": "preserve",
+      "sourceSha256": "9b51fd6b0a9ae2d5a036c6aad22b56b34b6f5d71f3908e545fc22ec8ba6bf424",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.hulu.jp/images/logo_horizon.svg"
+    },
+    {
+      "id": "stream-108",
+      "name": "Viki",
+      "mode": "preserve",
+      "sourceSha256": "cd9288cd9bf585ac07956a230fc2e5101b3848c6709bc10acce8e811bc0dd2e8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/vod/rakuten-viki-vod.png"
+    },
+    {
+      "id": "stream-110",
+      "name": "Viu",
+      "mode": "preserve",
+      "sourceSha256": "38dfa9cc8294aad32f47a3984cfeecb1753d62d2a290fe23a177e6f2310566d7",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.viu.com/ott/hk"
+    },
+    {
+      "id": "stream-117",
+      "name": "myTV SUPER",
+      "mode": "neutral-regions",
+      "sourceSha256": "94a8c51d9775fea894ab0a5ffde8cec8dce05eb04c25315563f97994f99e3995",
+      "regions": [
+        [
+          0,
+          0,
+          321,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change neutral white wordmark; preserve three colored strokes in E.",
+      "sourceURL": "https://storage.googleapis.com/mytvsuper-web-assets/img/logo_mytvsuper_black_0320.svg"
+    },
+    {
+      "id": "stream-118",
+      "name": "Now TV Hong Kong",
+      "mode": "preserve",
+      "sourceSha256": "7bcb82e92c83012b0651f1953377894d437a51cf1e90a966c132edee56074840",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Now TV HK tiny white TV letters are inside a dark disc; orange wordmark already remains visible.",
+      "sourceURL": "https://nowtv-strapi-bucket.s3.ap-southeast-1.amazonaws.com/nowtv_logo_914ac9c204.svg"
+    },
+    {
+      "id": "stream-119",
+      "name": "myVideo",
+      "mode": "preserve",
+      "sourceSha256": "a5c7e59fc5fdff17c95d59717974d292282e743e8d381f98c57cbbb44452da41",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.myvideo.net.tw/event/login/brand_logo.svg"
+    },
+    {
+      "id": "stream-120",
+      "name": "friDay影音",
+      "mode": "neutral-regions",
+      "sourceSha256": "5b65c2f557588bdb0f6cc36e216686caf8a6b0833c70f7439560ea6d64b076b5",
+      "regions": [
+        [
+          0,
+          0,
+          226,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change fri/ay neutral white letter regions; preserve cyan d and Chinese wordmark.",
+      "sourceURL": "https://video.friday.tw/img/logo.svg?2026102936"
+    },
+    {
+      "id": "stream-121",
+      "name": "KKTV",
+      "mode": "preserve",
+      "sourceSha256": "6831548c2bcaee4dc2521b957e675300cfbe873f7e9a6f9774a555d3dd77335e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "KKTV white hexagon and K belong to the native burgundy app icon.",
+      "sourceURL": "https://play-lh.googleusercontent.com/i9HklBqCAO3vWNyg4GOsYHkX389C3uXiaEoPOSwTU07CGoLsgv5lyvR0Cq4YIL99ByP6IMfkZJLuHoo41WsC=w240-h480-rw"
+    },
+    {
+      "id": "stream-122",
+      "name": "Hami Video",
+      "mode": "monochrome",
+      "sourceSha256": "2c66a5a4f0e5766d6546587e6f4951493c22873c914e93c0f241ce4b234beb7d",
+      "regions": [
+        [
+          0,
+          0,
+          723,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://static-hamivideo.cdn.hinet.net/resources/images/logo.svg"
+    },
+    {
+      "id": "stream-123",
+      "name": "LiTV",
+      "mode": "preserve",
+      "sourceSha256": "2935f959c31a98cf837a5929245f6ca92d730212eb4d2a419b8e002ac0350c50",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "LiTV white text is inside the purple cloud; external Chinese tagline is already dark gray.",
+      "sourceURL": "https://www.litv.tv/_next/static/media/logo.d77e96be.svg"
+    },
+    {
+      "id": "stream-124",
+      "name": "CATCHPLAY+",
+      "mode": "preserve",
+      "sourceSha256": "1960807812bd8721a8cb3ee19002547dc11b90bc6f3a7ae01d181fbfaa7b20b8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.catchplay.com/static/images/logo.svg"
+    },
+    {
+      "id": "stream-125",
+      "name": "GagaOOLala",
+      "mode": "neutral-regions",
+      "sourceSha256": "92d380f4adc0b14b3ffa18c56a3ac9dbd09611c2f5dee6f0070782574255e631",
+      "regions": [
+        [
+          0,
+          0,
+          190,
+          96
+        ],
+        [
+          298,
+          0,
+          131,
+          61
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change Gaga and Lala white letters; preserve rainbow OO arcs and white small play disc (x283..308,y63..88) with green triangle.",
+      "sourceURL": "https://www.gagaoolala.com/img/ui/logo.png"
+    },
+    {
+      "id": "studio-sohu",
+      "name": "SOHU VIDEO",
+      "mode": "neutral-regions",
+      "sourceSha256": "92a86fd82fffe9c7269208c2166d00b7eee4c13a5e81339194fe9ca25e04c867",
+      "regions": [
+        [
+          0,
+          0,
+          168,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change left white 搜狐 only; preserve right pink plate and its internal white 视频.",
+      "sourceURL": "https://css.tv.itc.cn/channel/playv5/play-nav/logo.svg"
+    },
+    {
+      "id": "studio-migu",
+      "name": "MIGU VIDEO",
+      "mode": "preserve",
+      "sourceSha256": "a8a65e199484310de151bddd59c6ee08855451ca294251824b269935061fb025",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.miguvideo.com/"
+    },
+    {
+      "id": "studio-pptv",
+      "name": "PPTV",
+      "mode": "preserve",
+      "sourceSha256": "bc4ada682c9381fc020adcff6fe21a4059e420b0fe8d525fc43017f055fc8e66",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://upload.wikimedia.org/wikipedia/en/4/4d/PPTV_China_logo.png"
+    },
+    {
+      "id": "studio-xigua",
+      "name": "XIGUA VIDEO",
+      "mode": "neutral-regions",
+      "sourceSha256": "edcbcdf29b0758d994c5688b0b35f5a4270f4886ed27f328ae7a171d6b4e01c4",
+      "regions": [
+        [
+          98,
+          0,
+          274,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change external white Chinese wordmark only; preserve pink Xigua symbol.",
+      "sourceURL": "https://lf3-cdn-tos.bdxiguastatic.com/obj/ixigua-static/xigua_fe/xigua_video_web_pc/static/media/xigua-logo.e51a2e03.svg"
+    },
+    {
+      "id": "studio-douyin",
+      "name": "DOUYIN",
+      "mode": "neutral-regions",
+      "sourceSha256": "9e544a60cde6eb1801a9f001583f800aaf3f95c1405b5297f19e78cc2ad2e9a8",
+      "regions": [
+        [
+          0,
+          0,
+          81,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Special multicolor symbol, not wordmark: change white musical-note core to dark while preserving cyan/red offsets. No native colored backing supports white core.",
+      "sourceURL": "https://raw.githubusercontent.com/pheralb/svgl/main/static/library/tiktok-icon-dark.svg"
+    },
+    {
+      "id": "studio-m1905",
+      "name": "M1905",
+      "mode": "preserve",
+      "sourceSha256": "5068aede591dbca5f2c502bc4bfac7b97dac9d42f180132cfbd74bf3aaae8272",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "1905/CCTV6 white text belongs inside native blue/orange app tile.",
+      "sourceURL": "https://static.m1905.cn/css/homepage/img/1905TVlogo.png"
+    },
+    {
+      "id": "s-uhdbd",
+      "name": "Ultra HD Blu-ray",
+      "mode": "monochrome",
+      "sourceSha256": "c08415ac5837cc2e8edac8ca56e7e8689be71ae21886555e6939be8069be0ce2",
+      "regions": [
+        [
+          0,
+          0,
+          261,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://seeklogo.com/vector-logo/487334/ultra-hd-blu-ray"
+    },
+    {
+      "id": "s-bluray",
+      "name": "Blu-ray Disc",
+      "mode": "preserve",
+      "sourceSha256": "257a2ae4b38b2b1b63a18e33d855fe5ec0791b6ed1dd1f81c1011023e36bf94e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Blu-ray main gray is approximately #808080; small lighter edge pixels are raster antialiasing/highlights, not a missing white wordmark. Preserve for this white-logo fix.",
+      "sourceURL": "https://raw.githubusercontent.com/TaranVH/LOGOS/master/FORMAT-Blu-ray%20Disc%20Logo.png"
+    },
+    {
+      "id": "s-hdtv",
+      "name": "HDTV",
+      "mode": "preserve",
+      "sourceSha256": "6799be82ce1638562535343a9d89e46e3baf9db745e3d9c125327869ce3ed059",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/s-hdtv.png"
+    },
+    {
+      "id": "s-dvd",
+      "name": "DVD RIP",
+      "mode": "preserve",
+      "sourceSha256": "86c0bee19eccc3f2127ed78c92b78eab4377fe9cd9069c114bbfd6aea892c7c2",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/s-dvd.png"
+    },
+    {
+      "id": "stream-145",
+      "name": "巴哈姆特動畫瘋",
+      "mode": "preserve",
+      "sourceSha256": "b134302a35e177e3fbd32b7b8827c2931b0acfb6c6c1a5f2ba1f6c724bef1d5d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Bahamut white Chinese letters belong inside the native cyan/orange/pink character plates.",
+      "sourceURL": "https://i2.bahamut.com.tw/anime/logo.svg"
+    },
+    {
+      "id": "stream-146",
+      "name": "LINE TV",
+      "mode": "neutral-regions",
+      "sourceSha256": "9e78dccb0ebf2395d412ba532d2c06cc6501020275d0ca57c99b6710369c680f",
+      "regions": [
+        [
+          89,
+          0,
+          319,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change LINE TV white wordmark only; preserve green play outline.",
+      "sourceURL": "https://web-static.linetv.tw/release-fargate/public/images/logo/logo_darktheme.svg"
+    },
+    {
+      "id": "stream-cctv",
+      "name": "央视频 CCTV",
+      "mode": "monochrome",
+      "sourceSha256": "70da8f6c4fedb1457212ec7c95598999dd3a8a7193b66e57af3e8863b08089de",
+      "regions": [
+        [
+          0,
+          0,
+          312,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://sapi.yangshipin.cn/assets/2022/pcicon/logo@2x.png"
+    },
+    {
+      "id": "stream-letv",
+      "name": "乐视视频",
+      "mode": "preserve",
+      "sourceSha256": "9c9e4087762048107e3c43846cd4ff25335e7ee48e159e74185f4b92d5810a27",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://upload.wikimedia.org/wikipedia/commons/5/56/LeTV_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    },
+    {
+      "id": "stream-sonycore",
+      "name": "Sony Pictures Core",
+      "mode": "monochrome",
+      "sourceSha256": "971af8c755ba4dbdb5e0fc9aac15c973a14c4c2fd809defa30f7488915bfc5ee",
+      "regions": [
+        [
+          0,
+          0,
+          1089,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://www.sonypicturescore.com/assets/logos/rebrand-spc-logo-large.svg"
+    },
+    {
+      "id": "stream-nhk",
+      "name": "NHK",
+      "mode": "preserve",
+      "sourceSha256": "75eec4d52eb0411d957e358cca22815ef5e9455361175cb7a9c5ef06ac813b08",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://www.nhk.or.jp/"
+    },
+    {
+      "id": "stream-espn",
+      "name": "ESPN+",
+      "mode": "neutral-regions",
+      "sourceSha256": "24c51501ef2dc0b60e9190da973247487b1077267c8cca1f292d0dd3964b29c8",
+      "regions": [
+        [
+          0,
+          0,
+          330,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Change ESPN white letters only; preserve yellow plus.",
+      "sourceURL": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/misc/media/espn-plus.png"
+    },
+    {
+      "id": "stream-dazn",
+      "name": "DAZN",
+      "mode": "monochrome",
+      "sourceSha256": "711c18b9caac71fb16b0c9a8c18c2b638373189be8aa542f7ec8cf8a26b1f0cb",
+      "regions": [
+        [
+          0,
+          0,
+          90,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/funnymataleao/luma-webos-launcher/40994fc144b5af481056d14e2fb93304aa1e2c82/assets/logos/dazn.svg"
+    },
+    {
+      "id": "r4",
+      "name": "4K Ultra HD",
+      "mode": "preserve",
+      "sourceSha256": "4f3de0923ab5bd38050f639bc59b8feec227ca1c9ac9d38d73239b00cf1dd45c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/r4.png"
+    },
+    {
+      "id": "r1",
+      "name": "1080p Full HD",
+      "mode": "preserve",
+      "sourceSha256": "344ee219d634c80b5efd082870c40c018d812e5181dba952ff31e3f67e70c6bd",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/r1.png"
+    },
+    {
+      "id": "r7",
+      "name": "720p HD",
+      "mode": "preserve",
+      "sourceSha256": "0ddfc79680911131262d6f87ae964eb90f0d8f0c19fb94b4fed29a991ca07bd8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/r7.png"
+    },
+    {
+      "id": "res-8k",
+      "name": "8K",
+      "mode": "preserve",
+      "sourceSha256": "7dcec560c09108370ca2a707f822e59e40f5b39cb36af161ebd92827e9a966c3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/res-8k.png"
+    },
+    {
+      "id": "res-1440",
+      "name": "1440p 2K",
+      "mode": "preserve",
+      "sourceSha256": "639296b7a5359fb39e561cf56f8d654f9d4809a8f3b946d64959e693bdabc490",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/res-1440.png"
+    },
+    {
+      "id": "res-sd",
+      "name": "SD 480p/576p",
+      "mode": "preserve",
+      "sourceSha256": "532993d0101686cab977882fbf76b2381161dbf452922ce8c15d388a20fe9004",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/res-sd.png"
+    },
+    {
+      "id": "custom_dolby-vision-p5",
+      "name": "Dolby Vision P5",
+      "mode": "preserve",
+      "sourceSha256": "615caccb09408e2f7ee2ff028875030f29ccd07c9a21317a5c010c54ff2b53c0",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_dolby-vision-p5.png"
+    },
+    {
+      "id": "custom_dolby-vision-p7",
+      "name": "Dolby Vision P7",
+      "mode": "preserve",
+      "sourceSha256": "7462cb954466dc0f9a319c57fca77af7269d4a837b3c7604b1596ca0b86ca102",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_dolby-vision-p7.png"
+    },
+    {
+      "id": "custom_dolby-vision-p8",
+      "name": "Dolby Vision P8",
+      "mode": "preserve",
+      "sourceSha256": "959971eca74ce2e7e3ec7fde52f0b1da5ed175fd04414a0ee8929206b355585d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_dolby-vision-p8.png"
+    },
+    {
+      "id": "custom_dolby-vision_8",
+      "name": "Dolby Vision",
+      "mode": "monochrome",
+      "sourceSha256": "c1959b332f0b533b69e1b018552af31ed53b5bd60960446f9b8355733701d72f",
+      "regions": [
+        [
+          0,
+          0,
+          225,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://d21buns5ku92am.cloudfront.net/68644/images/413939-Dolby%20Vision%20Vertical-163bd8-original-1641854882.png?download=1"
+    },
+    {
+      "id": "custom_hdr10-plus_9",
+      "name": "HDR10+",
+      "mode": "neutral-regions",
+      "sourceSha256": "18a89f6ec541d66d44e01bae096f4f89caf27e72fd574afee2c203b6a15d0e83",
+      "regions": [
+        [
+          0,
+          0,
+          381,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "只替换HDR白色线性字样及白色加号；保留彩虹叠片、彩色10及其渐变。",
+      "sourceURL": "https://upload.wikimedia.org/wikipedia/commons/7/7c/HDR10%2B_Logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    },
+    {
+      "id": "custom_hdr10_10",
+      "name": "HDR10",
+      "mode": "preserve",
+      "sourceSha256": "7f6bfcf2274beb6315b6f9546d8f5d526413b0d9c5a1fb7f9388cd98e9fce289",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_hdr10_10.png"
+    },
+    {
+      "id": "custom_hdr_11",
+      "name": "HDR",
+      "mode": "preserve",
+      "sourceSha256": "342378d6464638ded3fd3a254483331dd5d16d96424ded3e0d97ccdb7e1bc2d8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_hdr_11.png"
+    },
+    {
+      "id": "custom_sdr_12",
+      "name": "SDR",
+      "mode": "preserve",
+      "sourceSha256": "c1d03abcde581930653c1c71ecd488a471b0bd4c4672835a0f4f6c705e8fe630",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_sdr_12.png"
+    },
+    {
+      "id": "custom_imax-enhanced_13",
+      "name": "IMAX Enhanced",
+      "mode": "monochrome",
+      "sourceSha256": "d9e16265f71f3b444a0bdc21af9c77d7ca8f2dff635173837fca445b3f0f917e",
+      "regions": [
+        [
+          0,
+          0,
+          237,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://static.wikia.nocookie.net/logopedia/images/0/00/IMAXEnhanced.svg/revision/latest?cb=20260726190949"
+    },
+    {
+      "id": "custom_imax_14",
+      "name": "IMAX",
+      "mode": "monochrome",
+      "sourceSha256": "920defb0206475b1695fb8c2b41837921ba5d830c03467bf063ffadee8e94f13",
+      "regions": [
+        [
+          0,
+          0,
+          432,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://www.imax.com/"
+    },
+    {
+      "id": "v-3d",
+      "name": "3D",
+      "mode": "preserve",
+      "sourceSha256": "fb032501c432c01c78f3fa551d28ddd0f6f5f40798e3b8f8ba5a099e7fb0afab",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/v-3d.png"
+    },
+    {
+      "id": "video-hdr-vivid",
+      "name": "HDR Vivid",
+      "mode": "neutral-regions",
+      "sourceSha256": "a4e72cbf0adaa23962d79dac36963b9e3387b10c880c945aee79b8b72f9cd0b4",
+      "regions": [
+        [
+          0,
+          0,
+          528,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "只替换HDR Vivid近白字样；保留红蓝V形图标及渐变。",
+      "sourceURL": "https://www.uhd-world-association.com/wp-content/uploads/2025/11/HDR-Vivid_full-colour_rgb-scaled.png"
+    },
+    {
+      "id": "video-hlg",
+      "name": "HLG",
+      "mode": "preserve",
+      "sourceSha256": "15d86f6bab4467c6c6e5bd5b21d7077b890c665b1ee2caf86d43e6af63babc73",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/video-hlg.png"
+    },
+    {
+      "id": "custom_hevc_15",
+      "name": "HEVC",
+      "mode": "preserve",
+      "sourceSha256": "4b061e18077893d2190ad3176989fbd7d6e2655dfd358213e2a484e372172e79",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_hevc_15.png"
+    },
+    {
+      "id": "custom_avc_16",
+      "name": "AVC",
+      "mode": "preserve",
+      "sourceSha256": "efe0965ff6610e9fd282e9644def88b0d6aa81329a35b034e1741c7d5cb17487",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_avc_16.png"
+    },
+    {
+      "id": "f9",
+      "name": "AV1",
+      "mode": "preserve",
+      "sourceSha256": "fb5167455feb659345db49f2b0995a4e2af166abc17888456f346ed06ba5df9e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f9.png"
+    },
+    {
+      "id": "codec-vvc",
+      "name": "VVC H.266",
+      "mode": "preserve",
+      "sourceSha256": "d3c72dfd8954e779750afc0739933e4065550ed73ed3456ef2f7f774f6054e21",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/codec-vvc.png"
+    },
+    {
+      "id": "codec-vp9",
+      "name": "VP9",
+      "mode": "preserve",
+      "sourceSha256": "27cb6c6441ba1313b304f443a74efa71c541386a84a75f7d8704aa17cc49c186",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/codec-vp9.png"
+    },
+    {
+      "id": "codec-vc1",
+      "name": "VC-1",
+      "mode": "preserve",
+      "sourceSha256": "b491aa04c78c4da95e17ab2a9046a94eed4850725ba87d0ea3fbb15e3826dd20",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/codec-vc1.png"
+    },
+    {
+      "id": "codec-mpeg2",
+      "name": "MPEG-2",
+      "mode": "preserve",
+      "sourceSha256": "8a69e2752e404cfff44b3ae509a5037109723cbd5864ad29f9c429e5cfa23287",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/codec-mpeg2.png"
+    },
+    {
+      "id": "custom_10bit_17",
+      "name": "10Bit",
+      "mode": "preserve",
+      "sourceSha256": "014f14e99ef912ce9cdea9003d3b8a16cc947f2fc4d58f41d3ed8ba299a750d7",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_10bit_17.png"
+    },
+    {
+      "id": "custom_8bit_18",
+      "name": "8Bit",
+      "mode": "preserve",
+      "sourceSha256": "734dc885582cfca72c4cc0758c2b11134f83dfd9a54da7813cd8cfb0008a33c2",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/custom_8bit_18.png"
+    },
+    {
+      "id": "bit-12",
+      "name": "12Bit",
+      "mode": "preserve",
+      "sourceSha256": "8015628ec60075020a5d1414d86a29532f74844f31913152404642522dbe539c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/bit-12.png"
+    },
+    {
+      "id": "fps-120",
+      "name": "120 FPS",
+      "mode": "preserve",
+      "sourceSha256": "3d09adf9c5457536b8197c14f2a96143467a80dc573616f800b3b44b89baef7b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/fps-120.png"
+    },
+    {
+      "id": "fps-60",
+      "name": "60 FPS",
+      "mode": "preserve",
+      "sourceSha256": "5719047fbad1c41c11ce4d9a750d22cb620891e7560e702ceeeefe7097960222",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/fps-60.png"
+    },
+    {
+      "id": "fps-50",
+      "name": "50 FPS",
+      "mode": "preserve",
+      "sourceSha256": "96bd2f5083c5fb79eda3cea401807c8ceddb324e5aaea5d0c794f31fbaf80d9f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/fps-50.png"
+    },
+    {
+      "id": "fps-hfr",
+      "name": "HFR 高帧率",
+      "mode": "preserve",
+      "sourceSha256": "023278935367143c37bac3c41265c1ab4a51fe6eb637347d967afdc1ecef04a2",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/fps-hfr.png"
+    },
+    {
+      "id": "custom_dolby-atmos_19",
+      "name": "Dolby Atmos",
+      "mode": "monochrome",
+      "sourceSha256": "a98d1c0b7812c9531bbac1cf4afcbf9d61abe91f9920b1e1b6281d655909e3ed",
+      "regions": [
+        [
+          0,
+          0,
+          222,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/TaranVH/LOGOS/master/Dolby_Atmos%202019.png"
+    },
+    {
+      "id": "custom_truehd_20",
+      "name": "TrueHD",
+      "mode": "monochrome",
+      "sourceSha256": "f3d72d9ae7bfcfe92e667253aad815be44f8e7ef4c2ac3712a6f262c50b4a01d",
+      "regions": [
+        [
+          0,
+          0,
+          330,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://raw.githubusercontent.com/TaranVH/LOGOS/master/Dolby_TrueHD.svg.png"
+    },
+    {
+      "id": "custom_dolby-digital-plus_21",
+      "name": "Dolby Digital Plus",
+      "mode": "monochrome",
+      "sourceSha256": "44c5e9d69156571a992d0f46b8ba154417b1f5e4c324bd2fcd4625f30db820d2",
+      "regions": [
+        [
+          0,
+          0,
+          237,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Dolby-Digital-Plus-Logo.svg"
+    },
+    {
+      "id": "custom_dolby-digital_22",
+      "name": "Dolby Digital",
+      "mode": "monochrome",
+      "sourceSha256": "13a63ef672b5722462aa857dafd249203db5b6f8c28500f7b8275f222e5da130",
+      "regions": [
+        [
+          0,
+          0,
+          336,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "Create a dark monochrome foreground variant for light surfaces, preserving the exact geometry and alpha; retain the current white artwork for dark surfaces.",
+      "sourceURL": "https://upload.wikimedia.org/wikipedia/commons/1/18/Dolby-Digital-Logo.svg"
+    },
+    {
+      "id": "custom_dts-x_23",
+      "name": "DTS:X",
+      "mode": "neutral-regions",
+      "sourceSha256": "eceb3e4a3930dd3d09fec585a99f188991d547e357a3b118cf29709267ecdbed",
+      "regions": [
+        [
+          0,
+          0,
+          285,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "只替换白色dts字标及必要白色注册标记；橙黄色X不改。",
+      "sourceURL": "https://raw.githubusercontent.com/TaranVH/LOGOS/master/_SVGs/DTS_X_2020.svg"
+    },
+    {
+      "id": "custom_dts-hd-master-audio_24",
+      "name": "DTS-HD Master Audio",
+      "mode": "neutral-regions",
+      "sourceSha256": "e9d50dfd1549a7b9c19f2865d2d1d20ae1c33a54fd2782d890d36c4f184cde9d",
+      "regions": [
+        [
+          0,
+          0,
+          276,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "只替换白色dts与Master Audio文字；保留金橙环线与原灰色-HD。原灰-HD在白底对比仍偏低，可另设文字层适配但不能整图反色。",
+      "sourceURL": "https://upload.wikimedia.org/wikipedia/commons/b/bd/DTS-HD-MA.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    },
+    {
+      "id": "custom_dts-hd_25",
+      "name": "DTS-HD",
+      "mode": "neutral-regions",
+      "sourceSha256": "3cd43958c64393f2d1487511ad2bc09c7f899364e23f3406c8a58ed8b8395280",
+      "regions": [
+        [
+          0,
+          0,
+          480,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "只替换白色dts字标；保留金橙环线与原灰色-HD。原灰-HD的弱对比另行决定，不能整图反色。",
+      "sourceURL": "https://images.seeklogo.com/logo-png/4/1/dts-hd-logo-png_seeklogo-44054.png"
+    },
+    {
+      "id": "custom_dts_26",
+      "name": "DTS",
+      "mode": "preserve",
+      "sourceSha256": "b719560de69e0a8d939204b16ccdf44d30e6a892f8e819c716eefcdfaffbd680",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://dts.com/wp-content/themes/dts-master-theme/assets/img//DTS-Logo.png"
+    },
+    {
+      "id": "a-aac",
+      "name": "AAC",
+      "mode": "preserve",
+      "sourceSha256": "8248e1474c4ded72b84d13566afcfcf6660b95ae03d5442cff95a7ca474797ad",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/a-aac.png"
+    },
+    {
+      "id": "a-flac",
+      "name": "FLAC",
+      "mode": "neutral-regions",
+      "sourceSha256": "37029be6473097e125d1348a283b4fb765117e1628b5cbe742ad620008b4c389",
+      "regions": [
+        [
+          0,
+          0,
+          174,
+          96
+        ]
+      ],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "只替换近白flac字样及近白小字；保留红黄绿音柱、暗色轮廓与原抗锯齿。近白主色#FDFFFC，不要只匹配#FFFFFF。",
+      "sourceURL": "https://xiph.org/flac/images/logo130.gif"
+    },
+    {
+      "id": "a-opus",
+      "name": "OPUS",
+      "mode": "preserve",
+      "sourceSha256": "7cca378884b2b047ac2c30a15cf37f4426fa61db62a6ed1330adf3bbaa76d44e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/a-opus.png"
+    },
+    {
+      "id": "a-mp3",
+      "name": "MP3",
+      "mode": "preserve",
+      "sourceSha256": "4885f573ca58c3f05909ffbcab3209282aa9361ac627973bdc57c363842c5ead",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/a-mp3.png"
+    },
+    {
+      "id": "a-pcm",
+      "name": "PCM",
+      "mode": "preserve",
+      "sourceSha256": "5028ae80e8b42b06dfe052e93fd962467ea65df5d17aa73228a42955d7546f71",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/a-pcm.png"
+    },
+    {
+      "id": "c7",
+      "name": "7.1 Audio",
+      "mode": "preserve",
+      "sourceSha256": "2605f2077c32ad8df887c4f149d7d2f9ea0f349770efbbbc2e6ee8cea1c4469f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/c7.png"
+    },
+    {
+      "id": "c5",
+      "name": "5.1 Audio",
+      "mode": "preserve",
+      "sourceSha256": "01caf110a29b6c60d33c4646bde5264a669289c968110a702672b80a5ebedf4e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/c5.png"
+    },
+    {
+      "id": "ch-61",
+      "name": "6.1",
+      "mode": "preserve",
+      "sourceSha256": "15a1d67a541d45290cbaf73f1a5e7a3cf7529aea52b4007b6dbdb03e6368a752",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/ch-61.png"
+    },
+    {
+      "id": "ch-20",
+      "name": "2.0",
+      "mode": "preserve",
+      "sourceSha256": "60a1542e91dfe14e22e9f82a26d1390226daa411949e87c44402eda33c69c891",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/ch-20.png"
+    },
+    {
+      "id": "q-r",
+      "name": "Remux",
+      "mode": "preserve",
+      "sourceSha256": "2a54101daee21b6515ec4488bac7b3965cc2294a085223979e965dcde7899d66",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-r.png"
+    },
+    {
+      "id": "q-w",
+      "name": "WebDL",
+      "mode": "preserve",
+      "sourceSha256": "b69da7e1fed9a3bcf9de4b30e83a6416f8dac8c899260dd3d74f2b45a2c6dc04",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-w.png"
+    },
+    {
+      "id": "q-wr",
+      "name": "WebRip",
+      "mode": "preserve",
+      "sourceSha256": "7d401b65ee3fb736622948595f635240dc640afb6e5b5b0be7e0333511b5b366",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-wr.png"
+    },
+    {
+      "id": "q-br",
+      "name": "Best Remux",
+      "mode": "preserve",
+      "sourceSha256": "a754c4c40c60c649dafeb1d28ab1fa9022bd8e2c64448f4b9afd92bb05bb778d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-br.png"
+    },
+    {
+      "id": "q-bb",
+      "name": "Best BluRay",
+      "mode": "preserve",
+      "sourceSha256": "3ef05094b894704f28511bab6d9e73f145519832c76179a03217e618f5704d30",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-bb.png"
+    },
+    {
+      "id": "q-bw",
+      "name": "Best WebDL",
+      "mode": "preserve",
+      "sourceSha256": "179adab766742e5e236f20cd80eef37cb6653ab1f7985f2c3bb8a77191f43218",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-bw.png"
+    },
+    {
+      "id": "q-gr",
+      "name": "Good Remux",
+      "mode": "preserve",
+      "sourceSha256": "7d8d4352d22bff02c1881ecd9547e405570144582e2a22b8db2735be2354d291",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-gr.png"
+    },
+    {
+      "id": "q-gb",
+      "name": "Good BluRay",
+      "mode": "preserve",
+      "sourceSha256": "c7ba56e64c4ac6925d10fab865c53c25246745bb1733f2a524c0e497a0ffa872",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-gb.png"
+    },
+    {
+      "id": "q-gw",
+      "name": "Good WebDL",
+      "mode": "preserve",
+      "sourceSha256": "800f51176e3f54fbfad5ee0eb13fc6eb6a39eab54dd38aa52eed4d8c4e8bb004",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-gw.png"
+    },
+    {
+      "id": "q-or",
+      "name": "OK Remux",
+      "mode": "preserve",
+      "sourceSha256": "675b77bae2618cdf6f305626f1ee3840106c54498e0a5f8b92355707092fdfc8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-or.png"
+    },
+    {
+      "id": "q-ob",
+      "name": "OK BluRay",
+      "mode": "preserve",
+      "sourceSha256": "8bc277a4f17a129c09d9eb80c238fc42e69254f01c5e90e421c6a783d654036e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-ob.png"
+    },
+    {
+      "id": "q-ow",
+      "name": "OK WebDL",
+      "mode": "preserve",
+      "sourceSha256": "db5f47af4f529d446f0967d422312582b0f1ca55f905f3a910a4d8e21cfdc1df",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/q-ow.png"
+    },
+    {
+      "id": "web-6",
+      "name": "WEB 6",
+      "mode": "preserve",
+      "sourceSha256": "deb0adb03fc96ca81538fb731b7b6f4ae185b00b86b64a87a6a4eb07a6cfcb75",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/web-6.png"
+    },
+    {
+      "id": "web-5",
+      "name": "WEB 5",
+      "mode": "preserve",
+      "sourceSha256": "5b8a178af654df213e1ab25b5f782a8e0ce65b3e4a4163343596d9e4464d2b2d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/web-5.png"
+    },
+    {
+      "id": "web-4",
+      "name": "WEB 4",
+      "mode": "preserve",
+      "sourceSha256": "1982ff5471118dd0cfea827927352f8d2acbb123b68bf9d74771e327e3384e2c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/web-4.png"
+    },
+    {
+      "id": "web-3",
+      "name": "WEB 3",
+      "mode": "preserve",
+      "sourceSha256": "473c0431c15890e21d0666e9fbedcaac5325fe2d64c4d68236ee65e7ab500047",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/web-3.png"
+    },
+    {
+      "id": "web-2",
+      "name": "WEB 2",
+      "mode": "preserve",
+      "sourceSha256": "d4299665fc6dfd7996eeba8f731119b247834c467081cca956edba363a1fdf01",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/web-2.png"
+    },
+    {
+      "id": "web-1",
+      "name": "WEB 1",
+      "mode": "preserve",
+      "sourceSha256": "dd2b657d5f0d0bffde442a0b64458ca6fd1f8e58eb7fa55b96e72bede31fc26f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/web-1.png"
+    },
+    {
+      "id": "blu-ray-8",
+      "name": "BLU-RAY 8",
+      "mode": "preserve",
+      "sourceSha256": "bafeb9db67cc086f3e77ddb2bfb971ff92e4c3196fdb156e9f76f9393e5491c9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-8.png"
+    },
+    {
+      "id": "blu-ray-7",
+      "name": "BLU-RAY 7",
+      "mode": "preserve",
+      "sourceSha256": "595e7738e260dd813a4cbca02bfa76862d0c5f1e639cb22c1413857546623ec7",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-7.png"
+    },
+    {
+      "id": "blu-ray-6",
+      "name": "BLU-RAY 6",
+      "mode": "preserve",
+      "sourceSha256": "376d91759aecdaf19e1f37cb291739e67ee3189e54e2928542e1c74869dc5bf6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-6.png"
+    },
+    {
+      "id": "blu-ray-5",
+      "name": "BLU-RAY 5",
+      "mode": "preserve",
+      "sourceSha256": "4e9351b1f37d39eb9bf44c2636fa7f571fae6580bcd3878adafcd2fd78013fec",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-5.png"
+    },
+    {
+      "id": "blu-ray-4",
+      "name": "BLU-RAY 4",
+      "mode": "preserve",
+      "sourceSha256": "27a83ded6e13fb30c288a28828724e4b428c3c76f694a6a2c938c7d3b589639f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-4.png"
+    },
+    {
+      "id": "blu-ray-3",
+      "name": "BLU-RAY 3",
+      "mode": "preserve",
+      "sourceSha256": "decb07bc6e4d2cb4db465a7422c9b6312cb0fa5c3233f4880f94a6cd8bc73038",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-3.png"
+    },
+    {
+      "id": "blu-ray-2",
+      "name": "BLU-RAY 2",
+      "mode": "preserve",
+      "sourceSha256": "df0b735854523b06ba3f3e98f54568d77192604ed56593d723e63b430cf04576",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-2.png"
+    },
+    {
+      "id": "blu-ray-1",
+      "name": "BLU-RAY 1",
+      "mode": "preserve",
+      "sourceSha256": "f274daff6f600c1c0f8e0c9df75d2bd567005a4b6704161626cd60fb7f4b066d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/blu-ray-1.png"
+    },
+    {
+      "id": "remux-3",
+      "name": "REMUX 3",
+      "mode": "preserve",
+      "sourceSha256": "8765a03bce6dafed83227e0dcca33fcef250c3036587812a2a66a3c208f429f3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/remux-3.png"
+    },
+    {
+      "id": "remux-2",
+      "name": "REMUX 2",
+      "mode": "preserve",
+      "sourceSha256": "6b5a31cb5ea2efeacda1f5127d528cfe5341d7f80d3da86564b062aaf330f22d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/remux-2.png"
+    },
+    {
+      "id": "remux-1",
+      "name": "REMUX 1",
+      "mode": "preserve",
+      "sourceSha256": "8fadd8a7238dc5f053e5e148394d103aaf69c6b126be56b0081df8677e7e5aec",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/remux-1.png"
+    },
+    {
+      "id": "seadex-release",
+      "name": "SEADEX",
+      "mode": "preserve",
+      "sourceSha256": "0bc9fe1c2f8b421cc550f82b74c88a8a3dc3e28cd75b8ef89453d86d057c4ffe",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/seadex-release.png"
+    },
+    {
+      "id": "edition-directors-cut",
+      "name": "DIR CUT",
+      "mode": "preserve",
+      "sourceSha256": "1b37290b880df5479162a09d0078108efab5e3d2f5da2250065fff0c3ad5fe09",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-directors-cut.png"
+    },
+    {
+      "id": "edition-extended",
+      "name": "EXTENDED",
+      "mode": "preserve",
+      "sourceSha256": "e19c32a69088d540a1f4ce2da39757329538de511c2bc3a3931bffe6835164f7",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-extended.png"
+    },
+    {
+      "id": "edition-true-hue",
+      "name": "TRUE-HUE",
+      "mode": "preserve",
+      "sourceSha256": "bad06590ef337d159caf38615ad4eb9b57746007baba9059b475d96ca579025c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-true-hue.png"
+    },
+    {
+      "id": "edition-bw",
+      "name": "B&W",
+      "mode": "preserve",
+      "sourceSha256": "a949eda4d95bb787a8f5d35e996a47a79848fa7d5a213ba29109c6349f220546",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-bw.png"
+    },
+    {
+      "id": "quality-hq",
+      "name": "HQ High Quality",
+      "mode": "preserve",
+      "sourceSha256": "daa398c1cbe080c242ffc30674008126be6e75e23f1bfdc205fbb0f691cc7cab",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/quality-hq.png"
+    },
+    {
+      "id": "edition-remastered",
+      "name": "REMASTERED",
+      "mode": "preserve",
+      "sourceSha256": "11aad9d7f57f8a058152ca8c4e9f3c58326518f2dec544e11404544f3250e359",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-remastered.png"
+    },
+    {
+      "id": "edition-uncut",
+      "name": "UNCUT / UNRATED",
+      "mode": "preserve",
+      "sourceSha256": "f2cd3ceb481ddb605de387a0874fa2ebea71b4b372b7a14231adc425858c6d05",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-uncut.png"
+    },
+    {
+      "id": "edition-pure",
+      "name": "纯净版 PURE",
+      "mode": "preserve",
+      "sourceSha256": "d64a144f325de97107ab51078a0f9bc9d8aa9db82041787188907eb4d0772492",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-pure.png"
+    },
+    {
+      "id": "edition-open-matte",
+      "name": "OPEN MATTE",
+      "mode": "preserve",
+      "sourceSha256": "417f0bbd2e30388232d3d55b3178b4feb9cdf8aa56261dde5a4079323556fca6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/edition-open-matte.png"
+    },
+    {
+      "id": "l-en",
+      "name": "ENG",
+      "mode": "preserve",
+      "sourceSha256": "aabd654f3fe74bd31bf0d84cecfb50f759d9b5f75cee36e443b0c7561fba5a2c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-en.png"
+    },
+    {
+      "id": "l-es",
+      "name": "ESP",
+      "mode": "preserve",
+      "sourceSha256": "26728e509c1efcc8325e0e19799a6529cee9519201fcadb83ab38c3d36ff10a8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-es.png"
+    },
+    {
+      "id": "f5",
+      "name": "LAT",
+      "mode": "preserve",
+      "sourceSha256": "48a9d7609f6ddcaa33f0f689de0cec15ee9aba4a886111b1cfd242f9dd06bec9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f5.png"
+    },
+    {
+      "id": "f6",
+      "name": "SPA",
+      "mode": "preserve",
+      "sourceSha256": "a164d319da1b0dfcd70b3a96439457cf6218da75c38b753160577994da675664",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f6.png"
+    },
+    {
+      "id": "l-fr",
+      "name": "FRE",
+      "mode": "preserve",
+      "sourceSha256": "5a036ad4d42200ef087af1f20bad4b2b96ad046997c5e5cc9b26803f9e0e3234",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-fr.png"
+    },
+    {
+      "id": "l-de",
+      "name": "GER",
+      "mode": "preserve",
+      "sourceSha256": "fa090bc050010eae4d641fc7117c9f4b611eb798e77f5026f7844acde1c0ad09",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-de.png"
+    },
+    {
+      "id": "l-it",
+      "name": "ITA",
+      "mode": "preserve",
+      "sourceSha256": "35cc1cc46cbcd8bae1c7539bcf39e27605c111daac8db2c7fd70ef6838ba9bdf",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-it.png"
+    },
+    {
+      "id": "l-pt-br",
+      "name": "BRA",
+      "mode": "preserve",
+      "sourceSha256": "457c08d7b4f45780a34c753f635321df470a8b81da14d2e94753aff2b47201a0",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-pt-br.png"
+    },
+    {
+      "id": "l-pt-pt",
+      "name": "POR",
+      "mode": "preserve",
+      "sourceSha256": "8bcfbc8decc5f7afdf684af9dafe3715bd115c8d2b13853d671a0d5f8a7a0a63",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-pt-pt.png"
+    },
+    {
+      "id": "l-tr",
+      "name": "TUR",
+      "mode": "preserve",
+      "sourceSha256": "b657c2982db416d2a3c7b49e452b3d5698e93d0a631bd44969f79f159344935c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-tr.png"
+    },
+    {
+      "id": "l-pl",
+      "name": "POL",
+      "mode": "preserve",
+      "sourceSha256": "a5479595c3ec17fe8b852eff67386475c1eb67e912152f5485b613ddc6cc7ece",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-pl.png"
+    },
+    {
+      "id": "l-uk",
+      "name": "UKR",
+      "mode": "preserve",
+      "sourceSha256": "b9b56ea1a070e3970c403720c8cee125933fabd5368a963df874b2eeca70409d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-uk.png"
+    },
+    {
+      "id": "l-id",
+      "name": "IND",
+      "mode": "preserve",
+      "sourceSha256": "91485a5967cadbf7933600aaf43ce5b6b61ce1a3b91274bcef7b0101d5fe7c8b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-id.png"
+    },
+    {
+      "id": "l-th",
+      "name": "THA",
+      "mode": "preserve",
+      "sourceSha256": "505675c04848378d6a7cd8fc61f95fc9e7c1f1899d8ea8c3d1143ba240c5bfca",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-th.png"
+    },
+    {
+      "id": "l-vi",
+      "name": "VIE",
+      "mode": "preserve",
+      "sourceSha256": "c6a7dff1c3958ec1f4203b854f8ee86a5b611bbe4c1722a6369c516b2edec83c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-vi.png"
+    },
+    {
+      "id": "l-ja",
+      "name": "JPN",
+      "mode": "preserve",
+      "sourceSha256": "9808f82860d1f3d60a18f08fdf0b22d970a246872b38e20612f9f6713866a2c5",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-ja.png"
+    },
+    {
+      "id": "l-ko",
+      "name": "KOR",
+      "mode": "preserve",
+      "sourceSha256": "fc02bf846c851405c509bd12f757b91c575d6fb694a1266f6cabf85d4e0eb436",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-ko.png"
+    },
+    {
+      "id": "l-zh",
+      "name": "CHI",
+      "mode": "preserve",
+      "sourceSha256": "0ac10b5b13a45c55ae3ca8cc896ca1377e4096386b17f0afc2d9c24248a88993",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-zh.png"
+    },
+    {
+      "id": "l-hi",
+      "name": "HIN",
+      "mode": "preserve",
+      "sourceSha256": "a85bd71b0309e43c441d1cca4d554a4b39f7c77d97ba816f454df93824eb3b9e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-hi.png"
+    },
+    {
+      "id": "l-ar",
+      "name": "ARA",
+      "mode": "preserve",
+      "sourceSha256": "5a603a57ef8601aeac1f5fe704c133905683636698ca97d808169aa33219f1c8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-ar.png"
+    },
+    {
+      "id": "l-ru",
+      "name": "RUS",
+      "mode": "preserve",
+      "sourceSha256": "d458b1bf5c6d1ced28dcacc88faa5f55e77a5e910f92be101ac1a10f73283035",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-ru.png"
+    },
+    {
+      "id": "l-el",
+      "name": "GRE",
+      "mode": "preserve",
+      "sourceSha256": "c824d5bb4311be7ea9809102fef7929470d69d128061a6eba9bdb5288324e9cd",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-el.png"
+    },
+    {
+      "id": "f1",
+      "name": "CZE",
+      "mode": "preserve",
+      "sourceSha256": "3843a0b3bd907d126885ab396a6d383b691931074c4c3c17611bf16667713ddf",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f1.png"
+    },
+    {
+      "id": "f2",
+      "name": "SVK",
+      "mode": "preserve",
+      "sourceSha256": "683917b435a8b9e08313329ca7da8d6011ee7cbf8a2e14b0924948fa5d8a4e62",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f2.png"
+    },
+    {
+      "id": "f4",
+      "name": "SLO",
+      "mode": "preserve",
+      "sourceSha256": "19c072cddd71fc8265ece21b71cc4bbfccbc1811b245233f5818a42d4db036d4",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f4.png"
+    },
+    {
+      "id": "f3",
+      "name": "SWE",
+      "mode": "preserve",
+      "sourceSha256": "bb4111dbc1390456bb73ba3586f3e01946571e1332fa365730b3c48b77eaa699",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/f3.png"
+    },
+    {
+      "id": "l-mu",
+      "name": "MUL",
+      "mode": "preserve",
+      "sourceSha256": "f8eec06af2861b41c757258c540c4a725fcd02938d6821ff2f77a939350b5856",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/l-mu.png"
+    },
+    {
+      "id": "sub-zh",
+      "name": "中文字幕",
+      "mode": "preserve",
+      "sourceSha256": "badb38cf9d2d508ea6faed3bdf24f5c92ecbbea57ebfa2e31f8432e6c6b8a4bc",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/sub-zh.png"
+    },
+    {
+      "id": "grp-hiveweb",
+      "name": "HiveWeb",
+      "mode": "preserve",
+      "sourceSha256": "7a8375f1a5d276e487c19f6e01db903b23ddfd7a8f35c92127ad2ac6678b1e6e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hiveweb.png"
+    },
+    {
+      "id": "grp-ubweb",
+      "name": "UBWEB",
+      "mode": "preserve",
+      "sourceSha256": "e44e7d62e8a8a5b638201e2d60cdda1b31be72972b01ae5b38df44f6502f7e34",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ubweb.png"
+    },
+    {
+      "id": "grp-adweb",
+      "name": "ADWeb",
+      "mode": "preserve",
+      "sourceSha256": "a91cc2f0fc4063d562d2d0edf40387efd75685dd1369c934ea17bfd075fe5ffb",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-adweb.png"
+    },
+    {
+      "id": "grp-chdweb",
+      "name": "CHDWEB",
+      "mode": "preserve",
+      "sourceSha256": "123648d1461d39f095a53c03a8df9dbf1ae3b49123b45794a96295e2df501a2c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-chdweb.png"
+    },
+    {
+      "id": "grp-zmweb",
+      "name": "ZmWeb",
+      "mode": "preserve",
+      "sourceSha256": "38bdc5926c63b6b1a7dd97e1562492b445fc68b7213fd98400bb438ec9344e37",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-zmweb.png"
+    },
+    {
+      "id": "grp-pterweb",
+      "name": "PTerWEB",
+      "mode": "preserve",
+      "sourceSha256": "aa577dcbad711af5ce3ec69f77f6fcf5197a4d14c6a27a26972f793f9275a43f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pterweb.png"
+    },
+    {
+      "id": "grp-hhweb",
+      "name": "HHWEB",
+      "mode": "preserve",
+      "sourceSha256": "b2a04e0ebfd0c35114d741f65760da3727ddbb24bc06946217ef398fb6368d5f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hhweb.png"
+    },
+    {
+      "id": "grp-qhstudio",
+      "name": "QHstudIo",
+      "mode": "preserve",
+      "sourceSha256": "429af7b0b093cbf2435ec1ee799c26abf926c81afcf5caa0b58cd0f2849cfaea",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-qhstudio.png"
+    },
+    {
+      "id": "grp-hdsweb",
+      "name": "HDSWEB",
+      "mode": "preserve",
+      "sourceSha256": "84fe8534fae5911172294d5fac27f4295c242a3209413f04c5a933f7a2e689b3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdsweb.png"
+    },
+    {
+      "id": "grp-frogweb",
+      "name": "FROGWeb",
+      "mode": "preserve",
+      "sourceSha256": "b59b46585af38779df73e43ba6cfa962c26aeddfc46d6dc9cd0cc337dccd5718",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-frogweb.png"
+    },
+    {
+      "id": "grp-csweb",
+      "name": "CSWEB",
+      "mode": "preserve",
+      "sourceSha256": "2a904c308daddceac04a0c8f1ecb2f23064aa575dc55f5d48f3cab4d575d4d05",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-csweb.png"
+    },
+    {
+      "id": "grp-hdhtv",
+      "name": "HDHTV",
+      "mode": "preserve",
+      "sourceSha256": "55c7da680e54c590baf462ec37ee272e36c33d9dd0c7228251f5fd7a83c1fe0d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdhtv.png"
+    },
+    {
+      "id": "grp-ourtv",
+      "name": "OurTV",
+      "mode": "preserve",
+      "sourceSha256": "038763a20562db47af49c35a6aa575dcd4aa766849305ed58c2d2f56d1147b92",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ourtv.png"
+    },
+    {
+      "id": "grp-mweb",
+      "name": "MWeb",
+      "mode": "preserve",
+      "sourceSha256": "91735a52813ca85a08a5d047a442162fe871ea3d1f179cb6e65f05c855d9ef80",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-mweb.png"
+    },
+    {
+      "id": "grp-starfallweb",
+      "name": "StarfallWeb",
+      "mode": "preserve",
+      "sourceSha256": "76c7eb27669e23365792f6398cc7c1662b3da1ec4e4e80395b8a941d75b50f2a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-starfallweb.png"
+    },
+    {
+      "id": "grp-cmctv",
+      "name": "CMCTV",
+      "mode": "preserve",
+      "sourceSha256": "381f9c4824d79d932caa95f6129e94f0f743d810010c9d12d1aa2c9b809b656d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-cmctv.png"
+    },
+    {
+      "id": "grp-longweb",
+      "name": "LongWeb",
+      "mode": "preserve",
+      "sourceSha256": "0de0ec2aa3c081bfcea9704e39b7c575d93f2e19a7bbb903e0fda3cad6530e08",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-longweb.png"
+    },
+    {
+      "id": "grp-agsvweb",
+      "name": "AGSVWEB",
+      "mode": "preserve",
+      "sourceSha256": "ed4f065aedd1f9db3daa5b1a5a2286d154ebc6160bd015a259dd379c9f91fa60",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-agsvweb.png"
+    },
+    {
+      "id": "grp-fgtweb",
+      "name": "FGTWeb",
+      "mode": "preserve",
+      "sourceSha256": "26fabec5b1718eb169a26ee11a378d805c8789085e8201c214102224ebf99e85",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-fgtweb.png"
+    },
+    {
+      "id": "grp-hdvweb",
+      "name": "HDVWEB",
+      "mode": "preserve",
+      "sourceSha256": "5ba3ae0864829096f8dc57da3c41aaf063579a975b5d4075c7dd723e5497dde6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdvweb.png"
+    },
+    {
+      "id": "grp-pigoweb",
+      "name": "PigoWeb",
+      "mode": "preserve",
+      "sourceSha256": "5cb782b03c6eaa11ea11cb145317f657357b0fceb307e5ffa7d724598eda5cec",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pigoweb.png"
+    },
+    {
+      "id": "grp-depweb",
+      "name": "DepWeb",
+      "mode": "preserve",
+      "sourceSha256": "0db64097a14b810ad4bc186f540a3b8ff21f929ea9471363f5f4ba22ed4874c8",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-depweb.png"
+    },
+    {
+      "id": "grp-haresweb",
+      "name": "HaresWEB",
+      "mode": "preserve",
+      "sourceSha256": "7ae26627b6d6469833b5e7f6c662ac815f6daeab4e0d774359c23438bbc59efc",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-haresweb.png"
+    },
+    {
+      "id": "grp-djweb",
+      "name": "DJWEB",
+      "mode": "preserve",
+      "sourceSha256": "7dcfc2c9763c057e66ef4212ea74984cbdb5336f9e4943b0d8043bb0f46eaff9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-djweb.png"
+    },
+    {
+      "id": "grp-salmonweb",
+      "name": "SalmonWeb",
+      "mode": "preserve",
+      "sourceSha256": "b2f39e9129525ac509c5517205074dd66653d74d933015d2fb8ccd567c93d703",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-salmonweb.png"
+    },
+    {
+      "id": "grp-momoweb",
+      "name": "MOMOWEB",
+      "mode": "preserve",
+      "sourceSha256": "2e6e68f49046262764d0f6873988183bc86eff5f992f59e334ae01e2cd0a4498",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-momoweb.png"
+    },
+    {
+      "id": "grp-smartweb",
+      "name": "SmartWeb",
+      "mode": "preserve",
+      "sourceSha256": "95cf1937eaaabb65b09250f017d7a37b8e1b5678782b275941c51429aed354eb",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-smartweb.png"
+    },
+    {
+      "id": "grp-grasstv",
+      "name": "GrassTV",
+      "mode": "preserve",
+      "sourceSha256": "6a867c1bf7f47a53d12b96a69528a3a9162388d294c8491c71ad87a40ecdc65a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-grasstv.png"
+    },
+    {
+      "id": "grp-seetv",
+      "name": "SeeTV",
+      "mode": "preserve",
+      "sourceSha256": "3f39b5c846f8cc3b0d4b530131439d76579a018c495c528962da1c27c130cc6c",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-seetv.png"
+    },
+    {
+      "id": "grp-parktv",
+      "name": "ParkTV",
+      "mode": "preserve",
+      "sourceSha256": "f08a68e9828a82f0b47426789c114d17942d11989bc1a9f97f57b8720367629b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-parktv.png"
+    },
+    {
+      "id": "grp-chd",
+      "name": "CHD",
+      "mode": "preserve",
+      "sourceSha256": "05f7865a24419eae4c332ed8ff81d409f2b04a8e878b296c81845ed289a61c0d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-chd.png"
+    },
+    {
+      "id": "grp-ade",
+      "name": "ADE",
+      "mode": "preserve",
+      "sourceSha256": "20426a4a02831156351482cb2d05602b668c0df5f55e63a342a79ed2785635a5",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ade.png"
+    },
+    {
+      "id": "grp-frds",
+      "name": "FRDS",
+      "mode": "preserve",
+      "sourceSha256": "58e9f1ce96165d05f88864ab2d31ad74853319084874f00c8e29de6ed5fe6925",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-frds.png"
+    },
+    {
+      "id": "grp-wiki",
+      "name": "WiKi",
+      "mode": "preserve",
+      "sourceSha256": "90eb2cae97a1d70da3f52aed4899b8eade6bce1fa1e80ddc563d9a46cfb063f9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-wiki.png"
+    },
+    {
+      "id": "grp-cmct",
+      "name": "CMCT",
+      "mode": "preserve",
+      "sourceSha256": "2abc9a08a543d46e4cb8a325c649cebfeceb326b6944b71da4ea7dac4a977646",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-cmct.png"
+    },
+    {
+      "id": "grp-hdh",
+      "name": "HDH",
+      "mode": "preserve",
+      "sourceSha256": "4edd6fc295c4102b86fa2cadc021bb6a68d4aa5c3ec7bac2886881c39452d420",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdh.png"
+    },
+    {
+      "id": "grp-beast",
+      "name": "beAst",
+      "mode": "preserve",
+      "sourceSha256": "cdcffd238797c2c45937a3ebecdaf4e1d9c604f15cc9da62ef390f38e5eeb1b0",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-beast.png"
+    },
+    {
+      "id": "grp-ubits",
+      "name": "UBits",
+      "mode": "preserve",
+      "sourceSha256": "1a6ae3ea1722e11a21724b0e85a053a6ac6fe813380e73b4c783f357b1f20e65",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ubits.png"
+    },
+    {
+      "id": "grp-froge",
+      "name": "FROGE",
+      "mode": "preserve",
+      "sourceSha256": "73dfc07fc1e260d22f04ec0caa3eba52a5083966e82b08a158a28c4cd7ad5a57",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-froge.png"
+    },
+    {
+      "id": "grp-ourbits",
+      "name": "OurBits",
+      "mode": "preserve",
+      "sourceSha256": "4f4d02287a940ca155a916e6040e11a776c8c56f1f6b099fb713f166830f5493",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ourbits.png"
+    },
+    {
+      "id": "grp-mteam",
+      "name": "MTeam",
+      "mode": "preserve",
+      "sourceSha256": "d218687e65c1721f2e79197b8e9e04f62f28385b01981bf6ad7eb122f04517dc",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-mteam.png"
+    },
+    {
+      "id": "grp-hds",
+      "name": "HDS",
+      "mode": "preserve",
+      "sourceSha256": "9f8791baa8f2087021fc2cfaa7ce88ea0bbd78afe441fd0dda63d6915d997c71",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hds.png"
+    },
+    {
+      "id": "grp-leagueweb",
+      "name": "LeagueWEB",
+      "mode": "preserve",
+      "sourceSha256": "a722666f81032eb2c07a56a77170c2b3b363ca5acaa6522a97f0edb5a89b5b7e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-leagueweb.png"
+    },
+    {
+      "id": "grp-leaguetv",
+      "name": "LeagueTV",
+      "mode": "preserve",
+      "sourceSha256": "e7cbd41c6f3019cdb7d620cf00a49ab0c43e5c2796d46866fc09985d718dc5dc",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-leaguetv.png"
+    },
+    {
+      "id": "grp-leaguenf",
+      "name": "LeagueNF",
+      "mode": "preserve",
+      "sourceSha256": "257f711c792de7a135d3ec0369d8f651cc734e42b99f16be3657ded72f70603e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-leaguenf.png"
+    },
+    {
+      "id": "grp-leaguehd",
+      "name": "LeagueHD",
+      "mode": "preserve",
+      "sourceSha256": "4601f374a826dbfbf0a919f00b0936e3457c9dab581c733291d105484af62642",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-leaguehd.png"
+    },
+    {
+      "id": "grp-hdhweb",
+      "name": "HDHWEB",
+      "mode": "preserve",
+      "sourceSha256": "bfbd45d4d321b5c00ad987990c3f5b9d084af1fb1cc11a444d7ac9ad716b1386",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdhweb.png"
+    },
+    {
+      "id": "grp-hdhome",
+      "name": "HDHome",
+      "mode": "preserve",
+      "sourceSha256": "e9772a6eb655a3af68454e6ead8b1aa0e9311ccaac440b6e5ecc2c4dacf9ec1d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdhome.png"
+    },
+    {
+      "id": "grp-hdctv",
+      "name": "HDCTV",
+      "mode": "preserve",
+      "sourceSha256": "958f7f5d31fd1e03ae5bf80a4b898736fa1a2e610279fa3cb800b9e77e5a48f7",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdctv.png"
+    },
+    {
+      "id": "grp-hdchina",
+      "name": "HDChina",
+      "mode": "preserve",
+      "sourceSha256": "da9a77fd1adf0af0fb1cb4068b5cc1f3a69638c1de0bde33c8f46a719312d55e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdchina.png"
+    },
+    {
+      "id": "grp-hdwing",
+      "name": "HDWinG",
+      "mode": "preserve",
+      "sourceSha256": "81c9a43e97d0a536f03b0d6f31c3201c99f3fa9ac1dcb42312e7654aca5bcf7f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdwing.png"
+    },
+    {
+      "id": "grp-hdstv",
+      "name": "HDSTV",
+      "mode": "preserve",
+      "sourceSha256": "5ec7da3fbebd4714f95977e534e742c120a7932722c8247767ee3b979e5a17e6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdstv.png"
+    },
+    {
+      "id": "grp-hdspad",
+      "name": "HDSPad",
+      "mode": "preserve",
+      "sourceSha256": "f3aad32c06b9e8e9c98ca9946e3112cf2bfcae8750ba1eeb1c5f8a9f00e2c8b3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdspad.png"
+    },
+    {
+      "id": "grp-hdsky",
+      "name": "HDSky",
+      "mode": "preserve",
+      "sourceSha256": "047797cf91ebf8e66bc04b08a2f1369c251eb05f697edb09375460a298f7c701",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdsky.png"
+    },
+    {
+      "id": "grp-chdtv",
+      "name": "CHDTV",
+      "mode": "preserve",
+      "sourceSha256": "fc9b230f138fcb854cfd4a2205258b7b8611e4ba6a939ec66cac758ad0d4ba37",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-chdtv.png"
+    },
+    {
+      "id": "grp-chdpad",
+      "name": "CHDPad",
+      "mode": "preserve",
+      "sourceSha256": "e4bac4a1b7045681edacbcc2d18d7eaa14f27d88605e5dc81dbbfb3a40cd8873",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-chdpad.png"
+    },
+    {
+      "id": "grp-ptertv",
+      "name": "PTerTV",
+      "mode": "preserve",
+      "sourceSha256": "b25e132f01ccac2d425d0ba94dbebfd24308a6be3a755cadf3a8d35aea151b0d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ptertv.png"
+    },
+    {
+      "id": "grp-pter",
+      "name": "PTer",
+      "mode": "preserve",
+      "sourceSha256": "678691538daea011bd3d75b12c119f5997b53077d295573ee5da83966b336cfa",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pter.png"
+    },
+    {
+      "id": "grp-pthweb",
+      "name": "PTHweb",
+      "mode": "preserve",
+      "sourceSha256": "f13715ecd5276e499fb404f967a337070ac0a9e00347ff77f2d495c7de1808dd",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pthweb.png"
+    },
+    {
+      "id": "grp-pthtv",
+      "name": "PTHtv",
+      "mode": "preserve",
+      "sourceSha256": "f9a228d3b1e20fe3ea2af4e1ff4cb53d1d440a899e80bed132fb84d2d4f9d31d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pthtv.png"
+    },
+    {
+      "id": "grp-pth",
+      "name": "PTH",
+      "mode": "preserve",
+      "sourceSha256": "a65cf244f2260ff17dceb8fdc5a6664e84c4b1a7a0caa2130be153a0de485f30",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pth.png"
+    },
+    {
+      "id": "grp-hdatv",
+      "name": "HDATV",
+      "mode": "preserve",
+      "sourceSha256": "1ae70b0ba94d3a1ae856f8e027ca67701b369fe598a1dd0568d8739035e9065f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdatv.png"
+    },
+    {
+      "id": "grp-hdarea",
+      "name": "HDArea",
+      "mode": "preserve",
+      "sourceSha256": "00e7732ac4208d81871b1fe9af0a62dde6fc82bd47c7ded1b70dd650d4d5cfc5",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdarea.png"
+    },
+    {
+      "id": "grp-harestv",
+      "name": "HaresTV",
+      "mode": "preserve",
+      "sourceSha256": "0abbf4a3021886fe613a4629e1902b08837de9d9beb2f54e4aad05382ee1107d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-harestv.png"
+    },
+    {
+      "id": "grp-ilovetv",
+      "name": "iLoveTV",
+      "mode": "preserve",
+      "sourceSha256": "622d5d61c0e258d7682dd75fcdbb9ebb3d86fa47661e0cc047b7c9db82421414",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ilovetv.png"
+    },
+    {
+      "id": "grp-ilovehd",
+      "name": "iLoveHD",
+      "mode": "preserve",
+      "sourceSha256": "30e1e7c3f921f76e56b5cf4d50fd7d9182fb9eaf5617ccaae478cd60fcf9b450",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ilovehd.png"
+    },
+    {
+      "id": "grp-ttg",
+      "name": "TTG",
+      "mode": "preserve",
+      "sourceSha256": "85e897ce8b5e210dfaa06fe002a36c840dba5e96833c25198a8093da33799967",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ttg.png"
+    },
+    {
+      "id": "grp-ngb",
+      "name": "NGB",
+      "mode": "preserve",
+      "sourceSha256": "f629a914aa1a69d80b0d9e3562f5c78591f4cad15b2a89ba2738ed8cb1e4cae0",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ngb.png"
+    },
+    {
+      "id": "grp-dbtv",
+      "name": "DBTV",
+      "mode": "preserve",
+      "sourceSha256": "119df5dab1316fd636e74224ce52641cb8200f36ca430f10dd4f92fc74ac5db9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-dbtv.png"
+    },
+    {
+      "id": "grp-carpt",
+      "name": "CarPT",
+      "mode": "preserve",
+      "sourceSha256": "edc33776684a0a1906e5173791162392d47c7681cf19a39f8081338494ed3bf9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-carpt.png"
+    },
+    {
+      "id": "grp-beitai",
+      "name": "BeiTai",
+      "mode": "preserve",
+      "sourceSha256": "00c817770147cc6aa8a3d3ea57b2e11292d4f987b4394bdbd670b41fa92eb379",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-beitai.png"
+    },
+    {
+      "id": "grp-goddramas",
+      "name": "GodDramas",
+      "mode": "preserve",
+      "sourceSha256": "2922c147c9cf82533de5cad7f3e3f281f15be0e8a9055fba906e437535ad5bc1",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-goddramas.png"
+    },
+    {
+      "id": "grp-blacktv",
+      "name": "BlackTV",
+      "mode": "preserve",
+      "sourceSha256": "4201d6897e424642ccd66fef5115a4b65bbc9a4445273182f8699ba59151c67e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-blacktv.png"
+    },
+    {
+      "id": "grp-tlf",
+      "name": "TLF",
+      "mode": "preserve",
+      "sourceSha256": "ec3638638ff785c88dccad6c2f8f3add4e1fcc0c0875398b5b820444850692b3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-tlf.png"
+    },
+    {
+      "id": "grp-keepfrds",
+      "name": "KeepFrds",
+      "mode": "preserve",
+      "sourceSha256": "c7d95b4ffc07fad16e012e2914e1ebabd9e0f4973e74fae73a07934e3524711d",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-keepfrds.png"
+    },
+    {
+      "id": "grp-audies",
+      "name": "Audies",
+      "mode": "preserve",
+      "sourceSha256": "646d4e48897a727bc10337e4280608dc794472ec75b112dee65e5861390b2cb9",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-audies.png"
+    },
+    {
+      "id": "grp-hdvideo",
+      "name": "HDVideo",
+      "mode": "preserve",
+      "sourceSha256": "b7ddfc853aa5b67dd3b98c46a11a1a2036a8d8e0ea53678c4ace7f188decf818",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hdvideo.png"
+    },
+    {
+      "id": "grp-ntb",
+      "name": "NTb",
+      "mode": "preserve",
+      "sourceSha256": "8e96952be18b45e4f0a485fdf0202c4f2f6519f9aecb4b4f0e6f828d28553f3b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ntb.png"
+    },
+    {
+      "id": "grp-ntg",
+      "name": "NTG",
+      "mode": "preserve",
+      "sourceSha256": "c25a9bff80d4617e8d672329eddd965fb31c1b9ea7752b5df09574a965fa019f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ntg.png"
+    },
+    {
+      "id": "grp-cmrg",
+      "name": "CMRG",
+      "mode": "preserve",
+      "sourceSha256": "89f89339288048669ce9b5924356147d85f397f1b8f5e68ca17dcfffa07b2abf",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-cmrg.png"
+    },
+    {
+      "id": "grp-tepes",
+      "name": "TEPES",
+      "mode": "preserve",
+      "sourceSha256": "58a02cdeb506a0023f181554ee96f1c36757055052005f2df4613f85ae8cc3ef",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-tepes.png"
+    },
+    {
+      "id": "grp-flux",
+      "name": "FLUX",
+      "mode": "preserve",
+      "sourceSha256": "62c0ec4f62cdd118e49d3d6a17e413f25fdea427e8be0047fb2cc4f3ec02c73e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-flux.png"
+    },
+    {
+      "id": "grp-mzabi",
+      "name": "MZABI",
+      "mode": "preserve",
+      "sourceSha256": "ae6f88bc8ae77d87d308100bcb8c9a395cef54ef782087ffdffea3ce63fe9daa",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-mzabi.png"
+    },
+    {
+      "id": "grp-byndr",
+      "name": "BYNDR",
+      "mode": "preserve",
+      "sourceSha256": "0cb9b1b26a5d32accbaffa7b03b35ad5467e9e93fba4fccaebf23adaf26919e3",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-byndr.png"
+    },
+    {
+      "id": "grp-playweb",
+      "name": "playWEB",
+      "mode": "preserve",
+      "sourceSha256": "83f0e68f9dbaf5dab56ac13411fa88241a644281371ed0f4d241670f9951459e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-playweb.png"
+    },
+    {
+      "id": "grp-edith",
+      "name": "EDITH",
+      "mode": "preserve",
+      "sourceSha256": "07c324c96cc8a5bfe1e534468ecd5bf323ee778e5e0c5057176bad5a219624c6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-edith.png"
+    },
+    {
+      "id": "grp-framestor",
+      "name": "FraMeSToR",
+      "mode": "preserve",
+      "sourceSha256": "c9ebdeb9d6d5470275bcfb7f3cb19be515035853b54bc77d3cfc63d4a4e6519b",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-framestor.png"
+    },
+    {
+      "id": "grp-epsilon",
+      "name": "EPSiLON",
+      "mode": "preserve",
+      "sourceSha256": "d3d12369dc7276ed077d016f77c75a0b21a0a7832db026006e61ebf8fd415f38",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-epsilon.png"
+    },
+    {
+      "id": "grp-bhdstudio",
+      "name": "BHDStudio",
+      "mode": "preserve",
+      "sourceSha256": "edfc42abfefdbb069236f09a06393be19862e4773dfda78c4d386e7149581e2a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-bhdstudio.png"
+    },
+    {
+      "id": "grp-ctrlhd",
+      "name": "CtrlHD",
+      "mode": "preserve",
+      "sourceSha256": "ba8b4c41181b7d2517f6df6f74c653a2567958b34fe916999cf49502b4d2306f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ctrlhd.png"
+    },
+    {
+      "id": "grp-hifi",
+      "name": "HiFi",
+      "mode": "preserve",
+      "sourceSha256": "8fc4fc25d30baf09a0506c88f7824c125b86f0f186974b1b37f9b2996ca06ed6",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hifi.png"
+    },
+    {
+      "id": "grp-ncmt",
+      "name": "NCmt",
+      "mode": "preserve",
+      "sourceSha256": "9f45f35d387f7f51b488ae996aba506dd084a873567ef7c4c67f16e31e2f0188",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-ncmt.png"
+    },
+    {
+      "id": "grp-smurf",
+      "name": "SMURF",
+      "mode": "preserve",
+      "sourceSha256": "8b8525ceb24607fccf0456924e833c0b834fefffc5e99042cb8223a79ec36964",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-smurf.png"
+    },
+    {
+      "id": "grp-hone",
+      "name": "HONE",
+      "mode": "preserve",
+      "sourceSha256": "4bb925270485706f013cf92f541ff433d92e52c016f05a5e3d26e100062e06d7",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-hone.png"
+    },
+    {
+      "id": "grp-blutonium",
+      "name": "BLUTONiUM",
+      "mode": "preserve",
+      "sourceSha256": "28cce078a2cebf9a2054da1385b78c77a586b296faf6a25186f7eec3576b6377",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-blutonium.png"
+    },
+    {
+      "id": "grp-didi",
+      "name": "DiDi",
+      "mode": "preserve",
+      "sourceSha256": "ce68fd291546a82f501b8843c5cbbd46eaff7b616ef4965433952b162103796a",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-didi.png"
+    },
+    {
+      "id": "grp-pbk",
+      "name": "PbK",
+      "mode": "preserve",
+      "sourceSha256": "a64890730627c26a4d283fe0bf414e8efe3e5ee832481e36f9aaa7e69ce69dad",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-pbk.png"
+    },
+    {
+      "id": "grp-bmdru",
+      "name": "BMDru",
+      "mode": "preserve",
+      "sourceSha256": "74f1e472598a56ce42ee3e5906c4fd8b753dd441784ac558f9b246187ac2ea87",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-bmdru.png"
+    },
+    {
+      "id": "grp-trolluhd",
+      "name": "TrollUHD",
+      "mode": "preserve",
+      "sourceSha256": "f7060d5b6005d085fac6ebcdf32b31db92e74dfc6a6cb97ebe222c852d4e2d4f",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-trolluhd.png"
+    },
+    {
+      "id": "grp-sicfoi",
+      "name": "SiCFoI",
+      "mode": "preserve",
+      "sourceSha256": "c9294475553d744c85896f4e933740c210d7278a1e3f0b29a5d7a5c22ecd4a27",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-sicfoi.png"
+    },
+    {
+      "id": "grp-web-other",
+      "name": "其他 WEB 组",
+      "mode": "preserve",
+      "sourceSha256": "e3ed5c5a920145ed09f6161ad358e2814e2616be811b3b4b101b6e5e5acf851e",
+      "regions": [],
+      "minChannel": 170,
+      "maxChroma": 24,
+      "reason": "No white-foreground adaptation identified. Preserve source colors. This is not certification that every brand color reaches a numerical contrast threshold.",
+      "sourceURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/grp-web-other.png"
+    }
+  ]
+}

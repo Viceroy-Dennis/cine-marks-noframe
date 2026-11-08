@@ -5,9 +5,13 @@
   "description": "Original-color transparent media badges and GitHub subscription builder.",
   "scripts": {
     "build:github": "node scripts/build-github.mjs",
-    "test": "node --test scripts/build-github.test.mjs"
+    "test": "node --test scripts/build-github.test.mjs",
+    "build:themes": "node scripts/build-theme-assets.cjs"
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2"
   }
 }
