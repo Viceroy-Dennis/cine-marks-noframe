@@ -1,7 +1,7 @@
 {
   "site": "https://viceroy-dennis.github.io/cine-marks-noframe",
-  "assetCommit": "65bf74a7448c8e77cbcc1357e7dc66cd5bb862cb",
-  "verifiedAt": "2026-11-08T10:10:44.145744+00:00",
+  "assetCommit": "6a9af84304ad7f12743871786ba57644494457b9",
+  "verifiedAt": "2026-11-08T11:17:54.882724+00:00",
   "subscriptions": {
     "adaptive": {
       "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json",
@@ -34,18 +34,20 @@
     "dark": 310
   },
   "failures": [],
-  "consumerAppImportTested": false,
+  "consumerAppImportTested": true,
   "assetChecks": {
-    "sourcePngHashesPreserved": 310,
-    "sourceSvgHashesPreserved": 310,
-    "lightVariants": 58,
-    "preservedVariants": 252,
-    "alphaPlanesPreserved": 310,
-    "protectedNativeContainersUnchanged": 14,
-    "chromaticRgbPreservedExceptDocumentedMetallicVariant": true
+    "unchangedPngsSincePreviousRelease": 309,
+    "unchangedSvgsSincePreviousRelease": 309,
+    "changedIds": [
+      "stream-019"
+    ],
+    "lightVariants": 59,
+    "preservedVariants": 251,
+    "protectedNativeContainersUnchanged": 13,
+    "lightDarkAlphaPlanesMatch": 310
   },
   "tests": {
-    "passed": 18,
+    "passed": 21,
     "failed": 0
   },
   "browser": {
@@ -69,6 +71,48 @@
     "systemInitialThemeVerified": true,
     "liveOperatingSystemThemeChangeTested": false,
     "pngDownloadLinksFollowTheme": true,
-    "actualTargetAppTested": false
+    "actualTargetAppTested": false,
+    "previousThemeTestsStillApplicable": true,
+    "itunesReplacement": {
+      "status": "verified_in_published_preview",
+      "imageDimensions": [
+        357,
+        96
+      ],
+      "bothThemeForegroundsVisible": true,
+      "consoleErrors": 0,
+      "previewCacheUsesSourceVersion": true
+    }
+  },
+  "consumerCompatibility": {
+    "consumer": "Rex",
+    "adaptiveSvg": {
+      "status": "user_reported_failed",
+      "symptom": "All icons appear white after import and become invisible on a light background.",
+      "rootCause": "Unconfirmed; not reproduced inside Rex by the authoring environment."
+    },
+    "pngReplacement": {
+      "light": "badges-rex.json",
+      "dark": "badges-rex-dark.json",
+      "status": "pending_consumer_retest",
+      "automaticThemeSwitching": false,
+      "httpVerification": {
+        "rex": {
+          "httpStatus": 200,
+          "contentType": "application/json; charset=utf-8",
+          "all310UsePng": true,
+          "matchesThemeJsonByteForByte": true,
+          "itunesSha256": "23dd9a8e9aaa942cd8034330a849bf14c5474a9eb0f18fc4d6f07955cf3bd871"
+        },
+        "rex-dark": {
+          "httpStatus": 200,
+          "contentType": "application/json; charset=utf-8",
+          "all310UsePng": true,
+          "matchesThemeJsonByteForByte": true,
+          "itunesSha256": "278175623bf9899f075aecbdc1c656b575e5478bab7a377b6c962d83d07c0798"
+        }
+      }
+    },
+    "preservedRuleFields": true
   }
 }

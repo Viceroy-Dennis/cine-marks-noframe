@@ -1,8 +1,8 @@
 {
   "repository": "https://github.com/Viceroy-Dennis/cine-marks-noframe",
-  "assetCommit": "bc06b2ce2ff357697c7ef8cb220f805ce61f4d15",
+  "assetCommit": "6a9af84304ad7f12743871786ba57644494457b9",
   "subscriptionUrl": "https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json",
-  "verifiedAt": "2026-11-08T09:04:23.226783+00:00",
+  "verifiedAt": "2026-11-08T11:17:54.882724+00:00",
   "subscriptionHttpStatus": 200,
   "subscriptionJsonParses": true,
   "configOnlyImageURLChanged": true,
@@ -16,11 +16,11 @@
   "enabled": 293,
   "pngsVerified": 310,
   "failures": [],
-  "applicationImportTested": false,
-  "commitWithSubscription": "ef05046cf15c073ecd215170f940982413bff1b1",
+  "applicationImportTested": true,
+  "commitWithSubscription": "d4922f9117e49f38448093c56f3d177b57cb49de",
   "themes": {
     "site": "https://viceroy-dennis.github.io/cine-marks-noframe",
-    "verifiedAt": "2026-11-08T10:10:44.145744+00:00",
+    "verifiedAt": "2026-11-08T11:17:54.882724+00:00",
     "subscriptions": {
       "adaptive": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json",
       "light": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json",
@@ -32,5 +32,12 @@
       "dark": 310
     },
     "details": "themes/verification.json"
-  }
+  },
+  "rex": {
+    "light": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex.json",
+    "dark": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-dark.json",
+    "adaptiveStatus": "user_reported_failed",
+    "pngStatus": "http_verified_pending_rex_retest"
+  },
+  "applicationImportEvidence": "User reported Rex SVG import failure; PNG entries await Rex retest."
 }
