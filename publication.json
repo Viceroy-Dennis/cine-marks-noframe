@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/Viceroy-Dennis/cine-marks-noframe",
+  "assetCommit": "bc06b2ce2ff357697c7ef8cb220f805ce61f4d15",
+  "subscriptionUrl": "https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json",
+  "verifiedAt": "2026-11-08T09:04:23.226783+00:00",
+  "subscriptionHttpStatus": 200,
+  "subscriptionJsonParses": true,
+  "configOnlyImageURLChanged": true,
+  "responseHeaders": {
+    "Cache-Control": "max-age=300",
+    "Content-Type": "text/plain; charset=utf-8",
+    "Access-Control-Allow-Origin": "*"
+  },
+  "filters": 310,
+  "groups": 15,
+  "enabled": 293,
+  "pngsVerified": 310,
+  "failures": [],
+  "applicationImportTested": false,
+  "commitWithSubscription": "ef05046cf15c073ecd215170f940982413bff1b1"
+}

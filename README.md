@@ -10,13 +10,17 @@ https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-
 
 [查看订阅 JSON](https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json) · [下载整个素材库](https://github.com/Viceroy-Dennis/cine-marks-noframe/archive/refs/heads/main.zip)
 
-订阅地址保持不变。每次发布把图片 URL 锁定到完整的素材提交 SHA，已发布图片不会因后续替换而改变。更新后在使用端刷新订阅即可。GitHub Raw 的缓存与响应头由 GitHub 管理，本仓库不承诺 60 秒刷新；具体刷新速度还取决于客户端缓存和网络。
+订阅地址保持不变。每次发布把图片 URL 锁定到完整的素材提交 SHA，已发布图片不会因后续替换而改变。更新后在使用端刷新订阅即可。GitHub Raw 的缓存与响应头由 GitHub 管理，本仓库不承诺 60 秒刷新；具体刷新速度还取决于客户端缓存和网络。 当前实测：JSON 返回 HTTP 200，可正常解析；GitHub Raw 以 `text/plain; charset=utf-8` 返回 JSON，允许跨域访问（`Access-Control-Allow-Origin: *`），缓存时间约 5 分钟。若使用端严格要求 `application/json` 响应类型，需要改用返回该类型的静态托管。
 
 ![品牌与技术标识原色复审展示](color-review.png)
 
 310 项资源标签，15 个分类。原配置的 ID、名称、正则、分组、排序和启停状态均保持一致，仅修改 imageURL：293 条启用、17 条停用。
 
 这套素材取消了统一灰色及香槟色遮罩。平台标识保留来源中的品牌色、多色组合与渐变；单色字标根据深色资源列表选择白色反白版本，逐项记录变换。没有给所有图标套用同一种颜色。
+
+## 发布验证
+
+固定订阅 JSON 与全部 310 张远程 PNG 已通过 HTTP 检查；每张图片与本地交付文件逐字节一致，0 缺图。原配置除 `imageURL` 外完全保留。构建器 11 项测试通过。验证时间和响应头见 `publication.json`，实际消费应用的导入与刷新尚未实测。
 
 ## 本次复审
 

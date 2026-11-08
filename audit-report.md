@@ -48,3 +48,5 @@ PPTV的历史聚力(PP)源图120×30，放大仍略模糊。历史Logo的来源�
 - `a-pcm` — PCM
 
 远程订阅配置位于仓库根目录 `badges-noframe.json`。固定订阅地址为 [https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json](https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json)；图片 URL 锁定至完整素材提交 SHA。浏览器和配置检查不替代实际消费应用的订阅导入测试。
+
+线上发布验证：固定 JSON 返回 HTTP 200，310/310 张远程 PNG 与本地逐字节一致，0 缺失。GitHub Raw 的 JSON 响应类型为 text/plain; charset=utf-8，缓存 max-age=300，CORS 为 *；详细记录见 publication.json。尚未在实际消费应用执行导入与刷新测试。
