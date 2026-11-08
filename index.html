@@ -115,16 +115,16 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       <footer class="board-footer"><p class="principles">品牌原色 · 来源可查 · 透明画布</p><div class="size-example"><span>实际显示 · 24 px</span><div data-badges="stream-012,r4,custom_dolby-vision_8,custom_dolby-atmos_19,sub-zh"></div></div></footer>
     </section>
     <section class="library" id="library" aria-labelledby="library-title">
-      <div class="library-heading"><div><h2 id="library-title">完整标识库</h2><p>310 个标识，15 个分类。点击标识，查看原尺寸与下载文件。</p></div><div class="download-actions"><a class="action primary" href="badges-adaptive.json" download="badges-adaptive.json"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载自适应订阅</a><a class="action" href="badges.relative.json" download="badges.relative.json">下载托管源配置</a></div></div>
+      <div class="library-heading"><div><h2 id="library-title">完整标识库</h2><p>310 个标识，15 个分类。点击标识，查看原尺寸与下载文件。</p></div><div class="download-actions"><a class="action primary" href="badges-rex.json" download="badges-rex.json"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载 Rex 浅色 PNG</a><a class="action" href="badges.relative.json" download="badges.relative.json">下载托管源配置</a></div></div>
       <aside class="subscription-note" id="theme-subscriptions" aria-label="主题订阅说明">
         <p class="subscription-title">主题订阅</p>
-        <div class="subscription-links"><a href="badges-adaptive.json" download="badges-adaptive.json">自适应 SVG</a><a href="badges-light.json" download="badges-light.json">浅色 PNG</a><a href="badges-dark.json" download="badges-dark.json">深色 PNG</a></div>
-        <p>本页默认跟随系统，也可手动切换。自适应订阅需要使用端支持 SVG 主题媒体查询；不支持时，选择与界面背景一致的 PNG 订阅。</p>
+        <div class="subscription-links"><a href="badges-rex.json" download="badges-rex.json">Rex 浅色 PNG</a><a href="badges-rex-dark.json" download="badges-rex-dark.json">Rex 深色 PNG</a><a href="badges-adaptive.json" download="badges-adaptive.json">网页自适应 SVG</a></div>
+        <p>Rex 导入 SVG 后全白的问题已记录，请改用对应的 PNG 入口；PNG 不会自动随主题变色。本网页预览可跟随系统，网页 SVG 入口仅用于支持主题媒体查询的渲染器。</p>
         <span class="theme-current" id="theme-current" aria-live="polite"></span>
       </aside>
       <div class="toolbar"><div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" aria-label="搜索标识" placeholder="搜索平台、格式、语言或制作组…" autocomplete="off"></div><label for="badge-size">显示高度</label><select id="badge-size"><option value="24">24 px</option><option value="32" selected>32 px</option><option value="48">48 px</option></select><div class="background-control" role="group" aria-label="预览背景"><button type="button" data-background="dark" aria-pressed="true">深色</button><button type="button" data-background="light" aria-pressed="false">浅色</button></div><label class="toggle"><input type="checkbox" id="only-enabled">仅看已启用</label></div>
       <div class="library-body"><nav class="group-nav" id="group-nav" aria-label="标识分类"></nav><div><p class="result-count" id="result-count" aria-live="polite"></p><div id="catalog"></div><div class="empty" id="empty" hidden><strong>没有找到匹配的标识</strong><p>试试其他关键词，或清除筛选查看完整标识库。</p><button class="action" id="reset-filters" type="button">清除筛选</button></div></div></div>
-      <p class="library-note">素材中的平台名称仅用于来源识别。上方片名为虚构排版示例。启停状态沿用参考配置：293 项启用，17 项停用。<br>全部 88 个平台品牌已替换为可追溯 Logo。保留彩色图形与渐变；需要适配的单色字标提供深浅版本。PNG 高 96px，建议显示 24–32px。</p>
+      <p class="library-note">素材中的平台名称仅用于来源识别。上方片名为虚构排版示例。启停状态沿用参考配置：293 项启用，17 项停用。<br>88 个平台品牌均有来源记录；iTunes 使用用户指定参考图。保留彩色图形与渐变；需要适配的单色字标提供深浅版本。PNG 高 96px，建议显示 24–32px。</p>
     </section>
   </main>
   <footer class="site-footer"><span>映标 · CINE MARKS</span><nav aria-label="文件说明"><a href="README.md">使用说明</a><a href="design-prompt.md">设计思路与提示词</a><a href="sources.json">素材来源</a></nav></footer>
@@ -403,9 +403,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "1b9a4d94932fcf2a7c79d95c9a6b0a953f57e53649779b72636e976c22199ab2",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -471,9 +471,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "0880d87e76d6195d6447654a7cba47e3bb735450de8aa80c6aa5395d935e014d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -539,9 +539,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "e5ed2bb8d302dd279aa657c4a787e694fbaa9e068dbb3da8a8aa0528437cbd15",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -675,9 +675,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "9ad760cb74307b4a5bf5059497536b981de5dd1b2608215f18045af54ce1986d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 260.0,
+        "width": 260,
         "height": 80
       }
     },
@@ -858,30 +858,30 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "isEnabled": true,
       "label": "iTunes",
       "secondary": "",
-      "color": "source colors",
-      "width": 30,
+      "color": "theme-specific monochrome",
+      "width": 119,
       "height": 32,
-      "pixelWidth": 90,
+      "pixelWidth": 357,
       "pixelHeight": 96,
       "png": "badges/png/stream-019.png",
       "svg": "badges/svg/stream-019.svg",
-      "sourceKind": "official-site",
-      "processing": "verified_source_color",
+      "sourceKind": "user-reference-image-edit",
+      "processing": "user_requested_wordmark_replacement",
       "assetType": "transparent SVG wrapper with embedded PNG; not pure vector",
       "isVector": false,
-      "sourceWidth": 226,
-      "sourceHeight": 226,
+      "sourceWidth": 2172,
+      "sourceHeight": 724,
       "sourceVisibleBounds": [
-        2,
-        2,
-        224,
-        224
+        101,
+        133,
+        2085,
+        590
       ],
-      "sourceSha256": "2e6a46e17b8cd554a78b46bd3fa510ef96179693a408c9f869dff6b5edef3450",
+      "sourceSha256": "faf90b45571f68f8637ae747d9a0375edb26cc1389275e2cf97335d6ea2d9d4d",
       "logoBox": {
-        "x": 5.0,
+        "x": 4.8457330415754996,
         "y": 8,
-        "width": 80.0,
+        "width": 347.308533916849,
         "height": 80
       }
     },
@@ -1015,9 +1015,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "8e04de41469dd1a7fe06f969e4f860b1b300a3f6cc4a2d15e43a3f1b437afce0",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -1831,9 +1831,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "6b3eb0cbc944370f76b850249db486b5b9b20e4c9477dd77ac52784530b45510",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -2205,9 +2205,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "3519c004ddb146843cd55ef4927e70599ad0c2d757d78b8e75fb78e26682ee57",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -2613,9 +2613,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "31c59d44fc64f4271fe4fe7f037b5b32661824d15bb82b59ce3d170e5ee8a449",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -2953,9 +2953,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "25fb038723a82a14f9ac8fc8789df3683d7c4fe7bbeba7875fbfb3641450cc5e",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -3361,9 +3361,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "c1ff67a9adf8e9ffbdb42576fae665b4f3956ada44c4b1bbc40291ed80921cbe",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -4349,7 +4349,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 285.0,
+        "width": 285,
         "height": 80
       }
     },
@@ -4381,9 +4381,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "5572a5e0b8d09e3de9bb6e50b1ad05bbba30343d16f0e3ee0b3419ba4d3d6f43",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 400.0,
+        "width": 400,
         "height": 80
       }
     },
@@ -4791,7 +4791,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 240.0,
+        "width": 240,
         "height": 80
       }
     },
@@ -5877,9 +5877,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "945b1f386a5e1905d6a41b8844997e6ac0c50d0850f9f86cb7d87091da761206",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 104.0,
+        "width": 104,
         "height": 80
       }
     },
@@ -6457,7 +6457,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 180.0,
+        "width": 180,
         "height": 80
       }
     },
@@ -6863,9 +6863,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "5fe2a7ea331732cbbfceef387070520e4f4805a0749cb99d713379ce480acec8",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 224.0,
+        "width": 224,
         "height": 80
       }
     },
@@ -6965,9 +6965,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "600dc719b4961aca9a504606b4315bb091627460b661a647b3ca21a359b76a99",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 220.0,
+        "width": 220,
         "height": 80
       }
     },
@@ -7067,9 +7067,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "8d906d16cc211f754a57f1d91b568f743594e2584d300ab214d02e70ce8a192e",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 230.0,
+        "width": 230,
         "height": 80
       }
     },
@@ -7169,9 +7169,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "2508623dd91f7c79c3777e55f7583a79abfffcf4f3b71fc7447d12edc2afdf8b",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 200.0,
+        "width": 200,
         "height": 80
       }
     },
@@ -7409,7 +7409,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 390.0,
+        "width": 390,
         "height": 80
       }
     },
@@ -8359,9 +8359,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "f6d25220342d84ba90e474828779a14591ece2e556402597a8bc4dba05b45f55",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 385.0,
+        "width": 385,
         "height": 80
       }
     },
@@ -8529,9 +8529,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "f6e68996a0337486eba63b1c4ffe0fab58e1c716d3d23427284869f72977e54f",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 320.0,
+        "width": 320,
         "height": 80
       }
     },
@@ -8733,9 +8733,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "714d8cbc04f37d901e0ebddb366bf9118b9d61fcae2fe37d0ee262a96382e365",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 385.0,
+        "width": 385,
         "height": 80
       }
     },
@@ -9381,7 +9381,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 330.0,
+        "width": 330,
         "height": 80
       }
     },
@@ -9719,9 +9719,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "b731c2e82a4e00c4bb04ce2ff3a07af6a94c97079ae87b909a849e799f9cf75d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 320.0,
+        "width": 320,
         "height": 80
       }
     },
@@ -9991,9 +9991,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "ff6d0feee8aa73ba2dfbcf9ac184434e1def56ce4cf984d2de97fa881ff6da86",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 215.0,
+        "width": 215,
         "height": 80
       }
     },
@@ -10127,9 +10127,9 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       ],
       "sourceSha256": "8ea15eb14b779bb83026cc7db36f750299eb2d1a3d9664c69873ecbf4441b18d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 275.0,
+        "width": 275,
         "height": 80
       }
     },
@@ -10707,7 +10707,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 465.0,
+        "width": 465,
         "height": 80
       }
     },

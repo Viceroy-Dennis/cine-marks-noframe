@@ -1,0 +1,15 @@
+{
+  "consumer": "Rex",
+  "adaptiveSvg": {
+    "status": "user_reported_failed",
+    "symptom": "All icons appear white after import and become invisible on a light background.",
+    "rootCause": "Unconfirmed; not reproduced inside Rex by the authoring environment."
+  },
+  "pngReplacement": {
+    "light": "badges-rex.json",
+    "dark": "badges-rex-dark.json",
+    "status": "pending_consumer_retest",
+    "automaticThemeSwitching": false
+  },
+  "preservedRuleFields": true
+}

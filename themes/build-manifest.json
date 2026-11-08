@@ -1,6 +1,6 @@
 {
   "total": 310,
-  "changed": 58,
+  "changed": 59,
   "items": [
     {
       "id": "stream-001",
@@ -166,11 +166,11 @@
     },
     {
       "id": "stream-019",
-      "mode": "preserve",
-      "sourceSha256": "a88a5ed26b4f5aaec9809650fdc3966c746db14341aba4f3b6cf8202a37b4354",
-      "lightSha256": "a88a5ed26b4f5aaec9809650fdc3966c746db14341aba4f3b6cf8202a37b4354",
-      "adaptiveSha256": "d7a8c8976f36a2a24bf905dd16dfd3e11593813eea5cbc0202a85f06da050c26",
-      "width": 90,
+      "mode": "monochrome",
+      "sourceSha256": "278175623bf9899f075aecbdc1c656b575e5478bab7a377b6c962d83d07c0798",
+      "lightSha256": "23dd9a8e9aaa942cd8034330a849bf14c5474a9eb0f18fc4d6f07955cf3bd871",
+      "adaptiveSha256": "3c1a68bd226308fd7c13d3fdf75ba63c7760fe92e45bad9a371788dc5a2d1b62",
+      "width": 357,
       "height": 96
     },
     {

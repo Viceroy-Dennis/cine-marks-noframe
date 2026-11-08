@@ -5,7 +5,6 @@
     "stream-007",
     "stream-009",
     "stream-010",
-    "stream-019",
     "stream-035",
     "stream-054",
     "stream-058",
@@ -281,13 +280,20 @@
     {
       "id": "stream-019",
       "name": "iTunes",
-      "mode": "preserve",
-      "sourceSha256": "a88a5ed26b4f5aaec9809650fdc3966c746db14341aba4f3b6cf8202a37b4354",
-      "regions": [],
+      "mode": "monochrome",
+      "sourceSha256": "278175623bf9899f075aecbdc1c656b575e5478bab7a377b6c962d83d07c0798",
+      "regions": [
+        [
+          0,
+          0,
+          357,
+          96
+        ]
+      ],
       "minChannel": 170,
       "maxChroma": 24,
-      "reason": "iTunes pale disc/background and white areas belong to its native gradient icon.",
-      "sourceURL": "https://www.apple.com/v/itunes/home/l/images/overview/itunes_logo__dwjkvx332d0m_large_2x.png"
+      "reason": "User-selected Apple + iTunes wordmark needs dark foreground on light surfaces; preserve silhouette and alpha without a background tile.",
+      "sourceURL": "sources/user/itunes-wordmark.png"
     },
     {
       "id": "stream-020",

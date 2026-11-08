@@ -111,12 +111,19 @@ test('site base and explicit SHA/repository inputs reject malformed values', () 
   assert.throws(() => createThemeSubscriptions(sourceConfig(), { repository: 'owner/../repo', siteBase, assetRef: ref }));
 });
 
-test('build validates and emits three JSON files plus immutable release SVG copies', async t => {
+test('build emits three theme JSON files, identical PNG Rex aliases and immutable release SVG copies', async t => {
   const options = await fixture(t);
   const build = await buildThemeSubscriptions(options);
   assert.equal(build.filters, 2);
   for (const theme of ['dark', 'light', 'adaptive']) {
     assert.deepEqual(JSON.parse(await readFile(path.join(options.root, `badges-${theme}.json`), 'utf8')), build.subscriptions[theme]);
+  }
+  for (const [alias, theme] of [['rex', 'light'], ['rex-dark', 'dark']]) {
+    const aliasBytes = await readFile(path.join(options.root, `badges-${alias}.json`));
+    assert.deepEqual(aliasBytes, await readFile(path.join(options.root, `badges-${theme}.json`)));
+    for (const filter of JSON.parse(aliasBytes.toString('utf8')).filters) {
+      assert.ok(new URL(filter.imageURL).pathname.endsWith('.png'));
+    }
   }
   for (const id of ['first', 'second']) {
     assert.equal(await readFile(path.join(options.root, 'themes', 'releases', options.assetRef, `${id}.svg`), 'utf8'), svg);
@@ -125,12 +132,30 @@ test('build validates and emits three JSON files plus immutable release SVG copi
   await buildThemeSubscriptions(options);
 });
 
-test('modified light PNG is rejected before any generated JSON is overwritten', async t => {
+test('modified light PNG is rejected before generated JSON and Rex aliases are overwritten', async t => {
   const options = await fixture(t);
-  await writeFile(path.join(options.root, 'badges-light.json'), 'prior output');
+  const priorOutputs = ['badges-light.json', 'badges-rex.json', 'badges-rex-dark.json'];
+  for (const filename of priorOutputs) await writeFile(path.join(options.root, filename), `prior ${filename}`);
   await writeFile(path.join(options.root, 'themes', 'light', 'first.png'), png(42));
   await assert.rejects(buildThemeSubscriptions(options), /Uncommitted|differ/);
-  assert.equal(await readFile(path.join(options.root, 'badges-light.json'), 'utf8'), 'prior output');
+  for (const filename of priorOutputs) {
+    assert.equal(await readFile(path.join(options.root, filename), 'utf8'), `prior ${filename}`);
+  }
+});
+
+test('both Rex alias destinations are validated before any output is written', async t => {
+  for (const alias of ['rex', 'rex-dark']) {
+    await t.test(alias, async child => {
+      const options = await fixture(child);
+      await mkdir(path.join(options.root, `badges-${alias}.json`));
+      await writeFile(path.join(options.root, 'badges-light.json'), 'prior subscription');
+      await assert.rejects(buildThemeSubscriptions(options), /Output path must contain only regular directories\/files/);
+      assert.equal(await readFile(path.join(options.root, 'badges-light.json'), 'utf8'), 'prior subscription');
+      assert.equal(existsSync(path.join(options.root, 'badges-dark.json')), false);
+      assert.equal(existsSync(path.join(options.root, 'badges-adaptive.json')), false);
+      assert.equal(existsSync(path.join(options.root, 'themes', 'releases', options.assetRef)), false);
+    });
+  }
 });
 
 test('assume-unchanged SVG modifications cannot bypass blob equality', async t => {

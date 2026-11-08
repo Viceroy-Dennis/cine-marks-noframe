@@ -202,6 +202,10 @@ async function inspectDestination(root, relative) {
 
 export async function buildThemeSubscriptions(options = {}) {
   const build = await prepareThemeBuild(options);
+  const jsonOutputs = new Map(Object.entries(build.subscriptions).map(([theme, subscription]) =>
+    [`badges-${theme}.json`, JSON.stringify(subscription, null, 2) + '\n']));
+  jsonOutputs.set('badges-rex.json', jsonOutputs.get('badges-light.json'));
+  jsonOutputs.set('badges-rex-dark.json', jsonOutputs.get('badges-dark.json'));
   const releases = [];
   for (const file of build.adaptiveFiles) {
     const relative = `${build.releaseRelative}/${file.id}.svg`;
@@ -212,14 +216,14 @@ export async function buildThemeSubscriptions(options = {}) {
     }
     releases.push({ filename, exists, bytes: file.bytes });
   }
-  for (const theme of Object.keys(build.subscriptions)) {
-    await inspectDestination(build.root, `badges-${theme}.json`);
+  for (const filename of jsonOutputs.keys()) {
+    await inspectDestination(build.root, filename);
   }
   // Validate every destination before producing output. Existing release bytes are never rewritten.
   await mkdir(path.join(build.root, ...build.releaseRelative.split('/')), { recursive: true });
   for (const release of releases) if (!release.exists) await writeFile(release.filename, release.bytes, { flag: 'wx' });
-  for (const [theme, subscription] of Object.entries(build.subscriptions)) {
-    await writeFile(path.join(build.root, `badges-${theme}.json`), JSON.stringify(subscription, null, 2) + '\n', 'utf8');
+  for (const [filename, content] of jsonOutputs) {
+    await writeFile(path.join(build.root, filename), content, 'utf8');
   }
   return build;
 }
@@ -241,7 +245,7 @@ function parseArgs(argv) {
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   if (options.help) {
-    console.log('Usage: node scripts/build-theme-subscriptions.mjs --repository owner/repo --asset-ref <40-character commit SHA> --site-base https://owner.github.io/repo\nAll arguments are required. Reads committed source assets, writes badges-dark.json, badges-light.json and badges-adaptive.json, and preserves SVG releases under themes/releases/<full SHA>/. No commits, pushes or network requests.');
+    console.log('Usage: node scripts/build-theme-subscriptions.mjs --repository owner/repo --asset-ref <40-character commit SHA> --site-base https://owner.github.io/repo\nAll arguments are required. Reads committed source assets, writes badges-dark.json, badges-light.json and badges-adaptive.json, plus PNG aliases badges-rex.json (light) and badges-rex-dark.json (dark), and preserves SVG releases under themes/releases/<full SHA>/. No commits, pushes or network requests.');
     return;
   }
   const build = await buildThemeSubscriptions(options);

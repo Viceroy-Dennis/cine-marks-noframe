@@ -473,26 +473,41 @@
     {
       "id": "stream-019",
       "originalURL": "https://streambridge-studio-markers.vercel.app/badges/tint19n/stream-019.png",
-      "sha256": "2e6a46e17b8cd554a78b46bd3fa510ef96179693a408c9f869dff6b5edef3450",
-      "sourceURL": "https://www.apple.com/v/itunes/home/l/images/overview/itunes_logo__dwjkvx332d0m_large_2x.png",
-      "evidence": "https://www.apple.com/itunes/; overview.built.css .image-itunes-logo",
-      "processing": "verified_source_color",
-      "sourceKind": "official-site",
+      "sha256": "faf90b45571f68f8637ae747d9a0375edb26cc1389275e2cf97335d6ea2d9d4d",
+      "sourceURL": "sources/user/itunes-wordmark.png",
+      "evidence": "User supplied a white Apple + iTunes wordmark on a multicolor background. Built-in image editing produced a clean transparent monochrome version. User-directed visual replacement, not an independently verified official master.",
+      "processing": "user_requested_wordmark_replacement",
+      "sourceKind": "user-reference-image-edit",
       "originalSize": [
-        226,
-        226
+        2172,
+        724
       ],
       "originalVisibleBounds": [
-        2,
-        2,
-        224,
-        224
+        101,
+        133,
+        2085,
+        590
       ],
-      "displayColor": "source RGB / gradients preserved",
-      "transformations": [],
+      "displayColor": "White foreground for dark surfaces; dark foreground for light surfaces.",
+      "transformations": [
+        {
+          "kind": "user_reference_background_extraction",
+          "tool": "built-in image_gen",
+          "description": "Remove the reference background and produce a transparent monochrome lockup; generated asset is derived artwork and may differ from original pixels.",
+          "referenceSha256": "1befe5e04633552ad7aeb9b72afe6733dff764383d48cc017a6fba0aca494233"
+        },
+        {
+          "kind": "normalized_badge_geometry",
+          "description": "Uniform 96px canvas height, 80px visible artwork, transparent outer space, original extracted proportions retained."
+        },
+        {
+          "kind": "negative_monochrome_brand_variant",
+          "description": "White dark-surface variant from the generated black alpha silhouette; separate dark light-surface version."
+        }
+      ],
       "sourceBytesUnchangedInSVG": true,
-      "upstreamArtworkAltered": false,
-      "upstreamSourceSha256": "2e6a46e17b8cd554a78b46bd3fa510ef96179693a408c9f869dff6b5edef3450"
+      "upstreamArtworkAltered": true,
+      "upstreamSourceSha256": "1befe5e04633552ad7aeb9b72afe6733dff764383d48cc017a6fba0aca494233"
     },
     {
       "id": "stream-020",

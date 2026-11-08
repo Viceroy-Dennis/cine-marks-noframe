@@ -3,7 +3,7 @@
   "total": 310,
   "platformBrands": 88,
   "physicalSourceLabels": 4,
-  "externalReplacements": 104,
+  "externalReplacements": 103,
   "referencePreserved": 206,
   "originalPlaceholderCount": 52,
   "remainingPlatformPlaceholders": 0,
@@ -273,12 +273,12 @@
       "id": "stream-019",
       "name": "iTunes",
       "groupId": "gs",
-      "sourceStatus": "external_source_with_provenance",
-      "processing": "verified_source_color",
-      "pngSha256": "a88a5ed26b4f5aaec9809650fdc3966c746db14341aba4f3b6cf8202a37b4354",
+      "sourceStatus": "user_reference_with_provenance",
+      "processing": "user_requested_wordmark_replacement",
+      "pngSha256": "278175623bf9899f075aecbdc1c656b575e5478bab7a377b6c962d83d07c0798",
       "vector": false,
-      "visualReview": "reviewed_in_contact_sheet",
-      "notes": ""
+      "visualReview": "reviewed_at_96px_and_paired_light_dark",
+      "notes": "Replaced the app tile with user-requested Apple + iTunes horizontal wordmark. The old review sheets document the previous asset."
     },
     {
       "id": "stream-020",
@@ -3486,5 +3486,29 @@
     "custom_dolby-digital_22": "Historical vector replaced; white wordmark inspected on sheet5",
     "custom_dolby-digital-plus_21": "Historical vector replaced; white wordmark inspected on sheet4",
     "s-uhdbd": "White original vector; no added background; individual PNG inspected"
+  },
+  "userReferenceReplacements": 1,
+  "externallySourcedPlatformBrands": 87,
+  "userReferencePlatformBrands": 1,
+  "latestReplacement": {
+    "id": "stream-019",
+    "sourceSha256": "faf90b45571f68f8637ae747d9a0375edb26cc1389275e2cf97335d6ea2d9d4d",
+    "pngSha256": "278175623bf9899f075aecbdc1c656b575e5478bab7a377b6c962d83d07c0798",
+    "referenceSha256": "1befe5e04633552ad7aeb9b72afe6733dff764383d48cc017a6fba0aca494233",
+    "other309PngsUnchanged": true,
+    "checks": {
+      "pngDimensions": [
+        357,
+        96
+      ],
+      "transparentOuterCanvas": true,
+      "visibleBounds": [
+        4,
+        8,
+        353,
+        88
+      ],
+      "lightAlphaMatchesDark": true
+    }
   }
 }

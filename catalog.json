@@ -271,9 +271,9 @@
       ],
       "sourceSha256": "1b9a4d94932fcf2a7c79d95c9a6b0a953f57e53649779b72636e976c22199ab2",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -339,9 +339,9 @@
       ],
       "sourceSha256": "0880d87e76d6195d6447654a7cba47e3bb735450de8aa80c6aa5395d935e014d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -407,9 +407,9 @@
       ],
       "sourceSha256": "e5ed2bb8d302dd279aa657c4a787e694fbaa9e068dbb3da8a8aa0528437cbd15",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -543,9 +543,9 @@
       ],
       "sourceSha256": "9ad760cb74307b4a5bf5059497536b981de5dd1b2608215f18045af54ce1986d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 260.0,
+        "width": 260,
         "height": 80
       }
     },
@@ -726,30 +726,30 @@
       "isEnabled": true,
       "label": "iTunes",
       "secondary": "",
-      "color": "source colors",
-      "width": 30,
+      "color": "theme-specific monochrome",
+      "width": 119,
       "height": 32,
-      "pixelWidth": 90,
+      "pixelWidth": 357,
       "pixelHeight": 96,
       "png": "badges/png/stream-019.png",
       "svg": "badges/svg/stream-019.svg",
-      "sourceKind": "official-site",
-      "processing": "verified_source_color",
+      "sourceKind": "user-reference-image-edit",
+      "processing": "user_requested_wordmark_replacement",
       "assetType": "transparent SVG wrapper with embedded PNG; not pure vector",
       "isVector": false,
-      "sourceWidth": 226,
-      "sourceHeight": 226,
+      "sourceWidth": 2172,
+      "sourceHeight": 724,
       "sourceVisibleBounds": [
-        2,
-        2,
-        224,
-        224
+        101,
+        133,
+        2085,
+        590
       ],
-      "sourceSha256": "2e6a46e17b8cd554a78b46bd3fa510ef96179693a408c9f869dff6b5edef3450",
+      "sourceSha256": "faf90b45571f68f8637ae747d9a0375edb26cc1389275e2cf97335d6ea2d9d4d",
       "logoBox": {
-        "x": 5.0,
+        "x": 4.8457330415754996,
         "y": 8,
-        "width": 80.0,
+        "width": 347.308533916849,
         "height": 80
       }
     },
@@ -883,9 +883,9 @@
       ],
       "sourceSha256": "8e04de41469dd1a7fe06f969e4f860b1b300a3f6cc4a2d15e43a3f1b437afce0",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -1699,9 +1699,9 @@
       ],
       "sourceSha256": "6b3eb0cbc944370f76b850249db486b5b9b20e4c9477dd77ac52784530b45510",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -2073,9 +2073,9 @@
       ],
       "sourceSha256": "3519c004ddb146843cd55ef4927e70599ad0c2d757d78b8e75fb78e26682ee57",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -2481,9 +2481,9 @@
       ],
       "sourceSha256": "31c59d44fc64f4271fe4fe7f037b5b32661824d15bb82b59ce3d170e5ee8a449",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -2821,9 +2821,9 @@
       ],
       "sourceSha256": "25fb038723a82a14f9ac8fc8789df3683d7c4fe7bbeba7875fbfb3641450cc5e",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -3229,9 +3229,9 @@
       ],
       "sourceSha256": "c1ff67a9adf8e9ffbdb42576fae665b4f3956ada44c4b1bbc40291ed80921cbe",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 80.0,
+        "width": 80,
         "height": 80
       }
     },
@@ -4217,7 +4217,7 @@
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 285.0,
+        "width": 285,
         "height": 80
       }
     },
@@ -4249,9 +4249,9 @@
       ],
       "sourceSha256": "5572a5e0b8d09e3de9bb6e50b1ad05bbba30343d16f0e3ee0b3419ba4d3d6f43",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 400.0,
+        "width": 400,
         "height": 80
       }
     },
@@ -4659,7 +4659,7 @@
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 240.0,
+        "width": 240,
         "height": 80
       }
     },
@@ -5745,9 +5745,9 @@
       ],
       "sourceSha256": "945b1f386a5e1905d6a41b8844997e6ac0c50d0850f9f86cb7d87091da761206",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 104.0,
+        "width": 104,
         "height": 80
       }
     },
@@ -6325,7 +6325,7 @@
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 180.0,
+        "width": 180,
         "height": 80
       }
     },
@@ -6731,9 +6731,9 @@
       ],
       "sourceSha256": "5fe2a7ea331732cbbfceef387070520e4f4805a0749cb99d713379ce480acec8",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 224.0,
+        "width": 224,
         "height": 80
       }
     },
@@ -6833,9 +6833,9 @@
       ],
       "sourceSha256": "600dc719b4961aca9a504606b4315bb091627460b661a647b3ca21a359b76a99",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 220.0,
+        "width": 220,
         "height": 80
       }
     },
@@ -6935,9 +6935,9 @@
       ],
       "sourceSha256": "8d906d16cc211f754a57f1d91b568f743594e2584d300ab214d02e70ce8a192e",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 230.0,
+        "width": 230,
         "height": 80
       }
     },
@@ -7037,9 +7037,9 @@
       ],
       "sourceSha256": "2508623dd91f7c79c3777e55f7583a79abfffcf4f3b71fc7447d12edc2afdf8b",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 200.0,
+        "width": 200,
         "height": 80
       }
     },
@@ -7277,7 +7277,7 @@
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 390.0,
+        "width": 390,
         "height": 80
       }
     },
@@ -8227,9 +8227,9 @@
       ],
       "sourceSha256": "f6d25220342d84ba90e474828779a14591ece2e556402597a8bc4dba05b45f55",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 385.0,
+        "width": 385,
         "height": 80
       }
     },
@@ -8397,9 +8397,9 @@
       ],
       "sourceSha256": "f6e68996a0337486eba63b1c4ffe0fab58e1c716d3d23427284869f72977e54f",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 320.0,
+        "width": 320,
         "height": 80
       }
     },
@@ -8601,9 +8601,9 @@
       ],
       "sourceSha256": "714d8cbc04f37d901e0ebddb366bf9118b9d61fcae2fe37d0ee262a96382e365",
       "logoBox": {
-        "x": 4.0,
+        "x": 4,
         "y": 8,
-        "width": 385.0,
+        "width": 385,
         "height": 80
       }
     },
@@ -9249,7 +9249,7 @@
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 330.0,
+        "width": 330,
         "height": 80
       }
     },
@@ -9587,9 +9587,9 @@
       ],
       "sourceSha256": "b731c2e82a4e00c4bb04ce2ff3a07af6a94c97079ae87b909a849e799f9cf75d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 320.0,
+        "width": 320,
         "height": 80
       }
     },
@@ -9859,9 +9859,9 @@
       ],
       "sourceSha256": "ff6d0feee8aa73ba2dfbcf9ac184434e1def56ce4cf984d2de97fa881ff6da86",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 215.0,
+        "width": 215,
         "height": 80
       }
     },
@@ -9995,9 +9995,9 @@
       ],
       "sourceSha256": "8ea15eb14b779bb83026cc7db36f750299eb2d1a3d9664c69873ecbf4441b18d",
       "logoBox": {
-        "x": 5.0,
+        "x": 5,
         "y": 8,
-        "width": 275.0,
+        "width": 275,
         "height": 80
       }
     },
@@ -10575,7 +10575,7 @@
       "logoBox": {
         "x": 4.5,
         "y": 8,
-        "width": 465.0,
+        "width": 465,
         "height": 80
       }
     },
