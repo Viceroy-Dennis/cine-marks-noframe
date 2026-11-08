@@ -1,0 +1,74 @@
+{
+  "site": "https://viceroy-dennis.github.io/cine-marks-noframe",
+  "assetCommit": "65bf74a7448c8e77cbcc1357e7dc66cd5bb862cb",
+  "verifiedAt": "2026-11-08T10:10:44.145744+00:00",
+  "subscriptions": {
+    "adaptive": {
+      "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cors": "*",
+      "imageCount": 310,
+      "allOtherFieldsPreserved": true
+    },
+    "light": {
+      "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cors": "*",
+      "imageCount": 310,
+      "allOtherFieldsPreserved": true
+    },
+    "dark": {
+      "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-dark.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cors": "*",
+      "imageCount": 310,
+      "allOtherFieldsPreserved": true
+    }
+  },
+  "verifiedImages": {
+    "adaptive": 310,
+    "light": 310,
+    "dark": 310
+  },
+  "failures": [],
+  "consumerAppImportTested": false,
+  "assetChecks": {
+    "sourcePngHashesPreserved": 310,
+    "sourceSvgHashesPreserved": 310,
+    "lightVariants": 58,
+    "preservedVariants": 252,
+    "alphaPlanesPreserved": 310,
+    "protectedNativeContainersUnchanged": 14,
+    "chromaticRgbPreservedExceptDocumentedMetallicVariant": true
+  },
+  "tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "browser": {
+    "renderer": "Codex in-app browser",
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "catalogLoaded": 310,
+    "brokenImages": 0,
+    "relevantConsoleErrors": 0,
+    "horizontalOverflow": false,
+    "sameSvgRendersDarkAndLight": true,
+    "manualThemeChangesVerified": true,
+    "systemInitialThemeVerified": true,
+    "liveOperatingSystemThemeChangeTested": false,
+    "pngDownloadLinksFollowTheme": true,
+    "actualTargetAppTested": false
+  }
+}

@@ -17,5 +17,20 @@
   "pngsVerified": 310,
   "failures": [],
   "applicationImportTested": false,
-  "commitWithSubscription": "ef05046cf15c073ecd215170f940982413bff1b1"
+  "commitWithSubscription": "ef05046cf15c073ecd215170f940982413bff1b1",
+  "themes": {
+    "site": "https://viceroy-dennis.github.io/cine-marks-noframe",
+    "verifiedAt": "2026-11-08T10:10:44.145744+00:00",
+    "subscriptions": {
+      "adaptive": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json",
+      "light": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json",
+      "dark": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-dark.json"
+    },
+    "imageChecks": {
+      "adaptive": 310,
+      "light": 310,
+      "dark": 310
+    },
+    "details": "themes/verification.json"
+  }
 }
