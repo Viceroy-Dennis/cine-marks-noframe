@@ -58,6 +58,46 @@ h1{font-size:52px;line-height:1.2;letter-spacing:-1.5px;font-weight:650}
 @media(max-width:639px){.design-board{padding:27px 20px 20px}h1{font-size:37px;letter-spacing:-1px}.masthead{padding-bottom:26px}.brand-en{font-size:10px;letter-spacing:3px;margin-top:10px}.tagline{font-size:16px;margin-top:17px;letter-spacing:.2px}.header-note{font-size:10px;letter-spacing:0;line-height:1.8;max-width:65px;text-align:right;padding-top:5px}.spec-row{padding:22px 0;display:block}.row-label{font-size:14px;margin:0 0 23px}.spec-row .badge-line{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:23px 21px}.spec-row .badge{height:32px;max-width:100%}.demo-section h2{font-size:20px;line-height:1.5;margin:25px 0 18px}.demo{padding:17px 0;background:transparent;gap:15px}.demo h3{font-size:19px}.demo-filename{font-size:10px;line-height:1.8}.demo .badge-line{gap:14px 22px}.demo .badge{height:25px;max-width:110px}.board-footer{gap:17px;margin-top:25px}.principles{font-size:13px;letter-spacing:.5px}.size-example{align-items:flex-start;flex-direction:column;gap:15px}.size-example>div{gap:22px;max-width:100%;flex-wrap:wrap}.size-example .badge{height:24px}.library{margin:24px 20px 0;padding-top:29px}.library h2{font-size:26px}.library-heading p{font-size:12px}.library-body{min-width:0}.library-body>div{min-width:0}.catalog-grid{gap:12px 15px;padding:10px 0}.asset{min-height:52px;padding:12px 6px;min-width:40px;max-width:100%}.catalog-grid.light{padding:12px}.asset img{min-width:0;max-width:100%}.site-footer{margin:0 20px}.preview-area img{height:38px}.preview-area{min-height:100px}}
 
   </style>
+  <style id="theme-preview-style">
+/* The embedding surface supplies the used color scheme to each external SVG. */
+:root{--bg:#101214;--surface:#171b1e;--edge:#343c43;--text:#f3f3f2;--muted:#a3adb5;--mint:#d8dfdd;--secondary:#c1cad0;--soft:#14171a;--button:#23282d;--button-edge:#46515a;--selected:#293a33;--selected-text:#dcece4;--hover:#ffffff09;--active:#3a434f;--primary:#d4deda;--primary-text:#1a2720}
+:root[data-theme="light"]{color-scheme:light;--bg:#fafaf7;--surface:#fff;--edge:#d3d9da;--text:#182328;--muted:#586770;--mint:#24684c;--secondary:#3c4e58;--soft:#f0f2ef;--button:#fff;--button-edge:#bac5c8;--selected:#dceae1;--selected-text:#204b37;--hover:#15352608;--active:#e0e9e3;--primary:#245e46;--primary-text:#fff}
+:root[data-theme="dark"]{color-scheme:dark}
+body{background:var(--bg);color:var(--text)}
+.masthead,.spec-row,.demo,.library,.toolbar,.site-footer{border-color:var(--edge)}
+.tagline,.row-label,.principles,.catalog-group h3{color:var(--secondary)}
+.brand-en,.header-note,.demo-filename,.size-example>span,.library-note,.site-footer{color:var(--muted)}
+.demo{background:var(--soft)}
+.action{background:var(--button);border-color:var(--button-edge);color:var(--text)}
+.action.primary{background:var(--primary);border-color:var(--primary);color:var(--primary-text)}
+.search input,.toolbar select,.background-control{background:var(--surface);border-color:var(--button-edge);color:var(--text)}
+.search input::placeholder{color:var(--muted)}
+.background-control{gap:3px}.background-control button{color:var(--muted)}
+.background-control button[aria-pressed="true"]{background:var(--active);color:var(--text)}
+.group-button{color:var(--secondary)}.group-button span:last-child{color:var(--muted)}
+.group-button:hover{background:var(--soft);color:var(--text)}
+.group-button[aria-pressed="true"]{background:var(--selected);color:var(--selected-text)}
+.catalog-grid{background:var(--bg);border-color:var(--edge);color-scheme:inherit}
+.asset:hover{background:var(--hover);border-color:var(--button-edge)}
+.asset img,.badge,.preview-area img{color-scheme:inherit}
+.disabled-mark{color:var(--muted)}.empty{border-color:var(--button-edge)}
+.site-footer a:hover{color:var(--text)}
+dialog{background:var(--surface);border-color:var(--button-edge);color:var(--text)}
+.close-button{background:var(--button);color:var(--text)}
+.preview-area{position:relative;background:#101214;border-color:#303640;color-scheme:dark;min-height:130px;padding-top:42px}
+.preview-area.light{background:#fff;border-color:#d3d9da;color-scheme:light;min-height:130px;padding-top:42px}
+.preview-area::before{content:"深色背景";position:absolute;top:10px;left:14px;color:#aab5bd;font-size:11px;letter-spacing:.5px}
+.preview-area.light::before{content:"浅色背景";color:#586770}
+.light-example{color-scheme:light}.status{background:var(--selected);border-color:var(--button-edge);color:var(--text)}
+.subscription-note{margin:24px 0 0;padding:18px 0;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}
+.subscription-note p{margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+.subscription-note .subscription-title{color:var(--text);font-weight:600;margin-bottom:10px}
+.subscription-links{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+.subscription-links a{display:inline-flex;align-items:center;min-height:36px;padding:7px 12px;border:1px solid var(--button-edge);border-radius:5px;color:var(--text);font-size:13px;background:var(--button)}
+.subscription-links a:hover{background:var(--selected)}
+.theme-current{display:block;margin:10px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+@media(max-width:639px){.background-control{flex-wrap:nowrap}.background-control button{white-space:nowrap;padding:8px 10px}.subscription-links{gap:8px}.subscription-links a{flex:1;justify-content:center;padding:8px;font-size:12px}.subscription-note{margin-top:20px}.preview-area,.preview-area.light{min-height:115px}.demo{background:transparent}}
+  </style>
 </head>
 <body>
   <a class="skip" href="#library">跳转到完整素材库</a>
@@ -75,14 +115,20 @@ h1{font-size:52px;line-height:1.2;letter-spacing:-1.5px;font-weight:650}
       <footer class="board-footer"><p class="principles">品牌原色 · 来源可查 · 透明画布</p><div class="size-example"><span>实际显示 · 24 px</span><div data-badges="stream-012,r4,custom_dolby-vision_8,custom_dolby-atmos_19,sub-zh"></div></div></footer>
     </section>
     <section class="library" id="library" aria-labelledby="library-title">
-      <div class="library-heading"><div><h2 id="library-title">完整标识库</h2><p>310 个标识，15 个分类。点击标识，查看原尺寸与下载文件。</p></div><div class="download-actions"><a class="action primary" href="badges-noframe.json" download="badges-noframe.json"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载订阅 JSON</a><a class="action" href="badges.relative.json" download="badges.relative.json">下载托管源配置</a></div></div>
+      <div class="library-heading"><div><h2 id="library-title">完整标识库</h2><p>310 个标识，15 个分类。点击标识，查看原尺寸与下载文件。</p></div><div class="download-actions"><a class="action primary" href="badges-adaptive.json" download="badges-adaptive.json"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载自适应订阅</a><a class="action" href="badges.relative.json" download="badges.relative.json">下载托管源配置</a></div></div>
+      <aside class="subscription-note" id="theme-subscriptions" aria-label="主题订阅说明">
+        <p class="subscription-title">主题订阅</p>
+        <div class="subscription-links"><a href="badges-adaptive.json" download="badges-adaptive.json">自适应 SVG</a><a href="badges-light.json" download="badges-light.json">浅色 PNG</a><a href="badges-dark.json" download="badges-dark.json">深色 PNG</a></div>
+        <p>本页默认跟随系统，也可手动切换。自适应订阅需要使用端支持 SVG 主题媒体查询；不支持时，选择与界面背景一致的 PNG 订阅。</p>
+        <span class="theme-current" id="theme-current" aria-live="polite"></span>
+      </aside>
       <div class="toolbar"><div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" aria-label="搜索标识" placeholder="搜索平台、格式、语言或制作组…" autocomplete="off"></div><label for="badge-size">显示高度</label><select id="badge-size"><option value="24">24 px</option><option value="32" selected>32 px</option><option value="48">48 px</option></select><div class="background-control" role="group" aria-label="预览背景"><button type="button" data-background="dark" aria-pressed="true">深色</button><button type="button" data-background="light" aria-pressed="false">浅色</button></div><label class="toggle"><input type="checkbox" id="only-enabled">仅看已启用</label></div>
       <div class="library-body"><nav class="group-nav" id="group-nav" aria-label="标识分类"></nav><div><p class="result-count" id="result-count" aria-live="polite"></p><div id="catalog"></div><div class="empty" id="empty" hidden><strong>没有找到匹配的标识</strong><p>试试其他关键词，或清除筛选查看完整标识库。</p><button class="action" id="reset-filters" type="button">清除筛选</button></div></div></div>
-      <p class="library-note">素材中的平台名称仅用于来源识别。上方片名为虚构排版示例。启停状态沿用参考配置：293 项启用，17 项停用。<br>全部 88 个平台品牌已替换为可追溯 Logo。保留彩色图形与渐变；黑白字标采用适合深色界面的版本。PNG 高 96px，建议显示 24–32px。</p>
+      <p class="library-note">素材中的平台名称仅用于来源识别。上方片名为虚构排版示例。启停状态沿用参考配置：293 项启用，17 项停用。<br>全部 88 个平台品牌已替换为可追溯 Logo。保留彩色图形与渐变；需要适配的单色字标提供深浅版本。PNG 高 96px，建议显示 24–32px。</p>
     </section>
   </main>
   <footer class="site-footer"><span>映标 · CINE MARKS</span><nav aria-label="文件说明"><a href="README.md">使用说明</a><a href="design-prompt.md">设计思路与提示词</a><a href="sources.json">素材来源</a></nav></footer>
-  <dialog id="asset-dialog" aria-labelledby="asset-title"><div class="dialog-heading"><div><h2 id="asset-title"></h2><p id="asset-group"></p></div><button class="close-button" type="button" aria-label="关闭详情">×</button></div><div class="preview-area"><img id="detail-dark" alt=""></div><div class="preview-area light"><img id="detail-light" alt=""></div><dl class="asset-meta"><dt>标识 ID</dt><dd id="asset-id"></dd><dt>文件尺寸</dt><dd id="asset-dimensions"></dd><dt>原始状态</dt><dd id="asset-enabled"></dd></dl><div class="dialog-actions"><a class="action primary" id="download-png" download>下载 PNG</a><a class="action" id="download-svg" download>下载 SVG</a><button class="action" id="copy-id" type="button">复制 ID</button></div><p class="dialog-note">透明画布，无添加边框。部分来源是原生应用图标；SVG 包含矢量或内嵌位图，以素材清单为准。白字版本适合深色背景。</p></dialog>
+  <dialog id="asset-dialog" aria-labelledby="asset-title"><div class="dialog-heading"><div><h2 id="asset-title"></h2><p id="asset-group"></p></div><button class="close-button" type="button" aria-label="关闭详情">×</button></div><div class="preview-area"><img id="detail-dark" alt=""></div><div class="preview-area light"><img id="detail-light" alt=""></div><dl class="asset-meta"><dt>标识 ID</dt><dd id="asset-id"></dd><dt>文件尺寸</dt><dd id="asset-dimensions"></dd><dt>原始状态</dt><dd id="asset-enabled"></dd></dl><div class="dialog-actions"><a class="action primary" id="download-png" download>下载 PNG</a><a class="action" id="download-svg" download>下载 SVG</a><button class="action" id="copy-id" type="button">复制 ID</button></div><p class="dialog-note">上下分别预览深色与浅色背景。PNG 下载随当前页面主题选择；自适应 SVG 在支持主题媒体查询的查看器中切换。透明画布，无额外边框；SVG 包含矢量或内嵌位图，以素材清单为准。</p></dialog>
   <div class="status" id="status" role="status" hidden></div>
   <script id="catalog-data" type="application/json">{
   "groups": [
@@ -10735,35 +10781,132 @@ h1{font-size:52px;line-height:1.2;letter-spacing:-1.5px;font-weight:650}
     }
   ]
 }</script>
-  <script>
-    'use strict';
-    const data = JSON.parse(document.getElementById('catalog-data').textContent);
-    const byId = new Map(data.badges.map(b => [b.id,b]));
-    const groups = new Map(data.groups.map(g => [g.id,g]));
-    const state = { query:'', group:'all', onlyEnabled:false, background:'dark', height:32, active:null };
-    const $ = id => document.getElementById(id);
-    function image(b, className='badge') { const img=document.createElement('img');img.src=b.png;img.alt=b.name;img.className=className;img.width=b.width;img.height=b.height;img.decoding='async';return img; }
-    document.querySelectorAll('[data-badges]').forEach(row=>{row.dataset.badges.split(',').forEach(id=>{const b=byId.get(id);if(b) row.append(image(b));});});
-    function makeGroupButton(id,name,count){const btn=document.createElement('button');btn.type='button';btn.className='group-button';btn.dataset.group=id;btn.setAttribute('aria-pressed',String(state.group===id));const text=document.createElement('span');text.textContent=name;const amount=document.createElement('span');amount.textContent=count;btn.append(text,amount);btn.addEventListener('click',()=>{state.group=id;render();});return btn;}
-    function matches(b){const q=state.query.trim().toLocaleLowerCase();return (!state.onlyEnabled||b.isEnabled)&&(!q||[b.name,b.id,b.label,b.secondary,groups.get(b.groupId).name].join(' ').toLocaleLowerCase().includes(q));}
-    function render(){
-      const nav=$('group-nav');nav.replaceChildren();const matched=data.badges.filter(matches);nav.append(makeGroupButton('all','全部标识',matched.length));
-      data.groups.forEach(g=>nav.append(makeGroupButton(g.id,g.name,matched.filter(b=>b.groupId===g.id).length)));
-      const filtered=matched.filter(b=>state.group==='all'||b.groupId===state.group);$('result-count').textContent=`显示 ${filtered.length} / ${data.badges.length} 个标识${state.group==='all'?'':' · '+groups.get(state.group).name}`;
-      const catalog=$('catalog');catalog.replaceChildren();$('empty').hidden=filtered.length>0;
-      for(const g of data.groups){const badges=filtered.filter(b=>b.groupId===g.id);if(!badges.length)continue;const section=document.createElement('section');section.className='catalog-group';section.style.setProperty('--group-color',badges[0].color);const title=document.createElement('h3');title.textContent=g.name;const grid=document.createElement('div');grid.className='catalog-grid'+(state.background==='light'?' light':'');
-        for(const b of badges){const btn=document.createElement('button');btn.type='button';btn.className='asset';btn.dataset.badgeId=b.id;btn.setAttribute('aria-label',`查看 ${b.name}`);btn.title=b.name;const img=image(b);btn.append(img);if(!b.isEnabled){const mark=document.createElement('span');mark.className='disabled-mark';mark.textContent='默认停用';btn.append(mark);}btn.addEventListener('click',()=>openDetail(b));grid.append(btn);}
-        section.append(title,grid);catalog.append(section);
+  <script id="theme-preview-script">
+(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const data = JSON.parse($('catalog-data').textContent);
+  const byId = new Map(data.badges.map(badge => [badge.id, badge]));
+  const groups = new Map(data.groups.map(group => [group.id, group]));
+  const storageKey = 'cine-marks-theme';
+  const modes = ['system', 'dark', 'light'];
+  const media = typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  function savedTheme() {
+    try { const saved = window.localStorage.getItem(storageKey); return modes.includes(saved) ? saved : 'system'; }
+    catch { return 'system'; }
+  }
+  const state = { query: '', group: 'all', onlyEnabled: false, height: 32, active: null, theme: savedTheme(), effectiveTheme: 'light' };
+  const adaptivePath = badge => `themes/adaptive/${encodeURIComponent(badge.id)}.svg`;
+  const pngPath = badge => state.effectiveTheme === 'light' ? `themes/light/${encodeURIComponent(badge.id)}.png` : badge.png;
+  function image(badge, className = 'badge') {
+    const img = document.createElement('img');
+    img.src = adaptivePath(badge); img.alt = badge.name; img.className = className;
+    img.width = badge.width; img.height = badge.height; img.decoding = 'async'; img.style.colorScheme = 'inherit';
+    return img;
+  }
+  function refreshDownloads() {
+    if (!state.active) return;
+    const badge = state.active;
+    $('download-png').href = pngPath(badge);
+    $('download-png').download = `${badge.id}-${state.effectiveTheme}.png`;
+    $('download-png').textContent = `下载${state.effectiveTheme === 'light' ? '浅色' : '深色'} PNG`;
+    $('download-svg').href = adaptivePath(badge);
+    $('download-svg').download = `${badge.id}-adaptive.svg`;
+    $('download-svg').textContent = '下载自适应 SVG';
+  }
+  function applyTheme() {
+    state.effectiveTheme = state.theme === 'system' ? (media?.matches ? 'dark' : 'light') : state.theme;
+    document.documentElement.dataset.theme = state.effectiveTheme;
+    document.documentElement.dataset.themeMode = state.theme;
+    document.documentElement.style.colorScheme = state.effectiveTheme;
+    document.querySelectorAll('[data-background]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.background === state.theme)));
+    if ($('theme-current')) $('theme-current').textContent = state.theme === 'system'
+      ? `跟随系统 · 当前${state.effectiveTheme === 'light' ? '浅色' : '深色'}`
+      : `当前${state.effectiveTheme === 'light' ? '浅色' : '深色'}模式`;
+    refreshDownloads();
+  }
+  const themeControl = document.querySelector('.background-control');
+  themeControl.setAttribute('aria-label', '页面与标识主题'); themeControl.replaceChildren();
+  for (const [mode, label] of [['system', '跟随系统'], ['dark', '深色'], ['light', '浅色']]) {
+    const button = document.createElement('button'); button.type = 'button'; button.dataset.background = mode;
+    button.textContent = label; button.setAttribute('aria-pressed', 'false');
+    button.addEventListener('click', () => {
+      state.theme = mode;
+      try { window.localStorage.setItem(storageKey, mode); } catch { /* Theme switching also works without storage. */ }
+      applyTheme();
+    });
+    themeControl.append(button);
+  }
+  if (media?.addEventListener) media.addEventListener('change', () => { if (state.theme === 'system') applyTheme(); });
+  else if (media?.addListener) media.addListener(() => { if (state.theme === 'system') applyTheme(); });
+  applyTheme();
+  document.querySelectorAll('[data-badges]').forEach(row => row.dataset.badges.split(',').forEach(id => {
+    const badge = byId.get(id); if (badge) row.append(image(badge));
+  }));
+  function makeGroupButton(id, name, count) {
+    const button = document.createElement('button'); button.type = 'button'; button.className = 'group-button';
+    button.dataset.group = id; button.setAttribute('aria-pressed', String(state.group === id));
+    const label = document.createElement('span'); label.textContent = name;
+    const amount = document.createElement('span'); amount.textContent = count; button.append(label, amount);
+    button.addEventListener('click', () => { state.group = id; render(); }); return button;
+  }
+  function matches(badge) {
+    const query = state.query.trim().toLocaleLowerCase();
+    return (!state.onlyEnabled || badge.isEnabled) && (!query || [badge.name, badge.id, badge.label, badge.secondary,
+      groups.get(badge.groupId)?.name].join(' ').toLocaleLowerCase().includes(query));
+  }
+  function render() {
+    const nav = $('group-nav'); nav.replaceChildren(); const matched = data.badges.filter(matches);
+    nav.append(makeGroupButton('all', '全部标识', matched.length));
+    data.groups.forEach(group => nav.append(makeGroupButton(group.id, group.name, matched.filter(badge => badge.groupId === group.id).length)));
+    const filtered = matched.filter(badge => state.group === 'all' || badge.groupId === state.group);
+    $('result-count').textContent = `显示 ${filtered.length} / ${data.badges.length} 个标识${state.group === 'all' ? '' : ' · ' + groups.get(state.group).name}`;
+    const catalog = $('catalog'); catalog.replaceChildren(); $('empty').hidden = filtered.length > 0;
+    for (const group of data.groups) {
+      const badges = filtered.filter(badge => badge.groupId === group.id); if (!badges.length) continue;
+      const section = document.createElement('section'); section.className = 'catalog-group'; section.style.setProperty('--group-color', group.color);
+      const title = document.createElement('h3'); title.textContent = group.name;
+      const grid = document.createElement('div'); grid.className = 'catalog-grid';
+      for (const badge of badges) {
+        const button = document.createElement('button'); button.type = 'button'; button.className = 'asset';
+        button.dataset.badgeId = badge.id; button.setAttribute('aria-label', `查看 ${badge.name}`); button.title = badge.name;
+        button.append(image(badge));
+        if (!badge.isEnabled) { const mark = document.createElement('span'); mark.className = 'disabled-mark'; mark.textContent = '默认停用'; button.append(mark); }
+        button.addEventListener('click', () => openDetail(badge)); grid.append(button);
       }
+      section.append(title, grid); catalog.append(section);
     }
-    function openDetail(b){state.active=b;$('asset-title').textContent=b.name;$('asset-group').textContent=groups.get(b.groupId).name;for(const id of ['detail-dark','detail-light']){$(id).src=b.png;$(id).alt=b.name;}$('asset-id').textContent=b.id;$('asset-dimensions').textContent=`PNG ${b.pixelWidth} × ${b.pixelHeight} px / 建议显示 ${b.width} × ${b.height} px`;$('asset-enabled').textContent=b.isEnabled?'已启用':'默认停用';$('download-png').href=b.png;$('download-png').download=b.id+'.png';$('download-svg').href=b.svg;$('download-svg').download=b.id+'.svg';$('asset-dialog').showModal();}
-    let statusTimer;function notify(message){clearTimeout(statusTimer);$('status').textContent=message;$('status').hidden=false;statusTimer=setTimeout(()=>$('status').hidden=true,2500);}
-    $('search').addEventListener('input',e=>{state.query=e.target.value;render();});$('only-enabled').addEventListener('change',e=>{state.onlyEnabled=e.target.checked;render();});$('badge-size').addEventListener('change',e=>{state.height=Number(e.target.value);document.documentElement.style.setProperty('--badge-size',state.height+'px');});
-    document.querySelectorAll('[data-background]').forEach(btn=>btn.addEventListener('click',()=>{state.background=btn.dataset.background;document.querySelectorAll('[data-background]').forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));document.querySelectorAll('.catalog-grid').forEach(grid=>grid.classList.toggle('light',state.background==='light'));}));
-    $('reset-filters').addEventListener('click',()=>{state.query='';state.group='all';state.onlyEnabled=false;$('search').value='';$('only-enabled').checked=false;render();});
-    document.querySelector('.close-button').addEventListener('click',()=>$('asset-dialog').close());$('asset-dialog').addEventListener('click',e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.currentTarget.close();}});
-    $('copy-id').addEventListener('click',async()=>{const text=state.active.id;try{await navigator.clipboard.writeText(text);notify('已复制标识 ID');}catch{const range=document.createRange();range.selectNodeContents($('asset-id'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);notify('已选中 ID，请按 Ctrl+C 复制');}});
-    render();
+  }
+  function openDetail(badge) {
+    state.active = badge; $('asset-title').textContent = badge.name; $('asset-group').textContent = groups.get(badge.groupId)?.name ?? '';
+    for (const id of ['detail-dark', 'detail-light']) { $(id).src = adaptivePath(badge); $(id).alt = badge.name; $(id).style.colorScheme = 'inherit'; }
+    $('asset-id').textContent = badge.id;
+    $('asset-dimensions').textContent = `PNG ${badge.pixelWidth} × ${badge.pixelHeight} px / 建议显示 ${badge.width} × ${badge.height} px`;
+    $('asset-enabled').textContent = badge.isEnabled ? '已启用' : '默认停用'; refreshDownloads(); $('asset-dialog').showModal();
+  }
+  let statusTimer;
+  function notify(message) { clearTimeout(statusTimer); $('status').textContent = message; $('status').hidden = false; statusTimer = setTimeout(() => { $('status').hidden = true; }, 2500); }
+  $('search').addEventListener('input', event => { state.query = event.target.value; render(); });
+  $('only-enabled').addEventListener('change', event => { state.onlyEnabled = event.target.checked; render(); });
+  $('badge-size').addEventListener('change', event => { state.height = Number(event.target.value); document.documentElement.style.setProperty('--badge-size', `${state.height}px`); });
+  $('reset-filters').addEventListener('click', () => { state.query = ''; state.group = 'all'; state.onlyEnabled = false; $('search').value = ''; $('only-enabled').checked = false; render(); });
+  document.querySelector('.close-button').addEventListener('click', () => $('asset-dialog').close());
+  $('asset-dialog').addEventListener('click', event => {
+    if (event.target !== event.currentTarget) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) event.currentTarget.close();
+  });
+  $('copy-id').addEventListener('click', async () => {
+    if (!state.active) return;
+    try { await navigator.clipboard.writeText(state.active.id); notify('已复制标识 ID'); }
+    catch {
+      const range = document.createRange(); range.selectNodeContents($('asset-id')); const selection = window.getSelection();
+      if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+      notify('已选中 ID，请使用系统复制操作');
+    }
+  });
+  render();
+})();
   </script>
 </body>
 </html>
