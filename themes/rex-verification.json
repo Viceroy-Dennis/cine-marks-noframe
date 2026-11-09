@@ -163,7 +163,127 @@
   },
   "runtimeTested": false,
   "publication": {
-    "status": "pending"
+    "status": "verified",
+    "verifiedAt": "2026-11-09T01:53:04.553002+00:00",
+    "site": "https://viceroy-dennis.github.io/cine-marks-noframe",
+    "assetCommit": "270ce27c89645279ace4890211a7b8424cf7bb53",
+    "subscriptions": [
+      {
+        "file": "badges-rex-adaptive.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-adaptive.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      },
+      {
+        "file": "badges-rex.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      },
+      {
+        "file": "badges-adaptive.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      },
+      {
+        "file": "badges-light.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      },
+      {
+        "file": "badges-dark.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-dark.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      },
+      {
+        "file": "badges-rex-dark.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-dark.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      },
+      {
+        "file": "badges-web-adaptive.json",
+        "url": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-web-adaptive.json",
+        "httpStatus": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytesMatchLocal": true,
+        "allOtherFieldsPreserved": true
+      }
+    ],
+    "nativePngVerified": 310,
+    "secondaryImageChecks": [
+      {
+        "subscription": "web-adaptive",
+        "id": "stream-019",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "web-adaptive",
+        "id": "stream-001",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "web-adaptive",
+        "id": "custom_dolby-vision_8",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "light",
+        "id": "stream-019",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "light",
+        "id": "stream-001",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "light",
+        "id": "custom_dolby-vision_8",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "dark",
+        "id": "stream-019",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "dark",
+        "id": "stream-001",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      },
+      {
+        "subscription": "dark",
+        "id": "custom_dolby-vision_8",
+        "httpStatus": 200,
+        "bytesMatchLocal": true
+      }
+    ],
+    "failures": [],
+    "runtimeTested": false
   },
   "browserPreview": {
     "status": "passed",

@@ -114,5 +114,6 @@
       }
     },
     "preservedRuleFields": true
-  }
+  },
+  "historicalScope": "Records prior browser SVG/theme validation. badges-adaptive.json has since migrated to native PNG; the browser SVG export is now badges-web-adaptive.json. Current native publication evidence is rex-verification.json."
 }

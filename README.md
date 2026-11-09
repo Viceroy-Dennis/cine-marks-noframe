@@ -31,6 +31,8 @@ GitHub Pages 返回 JSON / SVG 对应的内容类型。PNG 地址锁定完整 Gi
 
 ## 发布验证
 
+线上 7 个订阅均返回 HTTP 200，JSON 与本地逐字节一致；310/310 个原生 PNG 的内容和 MIME 检查通过，0 缺图。
+
 原生 PNG 资产已完成全量检查：31 个模板的可见像素全部为纯白，279 个原色文件与源文件逐字节一致，全部 310 个尺寸和透明度通道不变。根据已核验检测阈值，在全分辨率及三种近似缩放采样下均为 31 个单色、279 个彩色，无误分类。CoreGraphics 的精确缩放与用户设备实际显示仍需原生复验。资产记录见 `themes/rex-build-manifest.json`；发布网络验证见 `themes/rex-verification.json`。
 
 构建器测试涵盖规则保留、原生 PNG、浏览器 SVG、别名一致、素材提交校验和历史发布目录保护。旧 SVG 导入 Rex 后全部变白的用户反馈保留在 `consumer-compatibility.json`；新入口避开该 SVG 解码路径。旧浏览器主题验证记录见 `themes/verification.json`。

@@ -1,43 +1,35 @@
 {
   "repository": "https://github.com/Viceroy-Dennis/cine-marks-noframe",
-  "assetCommit": "6a9af84304ad7f12743871786ba57644494457b9",
-  "subscriptionUrl": "https://raw.githubusercontent.com/Viceroy-Dennis/cine-marks-noframe/main/badges-noframe.json",
-  "verifiedAt": "2026-11-08T11:17:54.882724+00:00",
+  "assetCommit": "270ce27c89645279ace4890211a7b8424cf7bb53",
+  "commitWithSubscription": "9c96d6663a6c07b65d8bad5e58af5bfd1ba039d0",
+  "subscriptionUrl": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-adaptive.json",
+  "verifiedAt": "2026-11-09T01:53:04.553002+00:00",
   "subscriptionHttpStatus": 200,
   "subscriptionJsonParses": true,
   "configOnlyImageURLChanged": true,
-  "responseHeaders": {
-    "Cache-Control": "max-age=300",
-    "Content-Type": "text/plain; charset=utf-8",
-    "Access-Control-Allow-Origin": "*"
-  },
   "filters": 310,
   "groups": 15,
   "enabled": 293,
   "pngsVerified": 310,
   "failures": [],
-  "applicationImportTested": true,
-  "commitWithSubscription": "d4922f9117e49f38448093c56f3d177b57cb49de",
-  "themes": {
-    "site": "https://viceroy-dennis.github.io/cine-marks-noframe",
-    "verifiedAt": "2026-11-08T11:17:54.882724+00:00",
-    "subscriptions": {
-      "adaptive": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json",
-      "light": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json",
-      "dark": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-dark.json"
-    },
-    "imageChecks": {
-      "adaptive": 310,
-      "light": 310,
-      "dark": 310
-    },
-    "details": "themes/verification.json"
-  },
+  "applicationImportTested": false,
+  "applicationImportEvidence": "Native monochrome rendering statically verified in official Rex macOS 1.1 build24; delivered PNGs and public URLs verified; this package was not run inside Rex.",
   "rex": {
-    "light": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex.json",
-    "dark": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-dark.json",
-    "adaptiveStatus": "user_reported_failed",
-    "pngStatus": "http_verified_pending_rex_retest"
+    "adaptive": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-adaptive.json",
+    "aliases": [
+      "https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex.json",
+      "https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json"
+    ],
+    "requiredSetting": "黑白图标自适应",
+    "monochromeTemplates": 31,
+    "originalColorCopies": 279,
+    "details": "themes/rex-verification.json"
   },
-  "applicationImportEvidence": "User reported Rex SVG import failure; PNG entries await Rex retest."
+  "browserSvg": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-web-adaptive.json",
+  "previousSvgUserReport": "Old SVG subscription appeared all-white in Rex; entry is now migrated to native PNG.",
+  "fixedPng": {
+    "light": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json",
+    "dark": "https://viceroy-dennis.github.io/cine-marks-noframe/badges-dark.json"
+  },
+  "legacyDefaultPngAssetCommit": "6a9af84304ad7f12743871786ba57644494457b9"
 }
