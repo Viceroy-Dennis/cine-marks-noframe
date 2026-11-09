@@ -72,7 +72,7 @@ async function fixture(t) {
     assert.ok(relative.startsWith('cine-marks-theme-fixture-') && !relative.includes(path.sep));
     await rm(root, { recursive: true, force: true });
   });
-  for (const relative of ['scripts', 'badges/png', 'themes/light', 'themes/adaptive']) {
+  for (const relative of ['scripts', 'badges/png', 'themes/light', 'themes/adaptive', 'themes/rex']) {
     await mkdir(path.join(root, ...relative.split('/')), { recursive: true });
   }
   await copyFile(baseScript, path.join(root, 'scripts', 'build-github.mjs'));
@@ -80,6 +80,7 @@ async function fixture(t) {
   for (const filter of sourceConfig().filters) {
     await writeFile(path.join(root, 'badges', 'png', `${filter.id}.png`), png());
     await writeFile(path.join(root, 'themes', 'light', `${filter.id}.png`), png(40));
+    await writeFile(path.join(root, 'themes', 'rex', `${filter.id}.png`), png(255));
     await writeFile(path.join(root, 'themes', 'adaptive', `${filter.id}.svg`), svg);
   }
   await runGit(root, 'init', '--initial-branch=main');
@@ -87,14 +88,15 @@ async function fixture(t) {
   return { root, repository, siteBase, assetRef: await runGit(root, 'rev-parse', 'HEAD') };
 }
 
-test('all three subscriptions only replace imageURL and preserve opaque rules and metadata', () => {
+test('native and browser subscriptions only replace imageURL and preserve opaque rules and metadata', () => {
   const source = sourceConfig();
   const before = structuredClone(source);
   const subscriptions = createThemeSubscriptions(source, { repository, assetRef: ref, siteBase });
   assert.deepEqual(source, before);
   assert.equal(subscriptions.dark.filters[0].imageURL, `https://raw.githubusercontent.com/${repository}/${ref}/badges/png/first.png`);
   assert.equal(subscriptions.light.filters[0].imageURL, `https://raw.githubusercontent.com/${repository}/${ref}/themes/light/first.png`);
-  assert.equal(subscriptions.adaptive.filters[0].imageURL, `${siteBase}/themes/releases/${ref}/first.svg`);
+  assert.equal(subscriptions.adaptive.filters[0].imageURL, `https://raw.githubusercontent.com/${repository}/${ref}/themes/rex/first.png`);
+  assert.equal(subscriptions['web-adaptive'].filters[0].imageURL, `${siteBase}/themes/releases/${ref}/first.svg`);
   for (const subscription of Object.values(subscriptions)) {
     subscription.filters.forEach((filter, index) => { filter.imageURL = source.filters[index].imageURL; });
     assert.deepEqual(subscription, source);
@@ -111,14 +113,14 @@ test('site base and explicit SHA/repository inputs reject malformed values', () 
   assert.throws(() => createThemeSubscriptions(sourceConfig(), { repository: 'owner/../repo', siteBase, assetRef: ref }));
 });
 
-test('build emits three theme JSON files, identical PNG Rex aliases and immutable release SVG copies', async t => {
+test('build emits native adaptive PNG aliases, separate browser SVG and immutable release copies', async t => {
   const options = await fixture(t);
   const build = await buildThemeSubscriptions(options);
   assert.equal(build.filters, 2);
-  for (const theme of ['dark', 'light', 'adaptive']) {
+  for (const theme of ['dark', 'light', 'adaptive', 'web-adaptive']) {
     assert.deepEqual(JSON.parse(await readFile(path.join(options.root, `badges-${theme}.json`), 'utf8')), build.subscriptions[theme]);
   }
-  for (const [alias, theme] of [['rex', 'light'], ['rex-dark', 'dark']]) {
+  for (const [alias, theme] of [['rex', 'adaptive'], ['rex-adaptive', 'adaptive'], ['rex-dark', 'dark']]) {
     const aliasBytes = await readFile(path.join(options.root, `badges-${alias}.json`));
     assert.deepEqual(aliasBytes, await readFile(path.join(options.root, `badges-${theme}.json`)));
     for (const filter of JSON.parse(aliasBytes.toString('utf8')).filters) {
@@ -143,8 +145,8 @@ test('modified light PNG is rejected before generated JSON and Rex aliases are o
   }
 });
 
-test('both Rex alias destinations are validated before any output is written', async t => {
-  for (const alias of ['rex', 'rex-dark']) {
+test('all Rex alias destinations are validated before any output is written', async t => {
+  for (const alias of ['rex', 'rex-adaptive', 'rex-dark']) {
     await t.test(alias, async child => {
       const options = await fixture(child);
       await mkdir(path.join(options.root, `badges-${alias}.json`));
@@ -156,6 +158,15 @@ test('both Rex alias destinations are validated before any output is written', a
       assert.equal(existsSync(path.join(options.root, 'themes', 'releases', options.assetRef)), false);
     });
   }
+});
+
+test('native PNG changes are rejected instead of publishing stale or uncommitted template images', async t => {
+  const options = await fixture(t);
+  await writeFile(path.join(options.root, 'badges-rex.json'), 'prior native subscription');
+  await runGit(options.root, 'update-index', '--assume-unchanged', 'themes/rex/first.png');
+  await writeFile(path.join(options.root, 'themes', 'rex', 'first.png'), png(0));
+  await assert.rejects(prepareThemeBuild(options), /source bytes differ/);
+  assert.equal(await readFile(path.join(options.root, 'badges-rex.json'), 'utf8'), 'prior native subscription');
 });
 
 test('assume-unchanged SVG modifications cannot bypass blob equality', async t => {

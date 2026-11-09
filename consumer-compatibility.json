@@ -1,15 +1,30 @@
 {
   "consumer": "Rex",
-  "adaptiveSvg": {
-    "status": "user_reported_failed",
-    "symptom": "All icons appear white after import and become invisible on a light background.",
-    "rootCause": "Unconfirmed; not reproduced inside Rex by the authoring environment."
+  "nativeAdaptivePng": {
+    "subscription": "badges-rex-adaptive.json",
+    "aliases": [
+      "badges-rex.json",
+      "badges-adaptive.json"
+    ],
+    "mechanism": "Rex detects whole-image monochrome PNGs and uses native semantic label tint when the application switch is enabled.",
+    "requiredApplicationSetting": "资源卡片 Badge → 黑白图标自适应",
+    "monochromeTemplates": 31,
+    "originalColorImages": 279,
+    "evidence": "docs/rex-native-adaptation.md",
+    "detectorEvidence": "docs/rex-image-detector.md",
+    "staticallyInspectedVersion": "macOS 1.1 build 24 arm64",
+    "runtimeTested": false,
+    "limitation": "Colored images, including white lettering within a colored logo, remain unchanged. Native runtime on the user device still requires confirmation."
   },
-  "pngReplacement": {
-    "light": "badges-rex.json",
-    "dark": "badges-rex-dark.json",
-    "status": "pending_consumer_retest",
-    "automaticThemeSwitching": false
+  "browserAdaptiveSvg": {
+    "subscription": "badges-web-adaptive.json",
+    "rexStatus": "previous_svg_subscription_user_reported_failed",
+    "symptom": "All icons appeared white after SVG import and were invisible on light backgrounds.",
+    "rootCause": "SVG failure itself was not reproduced in Rex; native PNG avoids that decoding path."
+  },
+  "fixedThemePng": {
+    "light": "badges-light.json",
+    "dark": "badges-dark.json"
   },
   "preservedRuleFields": true
 }

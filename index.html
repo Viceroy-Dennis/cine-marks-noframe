@@ -59,7 +59,7 @@ h1{font-size:52px;line-height:1.2;letter-spacing:-1.5px;font-weight:650}
 
   </style>
   <style id="theme-preview-style">
-/* The embedding surface supplies the used color scheme to each external SVG. */
+/* Native PNG preview: only the reviewed monochrome masks receive a theme color. */
 :root{--bg:#101214;--surface:#171b1e;--edge:#343c43;--text:#f3f3f2;--muted:#a3adb5;--mint:#d8dfdd;--secondary:#c1cad0;--soft:#14171a;--button:#23282d;--button-edge:#46515a;--selected:#293a33;--selected-text:#dcece4;--hover:#ffffff09;--active:#3a434f;--primary:#d4deda;--primary-text:#1a2720}
 :root[data-theme="light"]{color-scheme:light;--bg:#fafaf7;--surface:#fff;--edge:#d3d9da;--text:#182328;--muted:#586770;--mint:#24684c;--secondary:#3c4e58;--soft:#f0f2ef;--button:#fff;--button-edge:#bac5c8;--selected:#dceae1;--selected-text:#204b37;--hover:#15352608;--active:#e0e9e3;--primary:#245e46;--primary-text:#fff}
 :root[data-theme="dark"]{color-scheme:dark}
@@ -80,6 +80,10 @@ body{background:var(--bg);color:var(--text)}
 .catalog-grid{background:var(--bg);border-color:var(--edge);color-scheme:inherit}
 .asset:hover{background:var(--hover);border-color:var(--button-edge)}
 .asset img,.badge,.preview-area img{color-scheme:inherit}
+.native-monochrome{filter:brightness(0) invert(1)}
+:root[data-theme="light"] .native-monochrome{filter:brightness(0)}
+.preview-area .native-monochrome{filter:brightness(0) invert(1)!important}
+.preview-area.light .native-monochrome{filter:brightness(0)!important}
 .disabled-mark{color:var(--muted)}.empty{border-color:var(--button-edge)}
 .site-footer a:hover{color:var(--text)}
 dialog{background:var(--surface);border-color:var(--button-edge);color:var(--text)}
@@ -115,11 +119,12 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
       <footer class="board-footer"><p class="principles">品牌原色 · 来源可查 · 透明画布</p><div class="size-example"><span>实际显示 · 24 px</span><div data-badges="stream-012,r4,custom_dolby-vision_8,custom_dolby-atmos_19,sub-zh"></div></div></footer>
     </section>
     <section class="library" id="library" aria-labelledby="library-title">
-      <div class="library-heading"><div><h2 id="library-title">完整标识库</h2><p>310 个标识，15 个分类。点击标识，查看原尺寸与下载文件。</p></div><div class="download-actions"><a class="action primary" href="badges-rex.json" download="badges-rex.json"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载 Rex 浅色 PNG</a><a class="action" href="badges.relative.json" download="badges.relative.json">下载托管源配置</a></div></div>
+      <div class="library-heading"><div><h2 id="library-title">完整标识库</h2><p>310 个标识，15 个分类。点击标识，查看原尺寸与下载文件。</p></div><div class="download-actions"><a class="action primary" href="badges-rex-adaptive.json" download="badges-rex-adaptive.json"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>下载 Rex 自适应订阅</a><a class="action" href="badges.relative.json" download="badges.relative.json">下载托管源配置</a></div></div>
       <aside class="subscription-note" id="theme-subscriptions" aria-label="主题订阅说明">
         <p class="subscription-title">主题订阅</p>
-        <div class="subscription-links"><a href="badges-rex.json" download="badges-rex.json">Rex 浅色 PNG</a><a href="badges-rex-dark.json" download="badges-rex-dark.json">Rex 深色 PNG</a><a href="badges-adaptive.json" download="badges-adaptive.json">网页自适应 SVG</a></div>
-        <p>Rex 导入 SVG 后全白的问题已记录，请改用对应的 PNG 入口；PNG 不会自动随主题变色。本网页预览可跟随系统，网页 SVG 入口仅用于支持主题媒体查询的渲染器。</p>
+        <div class="subscription-links"><a href="badges-rex-adaptive.json" download="badges-rex-adaptive.json">Rex 黑白自适应</a><a href="badges-light.json" download="badges-light.json">固定浅色 PNG</a><a href="badges-dark.json" download="badges-dark.json">固定深色 PNG</a><a href="badges-web-adaptive.json" download="badges-web-adaptive.json">网页自适应 SVG</a></div>
+        <p>导入 Rex 订阅后，在「资源卡片 Badge」页打开「黑白图标自适应」。31 枚单色图交给 Rex 跟随深浅模式，其余 279 枚保留原色。旧 badges-adaptive.json 与 badges-rex.json 已同步到此 PNG 方案。</p>
+        <p>本页模拟 Rex 的单色切换，未替代 Rex 真机验证。彩色 Logo 内的白字不会局部变色；按固定背景使用时，可选择固定浅色或深色版本。</p>
         <span class="theme-current" id="theme-current" aria-live="polite"></span>
       </aside>
       <div class="toolbar"><div class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="search" aria-label="搜索标识" placeholder="搜索平台、格式、语言或制作组…" autocomplete="off"></div><label for="badge-size">显示高度</label><select id="badge-size"><option value="24">24 px</option><option value="32" selected>32 px</option><option value="48">48 px</option></select><div class="background-control" role="group" aria-label="预览背景"><button type="button" data-background="dark" aria-pressed="true">深色</button><button type="button" data-background="light" aria-pressed="false">浅色</button></div><label class="toggle"><input type="checkbox" id="only-enabled">仅看已启用</label></div>
@@ -128,7 +133,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
     </section>
   </main>
   <footer class="site-footer"><span>映标 · CINE MARKS</span><nav aria-label="文件说明"><a href="README.md">使用说明</a><a href="design-prompt.md">设计思路与提示词</a><a href="sources.json">素材来源</a></nav></footer>
-  <dialog id="asset-dialog" aria-labelledby="asset-title"><div class="dialog-heading"><div><h2 id="asset-title"></h2><p id="asset-group"></p></div><button class="close-button" type="button" aria-label="关闭详情">×</button></div><div class="preview-area"><img id="detail-dark" alt=""></div><div class="preview-area light"><img id="detail-light" alt=""></div><dl class="asset-meta"><dt>标识 ID</dt><dd id="asset-id"></dd><dt>文件尺寸</dt><dd id="asset-dimensions"></dd><dt>原始状态</dt><dd id="asset-enabled"></dd></dl><div class="dialog-actions"><a class="action primary" id="download-png" download>下载 PNG</a><a class="action" id="download-svg" download>下载 SVG</a><button class="action" id="copy-id" type="button">复制 ID</button></div><p class="dialog-note">上下分别预览深色与浅色背景。PNG 下载随当前页面主题选择；自适应 SVG 在支持主题媒体查询的查看器中切换。透明画布，无额外边框；SVG 包含矢量或内嵌位图，以素材清单为准。</p></dialog>
+  <dialog id="asset-dialog" aria-labelledby="asset-title"><div class="dialog-heading"><div><h2 id="asset-title"></h2><p id="asset-group"></p></div><button class="close-button" type="button" aria-label="关闭详情">×</button></div><div class="preview-area"><img id="detail-dark" alt=""></div><div class="preview-area light"><img id="detail-light" alt=""></div><dl class="asset-meta"><dt>标识 ID</dt><dd id="asset-id"></dd><dt>文件尺寸</dt><dd id="asset-dimensions"></dd><dt>原始状态</dt><dd id="asset-enabled"></dd></dl><div class="dialog-actions"><a class="action primary" id="download-png" download>下载 PNG</a><a class="action" id="download-svg" download>下载 SVG</a><button class="action" id="copy-id" type="button">复制 ID</button></div><p class="dialog-note">上下模拟同一 Rex PNG 在深浅背景中的显示：单色图使用主题文字颜色，彩色图保持原样。下载的单色 PNG 本身为白色透明模板，由 Rex 的「黑白图标自适应」开关负责换色。网页 SVG 使用另一套浏览器适配方式，不用于 Rex 导入。</p></dialog>
   <div class="status" id="status" role="status" hidden></div>
   <script id="catalog-data" type="application/json">{
   "groups": [
@@ -10797,11 +10802,12 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
   }
   const state = { query: '', group: 'all', onlyEnabled: false, height: 32, active: null, theme: savedTheme(), effectiveTheme: 'light' };
   const versioned = (url, badge) => `${url}?v=${encodeURIComponent(badge.sourceSha256.slice(0, 16))}`;
+  const nativeMonochrome = new Set(['stream-014','stream-017','stream-018','stream-019','stream-037','stream-040','stream-045','stream-053','stream-055','stream-070','stream-080','stream-100','stream-101','stream-122','s-uhdbd','stream-cctv','stream-sonycore','stream-dazn','custom_dolby-vision_8','custom_imax-enhanced_13','custom_imax_14','custom_dolby-atmos_19','custom_truehd_20','custom_dolby-digital-plus_21','custom_dolby-digital_22','s-bluray','stream-nhk','custom_dolby-vision-p5','custom_dolby-vision-p7','custom_dolby-vision-p8','custom_sdr_12']);
   const adaptivePath = badge => versioned(`themes/adaptive/${encodeURIComponent(badge.id)}.svg`, badge);
-  const pngPath = badge => versioned(state.effectiveTheme === 'light' ? `themes/light/${encodeURIComponent(badge.id)}.png` : badge.png, badge);
+  const pngPath = badge => versioned(`themes/rex/${encodeURIComponent(badge.id)}.png`, badge);
   function image(badge, className = 'badge') {
     const img = document.createElement('img');
-    img.src = adaptivePath(badge); img.alt = badge.name; img.className = className;
+    img.src = pngPath(badge); img.alt = badge.name; img.className = `${className}${nativeMonochrome.has(badge.id) ? ' native-monochrome' : ''}`;
     img.width = badge.width; img.height = badge.height; img.decoding = 'async'; img.style.colorScheme = 'inherit';
     return img;
   }
@@ -10809,11 +10815,11 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
     if (!state.active) return;
     const badge = state.active;
     $('download-png').href = pngPath(badge);
-    $('download-png').download = `${badge.id}-${state.effectiveTheme}.png`;
-    $('download-png').textContent = `下载${state.effectiveTheme === 'light' ? '浅色' : '深色'} PNG`;
+    $('download-png').download = `${badge.id}-rex.png`;
+    $('download-png').textContent = '下载 Rex PNG';
     $('download-svg').href = adaptivePath(badge);
     $('download-svg').download = `${badge.id}-adaptive.svg`;
-    $('download-svg').textContent = '下载自适应 SVG';
+    $('download-svg').textContent = '下载网页 SVG';
   }
   function applyTheme() {
     state.effectiveTheme = state.theme === 'system' ? (media?.matches ? 'dark' : 'light') : state.theme;
@@ -10880,7 +10886,7 @@ dialog{background:var(--surface);border-color:var(--button-edge);color:var(--tex
   }
   function openDetail(badge) {
     state.active = badge; $('asset-title').textContent = badge.name; $('asset-group').textContent = groups.get(badge.groupId)?.name ?? '';
-    for (const id of ['detail-dark', 'detail-light']) { $(id).src = adaptivePath(badge); $(id).alt = badge.name; $(id).style.colorScheme = 'inherit'; }
+    for (const id of ['detail-dark', 'detail-light']) { $(id).src = pngPath(badge); $(id).alt = badge.name; $(id).classList.toggle('native-monochrome', nativeMonochrome.has(badge.id)); }
     $('asset-id').textContent = badge.id;
     $('asset-dimensions').textContent = `PNG ${badge.pixelWidth} × ${badge.pixelHeight} px / 建议显示 ${badge.width} × ${badge.height} px`;
     $('asset-enabled').textContent = badge.isEnabled ? '已启用' : '默认停用'; refreshDownloads(); $('asset-dialog').showModal();

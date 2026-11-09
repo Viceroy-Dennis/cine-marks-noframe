@@ -1,0 +1,47 @@
+{
+  "method": "Read-only ARM64 Mach-O disassembly; no app execution",
+  "application": "Rex macOS 1.1 (24)",
+  "binarySha256": "94f6e651ed800d5ccc3a292e5b670fef55594d7222bccf8e1a374a8af55a5789",
+  "detector": {
+    "address": "0x102581420",
+    "dimensions": "min(width,128) by min(height,128)",
+    "colorSpace": "DeviceRGB",
+    "bitmapInfo": "0x4001",
+    "bitsPerComponent": 8,
+    "interpolationQuality": 3,
+    "visibleAlphaMinimum": 8,
+    "unpremultiply": "min(255, floor((channel*255+floor(alpha/2))/alpha))",
+    "maximumChannelDifference": 8,
+    "blackMaximumChannel": 20,
+    "whiteMinimumChannel": 235,
+    "minimumSameToneVisibleRatio": 0.98,
+    "scope": "whole sampled image; black and white ratios are tested separately",
+    "booleanCallerAddress": "0x102582904",
+    "monochromeReturnValues": [0, 1],
+    "nonMonochromeReturnValues": [2, 3]
+  },
+  "renderer": {
+    "networkLoadFunction": "0x100e5ec1c",
+    "toneLookupFunction": "0x1025819dc",
+    "toneCompletionFunction": "0x100e5f4b0",
+    "appearanceUpdateFunction": "0x100e5dc08",
+    "conditions": ["badge.adaptsMonochromeImage", "view.imageIsMonochrome"],
+    "setTemplateCall": "0x100e5dd74",
+    "semanticColor": "NSColor.labelColor",
+    "labelColorCall": "0x100e5ddc8",
+    "setContentTintColorCall": "0x100e5dde8",
+    "textColorControlsImageTint": false,
+    "recolorsOnlyWhitePartsOfColoredLogo": false,
+    "specialSubscriptionKeyOrImageURLPrefixRequired": false
+  },
+  "preference": {
+    "key": "adaptiveResourceBadgeIconColors",
+    "label": "黑白图标自适应",
+    "detail": "逐张检测，纯黑或纯白图标会自动适配深浅模式；彩色图标保持原样。"
+  },
+  "limitations": [
+    "Direct evidence is for the downloaded macOS build; no iOS binary or runtime test was performed.",
+    "Python image resampling is an approximation of CoreGraphics, not a native app test.",
+    "Internal memory fields are not additional JSON import keys."
+  ]
+}

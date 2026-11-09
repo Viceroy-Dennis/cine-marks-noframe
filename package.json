@@ -7,7 +7,8 @@
     "build:github": "node scripts/build-github.mjs",
     "test": "node --test scripts/build-github.test.mjs scripts/build-theme-subscriptions.test.mjs",
     "build:themes": "node scripts/build-theme-assets.cjs",
-    "build:theme-subscriptions": "node scripts/build-theme-subscriptions.mjs"
+    "build:theme-subscriptions": "node scripts/build-theme-subscriptions.mjs",
+    "build:rex": "node scripts/build-rex-assets.cjs"
   },
   "engines": {
     "node": ">=20"

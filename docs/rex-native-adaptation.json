@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-11-09",
+  "method": "Read-only extraction of official public DMG, localization resources, and Swift nominal type / field descriptors; application not installed or executed.",
+  "scope": {
+    "platform": "macOS",
+    "architecture": "arm64",
+    "version": "1.1",
+    "build": "24",
+    "minimumOS": "14.0",
+    "bundleIdentifier": "tv.rexnow.app",
+    "runtimeTested": false
+  },
+  "source": {
+    "website": "https://rexnow.tv/",
+    "downloadURL": "https://updates.rexnow.app/macos/stable/releases/24/Rex-1.1-24-arm64-5505197161da.dmg?release=24",
+    "dmgBytes": 116307892,
+    "dmgSHA256": "5505197161daf01c18ee022c2b379ffbe719cd588523a0c2036f3eb72861368b",
+    "executableSHA256": "94f6e651ed800d5ccc3a292e5b670fef55594d7222bccf8e1a374a8af55a5789",
+    "localizationPath": "Rex.app/Contents/Resources/zh-Hans.lproj/Settings.strings",
+    "metadataPath": "Rex.app/Contents/MacOS/Rex",
+    "metadataSections": ["__swift5_types", "__swift5_fieldmd", "__swift5_reflstr"]
+  },
+  "officialLocalizedFeature": {
+    "titleKey": "settings.resourceBadge.page.adaptive",
+    "title": "黑白图标自适应",
+    "descriptionKey": "settings.resourceBadge.page.adaptive.detail",
+    "description": "逐张检测，纯黑或纯白图标会自动适配深浅模式；彩色图标保持原样。",
+    "pageTitleKey": "settings.resourceBadge.page.title",
+    "pageTitle": "资源卡片 Badge"
+  },
+  "knownNavigationLabels": {
+    "settings.title": "设置",
+    "settings.interface.page.title": "外观与交互",
+    "settings.interface.page.section.icons": "图标",
+    "settings.interface.page.icons.badge": "资源卡片 Badge"
+  },
+  "navigationLimit": "Labels are extracted from the official build. Actual menu hierarchy, switch position, and user-device default state have not been checked in a running application.",
+  "filterModel": {
+    "type": "RexBadgeCore.ResourceBadgeFilter",
+    "descriptorAddress": "0x103705e74",
+    "fields": ["id", "name", "pattern", "tagColor", "borderColor", "textColor", "tagStyle", "imageURL", "isEnabled", "groupId"],
+    "codingKeysType": "RexBadgeCore.ResourceBadgeFilter.<anonymous>.CodingKeys",
+    "codingKeysDescriptorAddress": "0x103706020",
+    "codingKeyCases": ["id", "name", "pattern", "tagColor", "borderColor", "textColor", "tagStyle", "imageURL", "isEnabled", "groupId"],
+    "decodeControlFlowFullyVerified": false
+  },
+  "implementationSignals": {
+    "imageAnalysisType": "RexBadgeCore.ResourceBadgeImageTone",
+    "preferenceString": "adaptiveResourceBadgeIconColors",
+    "packCenterFields": ["persistAdaptiveIconColors", "lastAdaptiveIconColorsEnabled"],
+    "presentationModelsWithBooleanAdaptsMonochromeImage": ["RexMacUI.MacResourceBadge", "RexMacUI.MacBadgeRecord", "RexPlayerCore.PlaybackResource.Presentation.Badge"]
+  },
+  "interpretation": "The official build provides an application-side monochrome image adaptation setting. Use normal PNG resources and enable the setting. Do not add speculative theme/renderMode/isTemplate/adaptsMonochromeImage keys to the imported badge rules.",
+  "limits": [
+    "Evidence is specific to the inspected macOS 1.1 build 24 and does not establish the version or behavior on the user's device.",
+    "The official description promises per-image black/white adaptation and preservation of colorful images, not selective recoloring of white lettering inside a colorful logo.",
+    "This metadata and localization review is not a Rex runtime rendering test, nor SVG/media-query compatibility proof.",
+    "No application binary, full metadata dump, or application code is included in this evidence artifact."
+  ]
+}

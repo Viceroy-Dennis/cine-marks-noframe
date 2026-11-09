@@ -1,0 +1,194 @@
+{
+  "scope": "Static assets and approximate detector simulation; not a Rex runtime test.",
+  "assets": {
+    "auditDate": "2026-11-09",
+    "pass": true,
+    "failures": [],
+    "counts": {
+      "sourcePng": 310,
+      "generatedPng": 310,
+      "audited": 310,
+      "template": 31,
+      "preserved": 279,
+      "protectedNativeContainers": 13,
+      "sourceHashesMatchThemeMap": 310,
+      "sourceHashesMatchRexMap": 310,
+      "dimensionsExact": 310,
+      "alphaExact": 310,
+      "templateVisibleRGBAll255": 31,
+      "preservedByteEqual": 279,
+      "protectedByteEqual": 13
+    },
+    "templateIds": [
+      "custom_dolby-atmos_19",
+      "custom_dolby-digital-plus_21",
+      "custom_dolby-digital_22",
+      "custom_dolby-vision-p5",
+      "custom_dolby-vision-p7",
+      "custom_dolby-vision-p8",
+      "custom_dolby-vision_8",
+      "custom_imax-enhanced_13",
+      "custom_imax_14",
+      "custom_sdr_12",
+      "custom_truehd_20",
+      "s-bluray",
+      "s-uhdbd",
+      "stream-014",
+      "stream-017",
+      "stream-018",
+      "stream-019",
+      "stream-037",
+      "stream-040",
+      "stream-045",
+      "stream-053",
+      "stream-055",
+      "stream-070",
+      "stream-080",
+      "stream-100",
+      "stream-101",
+      "stream-122",
+      "stream-cctv",
+      "stream-dazn",
+      "stream-nhk",
+      "stream-sonycore"
+    ]
+  },
+  "classification": {
+    "scope": "Read-only asset audit with approximate Python simulation of statically recovered Rex macOS detector. Not a native runtime test.",
+    "rasterizationLimitation": "Pillow per-channel resampling differs from CoreGraphics high-quality interpolation and DeviceRGB conversion. Three resamplers bound likely outcomes; native equivalence is not asserted.",
+    "count": 310,
+    "summaries": {
+      "fullResolution": {
+        "color": 279,
+        "white": 31
+      },
+      "sampledBicubic": {
+        "color": 279,
+        "white": 31
+      },
+      "sampledLanczos": {
+        "color": 279,
+        "white": 31
+      },
+      "sampledBilinear": {
+        "color": 279,
+        "white": 31
+      }
+    },
+    "colorByteIdenticalCount": 279,
+    "alphaUnchangedCount": 310,
+    "closestNonMonoWhite": [
+      {
+        "id": "stream-117",
+        "ratio": 0.9551087854585514
+      },
+      {
+        "id": "stream-espn",
+        "ratio": 0.8910500146241591
+      },
+      {
+        "id": "stream-038",
+        "ratio": 0.8721920991479474
+      },
+      {
+        "id": "stream-015",
+        "ratio": 0.8115183246073299
+      },
+      {
+        "id": "stream-146",
+        "ratio": 0.7953693495038588
+      },
+      {
+        "id": "custom_dts-x_23",
+        "ratio": 0.761056105610561
+      },
+      {
+        "id": "stream-021",
+        "ratio": 0.7332115121059845
+      },
+      {
+        "id": "studio-xigua",
+        "ratio": 0.6990526103608143
+      },
+      {
+        "id": "stream-125",
+        "ratio": 0.6983865656898255
+      },
+      {
+        "id": "stream-002",
+        "ratio": 0.6777434312210201
+      }
+    ],
+    "errors": []
+  },
+  "builderInputValidation": {
+    "passed": true,
+    "cases": [
+      {
+        "name": "missing mode",
+        "pass": true,
+        "rejectedBeforeWrites": true,
+        "error": "Missing or unsupported Rex mode: stream-001"
+      },
+      {
+        "name": "unsupported mode",
+        "pass": true,
+        "rejectedBeforeWrites": true,
+        "error": "Missing or unsupported Rex mode: stream-001"
+      },
+      {
+        "name": "missing hash",
+        "pass": true,
+        "rejectedBeforeWrites": true,
+        "error": "Missing or invalid Rex source hash: stream-001"
+      },
+      {
+        "name": "mismatched audited hash",
+        "pass": true,
+        "rejectedBeforeWrites": true,
+        "error": "Rex source hash differs from theme audit: stream-001"
+      },
+      {
+        "name": "changed source bytes",
+        "pass": true,
+        "rejectedBeforeWrites": true,
+        "error": "Re-audit changed source before rendering: stream-001"
+      }
+    ]
+  },
+  "builderTests": {
+    "passed": 23,
+    "failed": 0,
+    "command": "node --test --test-isolation=none scripts/build-github.test.mjs scripts/build-theme-subscriptions.test.mjs"
+  },
+  "runtimeTested": false,
+  "publication": {
+    "status": "pending"
+  },
+  "browserPreview": {
+    "status": "passed",
+    "nativeRuntimeTest": false,
+    "desktop": [
+      1265,
+      712
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "loadedCatalogImages": 310,
+    "brokenCatalogImages": 0,
+    "templateClassCount": 31,
+    "originalColorImagesWithFilter": 0,
+    "darkTemplateFilter": "brightness(0) invert(1)",
+    "lightTemplateFilter": "brightness(0)",
+    "consoleErrors": 0,
+    "testedInteractions": [
+      "switch dark",
+      "switch light",
+      "open iTunes details",
+      "check same PNG on two surfaces"
+    ],
+    "mobileHorizontalOverflow": false
+  }
+}

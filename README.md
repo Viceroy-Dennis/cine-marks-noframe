@@ -6,15 +6,20 @@
 
 | 入口 | 适用情况 | 固定订阅地址 |
 | --- | --- | --- |
-| **Rex 浅色 PNG** | Rex 浅色资源列表；纯 PNG，不依赖 SVG 主题 | [https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex.json) |
-| **Rex 深色 PNG** | Rex 深色资源列表；纯 PNG，不依赖 SVG 主题 | [https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-dark.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-dark.json) |
-| 网页自适应 SVG | 已验证浏览器；不用于当前 Rex 导入 | [https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-adaptive.json) |
+| **Rex 黑白自适应** | 单色图跟随主题，彩色图保持原样；需打开 Rex 对应开关 | [badges-rex-adaptive.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-rex-adaptive.json) |
+| 固定浅色 PNG | 固定用于浅色背景 | [badges-light.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-light.json) |
+| 固定深色 PNG | 固定用于深色背景 | [badges-dark.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-dark.json) |
+| 网页自适应 SVG | 浏览器媒体查询；不用于 Rex 导入 | [badges-web-adaptive.json](https://viceroy-dennis.github.io/cine-marks-noframe/badges-web-adaptive.json) |
 
-**Rex 兼容性记录：用户报告 SVG 自适应订阅导入后全部变白，浅色背景不可见。** 当前停止向 Rex 推荐该 SVG 入口。`badges-rex.json` 与浅色 PNG 配置逐字一致，`badges-rex-dark.json` 与深色 PNG 配置逐字一致，不使用 SVG、CSS 媒体查询或内嵌 data URI。先移除或停用旧的自适应订阅，再用相应 PNG 地址重新导入，避免同 ID 的旧条目继续生效。PNG 方案仍需在 Rex 实际复验；如果 PNG 也变白，需要检查应用自身的染色或显示设置，不能通过反复改图片保证解决。
+在 Rex 的 **「资源卡片 Badge」** 页面导入上述 Rex 地址，并开启 **「黑白图标自适应」**。31 枚单色图使用透明白色模板，Rex 检测后按当前系统文字颜色显示，浅色界面深色、深色界面浅色；其余 279 枚沿用原图字节，保留彩色、渐变及原生品牌底板。iTunes 保留用户指定的苹果 + iTunes 横向字标。
 
-PNG 不会自动读取应用背景。Rex 浅色、深色应选择对应入口；目前没有证据表明此配置格式提供两套图片的自动主题切换字段。旧 `badges-light.json`、`badges-dark.json` 继续分别作为浅色、深色别名；`badges-noframe.json` 保留深色 PNG 兼容行为。
+**旧地址已迁移：** `badges-adaptive.json` 和 `badges-rex.json` 与 `badges-rex-adaptive.json` 完全一致，均为原生 PNG 订阅。刷新原订阅即可取得新 PNG 地址；如果仍显示旧 SVG，请停用旧导入项，再导入新地址。`badges-rex-dark.json` 与 `badges-noframe.json` 保留固定深色兼容行为。历史 `themes/releases/` 图片继续保留。
 
-网页预览的自适应 SVG 使用 `prefers-color-scheme`，宿主必须正确设置 `color-scheme: light` 或 `dark`。浏览器中的主题测试不能证明 Rex 的原生解码支持。三个主题与两个 Rex 别名均保持原配置的 ID、规则和其余字段，仅修改 `imageURL`。
+**实现证据与验证范围：** 已静态核验 Rex 官网 macOS 1.1 build 24 安装包的设置文案、订阅模型、逐图检测及原生模板着色路径，见 [原生功能证据](docs/rex-native-adaptation.md) 和 [图像检测机制](docs/rex-image-detector.md)。PNG 自身不读取背景，是 Rex 的开关与渲染器负责切换。没有向 JSON 添加未经支持的主题字段。尚未在用户设备运行 Rex 验证此包，也不把网页模拟当成真机结果。
+
+Rex 按整张图片检测，**彩色 Logo 中的白字不会局部变黑**。31 个单色模板包含 25 个已有黑白标识，以及 Blu-ray、NHK、Dolby Vision P5/P7/P8、SDR 六个中性灰标识；源文件和原色版本仍保留。需要彩色图白字局部适配时，固定浅色 PNG 与网页 SVG 仍提供此前逐项审核的变体。
+
+网页预览使用 PNG，并仅对这 31 枚模板模拟主题文字颜色。独立的网页 SVG 使用 `prefers-color-scheme`，需要宿主正确设置 `color-scheme`。所有订阅继续保留原配置的 ID、规则和其余字段，仅修改 `imageURL`。
 
 GitHub Pages 返回 JSON / SVG 对应的内容类型。PNG 地址锁定完整 Git 提交；SVG 放入 `themes/releases/<素材提交>/`，历史发布目录保留，避免更新覆盖已发布图片。GitHub 的 CDN 缓存及客户端刷新频率可能延迟更新。
 
@@ -26,9 +31,9 @@ GitHub Pages 返回 JSON / SVG 对应的内容类型。PNG 地址锁定完整 Gi
 
 ## 发布验证
 
-自适应 SVG、浅色 PNG、深色 PNG 三个订阅均返回 HTTP 200 和 application/json，全部 930 个远程图片地址与本地文件逐字节一致，0 缺失。浏览器已验证同一 SVG 在深浅背景分别显示对应前景。详见 `themes/verification.json`。
+原生 PNG 资产已完成全量检查：31 个模板的可见像素全部为纯白，279 个原色文件与源文件逐字节一致，全部 310 个尺寸和透明度通道不变。根据已核验检测阈值，在全分辨率及三种近似缩放采样下均为 31 个单色、279 个彩色，无误分类。CoreGraphics 的精确缩放与用户设备实际显示仍需原生复验。资产记录见 `themes/rex-build-manifest.json`；发布网络验证见 `themes/rex-verification.json`。
 
-固定订阅 JSON 与全部 310 张远程 PNG 已通过 HTTP 检查；每张图片与本地交付文件逐字节一致，0 缺图。原配置除 `imageURL` 外完全保留。构建器测试涵盖规则保留、主题发布和 Rex PNG 别名。验证时间和响应头见 `publication.json`，Rex 的 SVG 导入失败已由用户反馈；PNG 替代入口待 Rex 复验。
+构建器测试涵盖规则保留、原生 PNG、浏览器 SVG、别名一致、素材提交校验和历史发布目录保护。旧 SVG 导入 Rex 后全部变白的用户反馈保留在 `consumer-compatibility.json`；新入口避开该 SVG 解码路径。旧浏览器主题验证记录见 `themes/verification.json`。
 
 ## 本次复审
 
@@ -50,8 +55,10 @@ GitHub Pages 返回 JSON / SVG 对应的内容类型。PNG 地址锁定完整 Gi
 | `badges/svg/` | 310 个自包含 SVG；有纯矢量来源，也有内嵌位图 |
 | `badges.relative.json` | 相对图片地址配置 |
 | `badges-noframe.json` | 旧版深色 PNG 兼容订阅 |
-| `badges-adaptive.json`、`badges-light.json`、`badges-dark.json` | 网页 SVG、浅色 PNG、深色 PNG 订阅 |
-| `badges-rex.json`、`badges-rex-dark.json` | Rex 浅色与深色 PNG 入口，不含 SVG |
+| `badges-rex-adaptive.json`、`badges-rex.json`、`badges-adaptive.json` | 相同的 Rex 原生黑白自适应 PNG 订阅 |
+| `badges-web-adaptive.json`、`badges-light.json`、`badges-dark.json` | 网页 SVG、固定浅色 PNG、固定深色 PNG 订阅 |
+| `badges-rex-dark.json` | 固定深色 PNG 的旧别名 |
+| `themes/rex/`、`themes/rex-map.json` | Rex PNG 与逐项模板/保留原图决策 |
 | `themes/light/`、`themes/adaptive/` | 310 个浅色 PNG 与 310 个自包含自适应 SVG |
 | `themes/theme-map.json` | 每项主题处理区域、规则、原因与原图校验哈希 |
 | `audit-report.md`、`audit.json` | 逐项来源状态、检查结果与限制 |
@@ -68,7 +75,7 @@ PPTV 使用可追溯的中国 PPTV 历史“聚力(PP)”标志，源图只有 1
 
 SVG 是否为矢量见 `catalog.json` 的 `assetType`。含位图的容器不能保证无限放大无损。部分 SVG 的嵌套位图或颜色适配已通过渲染固定为 PNG，避免终端渲染差异。
 
-Rex 的 SVG 导入失败已记录；Rex 替代入口沿用原配置的 groups / filters 结构和 HTTPS PNG。相对地址配置只用于本地或自行托管，不能直接作为远程订阅。
+Rex 的 SVG 导入失败已记录；Rex 原生入口沿用原配置的 groups / filters 结构和 HTTPS PNG。相对地址配置只用于本地或自行托管，不能直接作为远程订阅。
 
 GitHub 版本包含最终 PNG/SVG 和独立构建工具。体积较大的 PNG data URI 内嵌 JSON 不重复提交；需要离线素材时可下载仓库 ZIP。
 
@@ -102,11 +109,13 @@ npm test
 
 原始深色素材在 `badges/png/`；经逐项审核的变换在 `themes/theme-map.json`。修改原图后必须重新审核区域与原图哈希，再运行 `npm run build:themes`。渲染不增加边框、底板、阴影或光晕。所有主题版本保留原图尺寸与 alpha 通道。
 
+Rex 原生素材使用 `themes/rex-map.json` 记录模板选择，运行 `npm run build:rex`。生成器校验源哈希、图标范围和保护列表；只把确认的单色标识输出为白色 alpha 模板，彩色图复制原始字节。同步提交 `themes/rex/` 后再生成订阅。
+
 提交审核后的原始图、浅色 PNG、自适应 SVG，然后生成订阅和不可变发布目录：
 
 ```sh
 node scripts/build-theme-subscriptions.mjs --repository Viceroy-Dennis/cine-marks-noframe --asset-ref FULL_40_CHARACTER_COMMIT_SHA --site-base https://viceroy-dennis.github.io/cine-marks-noframe
-git add badges-light.json badges-dark.json badges-adaptive.json badges-rex.json badges-rex-dark.json themes/releases
+git add badges-light.json badges-dark.json badges-adaptive.json badges-web-adaptive.json badges-rex.json badges-rex-adaptive.json badges-rex-dark.json themes/releases
 git commit -m "Publish theme subscriptions"
 git push origin main
 ```

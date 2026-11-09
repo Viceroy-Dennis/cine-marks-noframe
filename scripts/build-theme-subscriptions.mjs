@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const defaultRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const sourcePaths = ['themes/light', 'themes/adaptive'];
+const sourcePaths = ['themes/light', 'themes/adaptive', 'themes/rex'];
 const maxBytes = 128 * 1024 * 1024;
 
 export function normalizeSiteBase(value) {
@@ -41,12 +41,12 @@ export function createThemeSubscriptions(source, { repository, assetRef, siteBas
     }
     ids.add(filter.id);
   }
-  for (const theme of ['dark', 'light', 'adaptive']) {
+  for (const theme of ['dark', 'light', 'adaptive', 'web-adaptive']) {
     subscriptions[theme] = structuredClone(source);
     for (const filter of subscriptions[theme].filters) {
-      filter.imageURL = theme === 'adaptive'
+      filter.imageURL = theme === 'web-adaptive'
         ? `${site}/themes/releases/${ref}/${filter.id}.svg`
-        : `https://raw.githubusercontent.com/${repository}/${ref}/${theme === 'dark' ? 'badges/png' : 'themes/light'}/${filter.id}.png`;
+        : `https://raw.githubusercontent.com/${repository}/${ref}/${theme === 'dark' ? 'badges/png' : theme === 'light' ? 'themes/light' : 'themes/rex'}/${filter.id}.png`;
     }
   }
   return subscriptions;
@@ -152,7 +152,7 @@ export async function prepareThemeBuild({ root = defaultRoot, repository, assetR
   const tree = readTree(await git(resolvedRoot, ['ls-tree', '-r', '-z', '--full-tree', ref, '--', ...sourcePaths]));
   const files = [];
   for (const filter of dark.subscription.filters) {
-    for (const [theme, extension] of [['light', 'png'], ['adaptive', 'svg']]) {
+    for (const [theme, extension] of [['light', 'png'], ['adaptive', 'svg'], ['rex', 'png']]) {
       const relative = `themes/${theme}/${filter.id}.${extension}`;
       const entry = tree.get(relative);
       if (!entry || entry.type !== 'blob' || !['100644', '100755'].includes(entry.mode)) {
@@ -165,7 +165,7 @@ export async function prepareThemeBuild({ root = defaultRoot, repository, assetR
   const blobs = readBlobs(await git(resolvedRoot, ['cat-file', '--batch'], `${oids.join('\n')}\n`), oids);
   for (const file of files) {
     if (!file.bytes.equals(blobs.get(file.oid))) throw new Error(`Theme source bytes differ from asset commit: ${file.relative}`);
-    if (file.theme === 'light') base.validatePng(file.bytes, file.relative);
+    if (file.theme !== 'adaptive') base.validatePng(file.bytes, file.relative);
     else {
       const text = new TextDecoder('utf-8', { fatal: true }).decode(file.bytes);
       if (!/^\s*(?:<\?xml[^>]*>\s*)?<svg\b/.test(text) ||
@@ -181,6 +181,7 @@ export async function prepareThemeBuild({ root = defaultRoot, repository, assetR
     adaptiveFiles: files.filter(file => file.theme === 'adaptive'),
     filters: dark.subscription.filters.length,
     lightBytes: files.filter(file => file.theme === 'light').reduce((sum, file) => sum + file.bytes.length, 0),
+    rexBytes: files.filter(file => file.theme === 'rex').reduce((sum, file) => sum + file.bytes.length, 0),
     adaptiveBytes: files.filter(file => file.theme === 'adaptive').reduce((sum, file) => sum + file.bytes.length, 0)
   };
 }
@@ -204,7 +205,10 @@ export async function buildThemeSubscriptions(options = {}) {
   const build = await prepareThemeBuild(options);
   const jsonOutputs = new Map(Object.entries(build.subscriptions).map(([theme, subscription]) =>
     [`badges-${theme}.json`, JSON.stringify(subscription, null, 2) + '\n']));
-  jsonOutputs.set('badges-rex.json', jsonOutputs.get('badges-light.json'));
+  // Rex's own monochrome detection and label-color tint implement theme switching.
+  // No theme or rendering-mode key is added to the imported rule schema.
+  jsonOutputs.set('badges-rex.json', jsonOutputs.get('badges-adaptive.json'));
+  jsonOutputs.set('badges-rex-adaptive.json', jsonOutputs.get('badges-adaptive.json'));
   jsonOutputs.set('badges-rex-dark.json', jsonOutputs.get('badges-dark.json'));
   const releases = [];
   for (const file of build.adaptiveFiles) {
@@ -245,15 +249,15 @@ function parseArgs(argv) {
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   if (options.help) {
-    console.log('Usage: node scripts/build-theme-subscriptions.mjs --repository owner/repo --asset-ref <40-character commit SHA> --site-base https://owner.github.io/repo\nAll arguments are required. Reads committed source assets, writes badges-dark.json, badges-light.json and badges-adaptive.json, plus PNG aliases badges-rex.json (light) and badges-rex-dark.json (dark), and preserves SVG releases under themes/releases/<full SHA>/. No commits, pushes or network requests.');
+    console.log('Usage: node scripts/build-theme-subscriptions.mjs --repository owner/repo --asset-ref <40-character commit SHA> --site-base https://owner.github.io/repo\nAll arguments are required. Reads committed source assets. Writes native PNG badges-adaptive.json with identical badges-rex.json and badges-rex-adaptive.json aliases; fixed badges-light.json and badges-dark.json with badges-rex-dark.json alias; browser badges-web-adaptive.json. Preserves SVG releases under themes/releases/<full SHA>/. No commits, pushes or network requests.');
     return;
   }
   const build = await buildThemeSubscriptions(options);
   console.log(JSON.stringify({
     repository: build.repository, assetRef: build.assetRef, siteBase: build.siteBase,
-    filters: build.filters, lightBytes: build.lightBytes, adaptiveBytes: build.adaptiveBytes,
+    filters: build.filters, lightBytes: build.lightBytes, adaptiveBytes: build.adaptiveBytes, rexBytes: build.rexBytes,
     releaseDirectory: build.releaseRelative,
-    note: 'Built locally. Commit and push all generated JSON and release SVG files, then deploy the static site. Consumer SVG/theme support must be verified separately.'
+    note: 'Built locally. Commit and push generated JSON and release SVG files. Rex native PNG requires its monochrome adaptation setting; runtime display must be verified on the consumer device.'
   }, null, 2));
 }
 
